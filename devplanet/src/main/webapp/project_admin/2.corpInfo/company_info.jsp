@@ -52,13 +52,13 @@ $(function() {
 	});//corp_btn
 	
 	$("#regist_btn").click(function() {
-		location.href= "http://localhost/prj2/project_admin/2.corpInfo/registerCorpInfo.jsp";
+		location.href= "http://localhost/devplanet/project_admin/2.corpInfo/registerCorpInfo.jsp";
 	});//regist_btn 
 });//ready
 
 function confirmDelete(corpNum) {
 	if(confirm("정말 삭제하시겠습니까?")) {
-		location.href="http://localhost/prj2/project_admin/2.corpInfo/delete_process.jsp?corp_num="+ corpNum;
+		location.href="http://localhost/devplanet/project_admin/2.corpInfo/delete_process.jsp?corp_num="+ corpNum;
 	}// end if
 }// confirmDelete
 </script>
@@ -69,7 +69,7 @@ function confirmDelete(corpNum) {
 <div id="header">
 
 <div class="logo">
-<img src="http://localhost/prj2/project_admin/images/devplanet_big.png"> 
+<img src="http://localhost/devplanet/project_admin/images/devplanet_big.png"> 
 </div>
 
 <div class="page_name">
@@ -77,7 +77,7 @@ function confirmDelete(corpNum) {
 </div>
 
 <div class="main_page">
-<a href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
+<a href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
 </div>
 
 </div>
@@ -114,7 +114,7 @@ pageContext.setAttribute("corpCount", corpCount);
 
 
 <div class="search">
-<form action="http://localhost/prj2/project_admin/2.corpInfo/company_info.jsp" id="corp_frm" name="corp_frm">
+<form action="http://localhost/devplanet/project_admin/2.corpInfo/company_info.jsp" id="corp_frm" name="corp_frm">
 <input type="text" placeholder="기업명 검색" style="width:110px; height:25px" id="cName"  name="cName">
 <input type="button" class="btn" value="검색" id="corp_btn">
 </form>
@@ -164,7 +164,7 @@ pageContext.setAttribute("corpCount", corpCount);
    		<td><c:out value="${ val.addr }"/></td>
     	<%-- <td><c:out value="${ val.representativeName[0] }"/></td> --%> 
    		<td>
-   			<a href="http://localhost/prj2/project_admin/2.corpInfo/editCorpInfo.jsp?corp_num=${ val.num }">수정</a> / 
+   			<a href="http://localhost/devplanet/project_admin/2.corpInfo/editCorpInfo.jsp?corp_num=${ val.num }">수정</a> / 
    			<a href="#" onclick="confirmDelete(${ val.num })">삭제</a>
    		</td>
 	</tr>

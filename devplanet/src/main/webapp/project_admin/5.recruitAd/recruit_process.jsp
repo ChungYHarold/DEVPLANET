@@ -53,7 +53,7 @@ jVO.setEndDate(endDate);
 
 <% 
 // 1. 저장 디렉토리를 설정 
-File saveDirectory=new File("C:/Users/user/git/prj2/prj2/src/main/webapp/upload/");
+File saveDirectory=new File("C:/Users/user/git/devplanet/devplanet/src/main/webapp/upload/");
 int totalMaxSize = 1024*1024*500;
 int fileSize=1024*1024*10;
 
@@ -119,7 +119,7 @@ jDAO.insertAd(jVO);
 %>
 <script>
 	alert("채용 공고 등록 성공!");
-	location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp"; 
+	location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp"; 
 						//채용공고 지원자 현황 페이지
 </script>
 <%
@@ -129,7 +129,7 @@ jDAO.insertAd(jVO);
 <%-- 
 	<script>
 	alert("잘못입력하셨거나, 누락된 정보가 있습니다. 다시 등록해주세요.");/* 기업명을 조회는 성공 */
-	location.href="http://localhost/prj2/project_admin/5.recruitAd/recruit.jsp?flag=y&name='<%=cName %>'";
+	location.href="http://localhost/devplanet/project_admin/5.recruitAd/recruit.jsp?flag=y&name='<%=cName %>'";
 	</script>
 	 --%>
 <% }//end catch %>  

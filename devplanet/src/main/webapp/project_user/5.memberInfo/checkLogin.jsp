@@ -6,7 +6,7 @@ String userName="";
 String userId="";
 //System.out.println("1.==sesVO is ==============="+session.getAttribute("sesVO") );
 if(session.getAttribute("sesVO")==null) {
-	String msg="<script>alert('로그인 후 이용해 주세요');  location.href='http://localhost/prj2/project_user/2.join/login.jsp'</script>";
+	String msg="<script>alert('로그인 후 이용해 주세요');  location.href='http://localhost/devplanet/project_user/2.join/login.jsp'</script>";
 	out.print(msg);
 }else {
 	LoginResultVO lrVO=(LoginResultVO)session.getAttribute("sesVO");

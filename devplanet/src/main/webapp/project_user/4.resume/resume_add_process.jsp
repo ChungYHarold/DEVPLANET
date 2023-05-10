@@ -27,7 +27,7 @@
 		%>
 		<script type="text/javascript">
 		alert("로그인 후 이용해 주세요.");
-		location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+		location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 		</script>  
 		<%															//로그인 창으로 보내는 예시
 	} else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -38,7 +38,7 @@
 <!-- session 끝 -->
     
 <%
-File saveDirectory = new File("C:/Users/user/git/prj2/prj2/src/main/webapp/upload");
+File saveDirectory = new File("C:/Users/user/git/devplanet/devplanet/src/main/webapp/upload");
 int totalMaxSize=1024*1024*10;
 MultipartRequest mr = new MultipartRequest(request,saveDirectory.getAbsolutePath(), totalMaxSize, "UTF-8", new DefaultFileRenamePolicy());
 
@@ -198,5 +198,5 @@ rDAO.insertEducation(eVO);
 %>
 
 <script>
-	location.href="http://localhost/prj2/project_user/4.resume/resume_add_complete.jsp"
+	location.href="http://localhost/devplanet/project_user/4.resume/resume_add_complete.jsp"
 </script>

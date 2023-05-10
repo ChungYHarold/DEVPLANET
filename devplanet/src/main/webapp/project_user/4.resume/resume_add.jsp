@@ -27,7 +27,7 @@ if(session.getAttribute("sesVO")==null) { // 정상적인 접근이라면 세션
 	%>
 	<script type="text/javascript">
 	alert("로그인 후 이용해 주세요.");
-	location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+	location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 	</script>  
 	<%														
 } else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -244,7 +244,7 @@ $(function() {
 		
 		
 		if(!confirm("이력서를 등록하시겠습니까?")) {
-			/* location.href="http://localhost/prj2/project_user/4.resume/2.resume_complete.jsp"  */
+			/* location.href="http://localhost/devplanet/project_user/4.resume/2.resume_complete.jsp"  */
 			/* $("#title").focus(); */
 		} else {
 			$(function(){
@@ -386,7 +386,7 @@ $(function() {
 	 		} else {
 		        // 이미지 요소의 src 속성 값을 빈 문자열로 설정하여 ${imageFileInput}을 지움.
 				alert("삭제 되었습니다.");
-		        $('#preview img').attr('src', 'http://localhost/prj2/upload/no.png').on('error', function() {
+		        $('#preview img').attr('src', 'http://localhost/devplanet/upload/no.png').on('error', function() {
 		            // 이미지 로드 실패 시 onerror 이벤트 핸들러에서 처리할 로직을 작성.
 		            $(this).hide();
 			    });
@@ -521,12 +521,12 @@ pageContext.setAttribute("imageFileInput", udVO.getImg());
 
 		<div class="resumeHeader">
 			<div class="container">
-				<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="logo linkLogo"><img
-					src="http://localhost/prj2/images/devplanet_logo.png"
+				<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="logo linkLogo"><img
+					src="http://localhost/devplanet/images/devplanet_logo.png"
 					style="width: 100px; height: auto;" alt="JOBKOREA"></a>
 				<div class="links">
-					<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a> <a
-						href="http://localhost/prj2/project_user/4.resume/resume_present.jsp"
+					<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a> <a
+						href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp"
 						class="link linkManage">이력서 관리</a>
 				</div>
 			</div>
@@ -623,7 +623,7 @@ pageContext.setAttribute("imageFileInput", udVO.getImg());
 										style="display: none;"> 사진등록 </a> -->
 									
 									<div class="picture dropped" id="preview" class="image" aria-hidden="true">
-									<img src="http://localhost/prj2/upload/${imageFileInput}" onerror="this.src='http://localhost/prj2/upload/no.png'"/>
+									<img src="http://localhost/devplanet/upload/${imageFileInput}" onerror="this.src='http://localhost/devplanet/upload/no.png'"/>
 
 									</div>
 							</div>

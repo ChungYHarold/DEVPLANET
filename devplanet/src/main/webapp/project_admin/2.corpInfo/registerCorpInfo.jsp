@@ -365,11 +365,11 @@ function img() {
 		<div id="gnb">
 	
 			<!--// 기업회원 -->
-			<h1><a class="logo" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">
-			<img alt="데브플래닛" src="http://localhost/prj2/project_admin/images/devplanet_logo.png"></a>
+			<h1><a class="logo" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">
+			<img alt="데브플래닛" src="http://localhost/devplanet/project_admin/images/devplanet_logo.png"></a>
 			<span class="bar"></span><span style="font-size:23px">&nbsp;기업정보 등록</span>
 			</h1>
-			<a id="main_page" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
+			<a id="main_page" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
 		</div>
 	</div>
 </div>
@@ -380,7 +380,7 @@ function img() {
 	<div id="container">
 		<div id="content">
 			<h1 class="skip"><!-- 회원정보 수정 --></h1>
-<!--폼태그 --><form action="http://localhost/prj2/project_admin/2.corpInfo/register_process.jsp" name="frm" id="frm" method="post" enctype="multipart/form-data">
+<!--폼태그 --><form action="http://localhost/devplanet/project_admin/2.corpInfo/register_process.jsp" name="frm" id="frm" method="post" enctype="multipart/form-data">
 				<div class="mbrSec mbrMngInfo">
 					<h2 class="mbrHeading2"><span>기본정보 등록</span></h2>
 					<div class="mbrTplDesc">
@@ -494,7 +494,7 @@ function img() {
 				
 				<p class="mbrBtnFunc" style="text-align:center">
 					<span class="mbrBtn mbrBtnOk_3"><a id="okLink" name="okLink" style="cursor:pointer;"><span></span></a></span>
-					<span class="mbrBtn mbrBtnCancel_1"><input type="button" id="cancleBtn" name="cancleBtn" onclick="location.href='http://localhost/prj2/project_admin/2.corpInfo/company_info.jsp'"/><span></span></span>
+					<span class="mbrBtn mbrBtnCancel_1"><input type="button" id="cancleBtn" name="cancleBtn" onclick="location.href='http://localhost/devplanet/project_admin/2.corpInfo/company_info.jsp'"/><span></span></span>
 				</p>
 		</form>		
 		</div>

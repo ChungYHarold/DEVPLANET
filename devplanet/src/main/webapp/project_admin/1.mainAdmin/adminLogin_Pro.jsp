@@ -15,7 +15,7 @@ request.setCharacterEncoding("UTF-8");
 <script type="text/javascript">
 if("<%=request.getMethod()%>" == "GET") {
 	alert("정상적인 방식으로 요청하지 않으셨습니다.");
-	location.href="http://localhost/prj2/project_admin/1.mainAdmin/adminLogin.jsp";
+	location.href="http://localhost/devplanet/project_admin/1.mainAdmin/adminLogin.jsp";
 };
 </script>
 
@@ -33,7 +33,7 @@ if (arVO != null) {
 } else {
     out.println("<script>");
     out.println("alert('등록된 정보와 일치하지 않습니다.');");
-    out.println("location.href='http://localhost/prj2/project_admin/1.mainAdmin/adminLogin.jsp'");
+    out.println("location.href='http://localhost/devplanet/project_admin/1.mainAdmin/adminLogin.jsp'");
     out.println("</script>");
 }
 %>

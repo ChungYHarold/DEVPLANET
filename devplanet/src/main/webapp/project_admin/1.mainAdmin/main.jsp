@@ -184,12 +184,12 @@ a { text-decoration-line: none; }
 <script type="text/javascript">
 $(function() {
 	$("#btn").click(function() {
-		location.href="http://localhost/prj2/project_admin/6.memberAdmin/member_manage.jsp";
+		location.href="http://localhost/devplanet/project_admin/6.memberAdmin/member_manage.jsp";
 	});// click
 	
 	$("#logout").click(function() {
 		if(confirm("로그아웃 하시겠습니까?")) {
-			location.href="http://localhost/prj2/project_admin/1.mainAdmin/adminLogin.jsp";
+			location.href="http://localhost/devplanet/project_admin/1.mainAdmin/adminLogin.jsp";
 		} else {
 			location.reload();
 		}
@@ -207,9 +207,9 @@ $(function() {
 		<div id="navi">
     		<select class="select" onchange="if(this.value) location.href=(this.value);">
         		<option>==선택==</option>
-        		<option value="http://localhost/prj2/project_admin/2.corpInfo/company_info.jsp">기업 정보 관리</option>
-        		<option value="http://localhost/prj2/project_admin/5.recruitAd/recruit.jsp">채용 공고 등록</option>
-        		<option value="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp">채용 공고 관리</option>
+        		<option value="http://localhost/devplanet/project_admin/2.corpInfo/company_info.jsp">기업 정보 관리</option>
+        		<option value="http://localhost/devplanet/project_admin/5.recruitAd/recruit.jsp">채용 공고 등록</option>
+        		<option value="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp">채용 공고 관리</option>
    			</select>
    			<input type="button" id="btn" value="회원관리" />
 		</div>
@@ -247,22 +247,22 @@ $(function() {
 			<div id="user">
 				<h2>개인 현황</h2>
 				<div class="user1">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
 					<p class="cnt">${ joinCount }</p> <br/>
 					<p class="cntlabel">회원가입<p>
 				</div>
 				<div class="user2">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
 					<p class="cnt">${ quitCount }</p> <br/>
 					<p class="cntlabel">회원탈퇴<p>
 				</div>
 				<div class="user3">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
 					<p class="cnt">${ resumeCount }</p> <br/>
 					<p class="cntlabel">이력서등록<p>
 				</div>
 				<div class="user4">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/user.PNG" alt="user Image" class="img">
 					<p class="cnt">${ JobCount }</p> <br/>
 					<p class="cntlabel">구직자수</p>
 				</div>
@@ -270,12 +270,12 @@ $(function() {
 			<div id="comp">
 				<h2>기업 현황</h2>
 				<div class="comp1">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/comp.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/comp.PNG" alt="user Image" class="img">
 					<p class="cnt">${ corpCount }</p> <br/>
 					<p class="cntlabel">등록된 기업<p>
 				</div>
 				<div class="comp2">
-					<img src="http://localhost/prj2/project_admin/1.mainAdmin/images/comp.PNG" alt="user Image" class="img">
+					<img src="http://localhost/devplanet/project_admin/1.mainAdmin/images/comp.PNG" alt="user Image" class="img">
 					<p class="cnt">${ adCount }</p> <br/>
 					<p class="cntlabel">등록된 공고<p>
 				</div>

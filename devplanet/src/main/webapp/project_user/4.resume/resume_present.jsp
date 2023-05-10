@@ -29,7 +29,7 @@ if(session.getAttribute("sesVO")==null) { // 정상적인 접근이라면 세션
 	%>
 	<script type="text/javascript">
 	alert("로그인 후 이용해 주세요.");
-	location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+	location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 	</script>  
 	<%															
 } else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -174,8 +174,8 @@ p{
 			<!-- // headInner -->
 			<div class="headInner">
 				<h1 class="jkLogo" >
-					<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp"><img
-						src="http://localhost/prj2/images/devplanet_logo.png"
+					<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp"><img
+						src="http://localhost/devplanet/images/devplanet_logo.png"
 						alt="JOBKOREA"></a>
 				</h1>
 
@@ -254,7 +254,7 @@ p{
 
 					<div class="btnBx">
 						<a
-							href="http://localhost/prj2/project_user/4.resume/resume_add.jsp"
+							href="http://localhost/devplanet/project_user/4.resume/resume_add.jsp"
 							class="btn btnBl mtuSpImgBefore" target="_blank"><span>이력서
 								등록</span></a>
 					</div>
@@ -296,10 +296,10 @@ p{
 
 							<div class="btnCell">
 								<a class="btn"
-									href="http://localhost/prj2/project_user/4.resume/resume_modify.jsp?rNum=${val.rNum} "target="_blank">수정</a>
+									href="http://localhost/devplanet/project_user/4.resume/resume_modify.jsp?rNum=${val.rNum} "target="_blank">수정</a>
 							</div>
 							<div class="btnCell">
-								<a class="btn" href="http://localhost/prj2/project_user/4.resume/resume_presnet_delete.jsp?rNum=${val.rNum}">삭제</a>
+								<a class="btn" href="http://localhost/devplanet/project_user/4.resume/resume_presnet_delete.jsp?rNum=${val.rNum}">삭제</a>
 							</div>
 
 						</div>
@@ -337,28 +337,28 @@ p{
 				<h1 class="skip">개인회원 서비스 메뉴</h1>
 				<div class="lnbGroup">
 					<h2 class="lnbTit">
-						<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp">개인회원 홈</a>
+						<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp">개인회원 홈</a>
 					</h2>
 				</div>
 				<div class="lnbGroup">
 					<h2 class="lnbTit">이력서 관리</h2>
 					<ul>
-						<li><a href="http://localhost/prj2/project_user/4.resume/resume_add.jsp" target="_blank">이력서 등록</a></li>
-						<li><a class=on href="http://localhost/prj2/project_user/4.resume/resume_present.jsp">이력서 현황</a></li>
+						<li><a href="http://localhost/devplanet/project_user/4.resume/resume_add.jsp" target="_blank">이력서 등록</a></li>
+						<li><a class=on href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp">이력서 현황</a></li>
 					</ul>
 				</div>
 				<div class="lnbGroup">
 					<h2 class="lnbTit">입사지원 관리</h2>
 					<ul>
-						<li><a href="http://localhost/prj2/project_user/4.resume/job_application.jsp">입사지원 현황</a></li>
+						<li><a href="http://localhost/devplanet/project_user/4.resume/job_application.jsp">입사지원 현황</a></li>
 					</ul>
 				</div>
 
 				<div class="lnbGroup">
 					<h2 class="lnbTit">회원정보 관리</h2>
 					<ul>
-						<li><a href="http://localhost/prj2/project_user/5.memberInfo/confrimInfo.jsp">회원정보 수정</a></li>
-						<li><a href="http://localhost/prj2/project_user/5.memberInfo/confirmPass.jsp">비밀번호 변경</a></li>
+						<li><a href="http://localhost/devplanet/project_user/5.memberInfo/confrimInfo.jsp">회원정보 수정</a></li>
+						<li><a href="http://localhost/devplanet/project_user/5.memberInfo/confirmPass.jsp">비밀번호 변경</a></li>
 					</ul>
 				</div>
 			</section>

@@ -66,7 +66,7 @@ if(result > 0) {
 	%>
 	<script>
 	alert("회원정보가 수정되었습니다.");
-	location.href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp";
+	location.href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp";
 	</script>
 	<%
 }//end if

@@ -20,13 +20,13 @@
 <title>회원정보 수정</title>
 
 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/footer_sub.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/gnb_sub.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/gnb.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_common.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_style.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_tpl.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/footer_sub.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/gnb_sub.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/gnb.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_common.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_style.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_tpl.css"/>
 
 
 	    
@@ -160,7 +160,7 @@ $(function(){
 	})//kakao
 	
 	$("#cancel").click(function() {
-		location.href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp";
+		location.href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp";
 	});//cancel
 	
 	
@@ -218,15 +218,15 @@ function selectEmail() {
 		<div id="gnb">
 	
 			<!--// 개인회원 -->
-			<h1><a class="logo"href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp"><img alt="데브플래닛" src="http://localhost/prj2/project_admin/images/devplanet_logo.png"></a>
-			<span class="bar"><span class="title"><img src="http://localhost/prj2/project_user/images/h_mng_gg.gif" width="117" height="23" alt="회원정보 관리"></span></span>
+			<h1><a class="logo"href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp"><img alt="데브플래닛" src="http://localhost/devplanet/project_admin/images/devplanet_logo.png"></a>
+			<span class="bar"><span class="title"><img src="http://localhost/devplanet/project_user/images/h_mng_gg.gif" width="117" height="23" alt="회원정보 관리"></span></span>
 			</h1>
 <!--skip은 안보임  -->	<h2 class="skip"><!--주요링크--></h2>
 			<!-- <br><br><br> -->
 			<div class="secNav">
 				<ol>
 					<li class="mn1"><a href=""><span class="span"></span>개인정보 수정</a></li>
-					<li class="mn2"><a href="http://localhost/prj2/project_user/5.memberInfo/confirmPass.jsp"><span></span>비밀번호변경</a></li>
+					<li class="mn2"><a href="http://localhost/devplanet/project_user/5.memberInfo/confirmPass.jsp"><span></span>비밀번호변경</a></li>
 					<li class="mn3 end"><a href="quit_member.jsp" ><span></span>회원탈퇴</a></li>
 				</ol>
 			</div>
@@ -244,7 +244,7 @@ function selectEmail() {
 
 		<div id="content">
 <!--skip은 안보임  -->	<h1 class="skip"><!-- 회원정보 수정 --></h1>
-			<form id="frm" name="frm" method="get" action="http://localhost/prj2/project_user/5.memberInfo/correctionInfo_process.jsp">
+			<form id="frm" name="frm" method="get" action="http://localhost/devplanet/project_user/5.memberInfo/correctionInfo_process.jsp">
 				<input type="hidden" name="M_Hand_Phone" id="M_Hand_Phone" value="">
 				<input type="hidden" name="M_Home_Phone" id="M_Home_Phone" value="">
 				<input type="hidden" name="R_No" id="R_No" value="">
@@ -256,7 +256,7 @@ function selectEmail() {
 				<fieldset>
 				<legend><!-- 회원정보 수정 입력폼 --></legend>
 				<div class="mbrSec mbrMngInfo">
-					<h2 class="mbrHeading2"><img src="http://localhost/prj2/project_user/images/mbr_h_mng_gg.gif" alt="회원정보 수정"></h2>
+					<h2 class="mbrHeading2"><img src="http://localhost/devplanet/project_user/images/mbr_h_mng_gg.gif" alt="회원정보 수정"></h2>
 					<div class="mbrTplDesc">
 						<p>회원님의 정보를 수정·확인하실 수 있습니다.</p>
 					</div>
@@ -280,12 +280,12 @@ function selectEmail() {
 
 						
 							<tr>
-								<th scope="row" colspan="2"><span class="blank"></span> 이름 <img alt="필수입력사항" src="http://localhost/prj2/project_user/images/icon_b.gif"></th>
+								<th scope="row" colspan="2"><span class="blank"></span> 이름 <img alt="필수입력사항" src="http://localhost/devplanet/project_user/images/icon_b.gif"></th>
 								<td colspan="3"><input type="hidden" class="txtForm" id="M_Name"  name="name" size="12" maxlength="15" value="${ name }"><span>${ name }</span>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row" colspan="2"><span class="blank"></span> 생년월일/성별 <img alt="필수입력사항" src="http://localhost/prj2/project_user/images/icon_b.gif"></th>
+								<th scope="row" colspan="2"><span class="blank"></span> 생년월일/성별 <img alt="필수입력사항" src="http://localhost/devplanet/project_user/images/icon_b.gif"></th>
 								<td>
 								<!-- <input type="text" name="birthYear" id="birthYear" maxlength="4" title="연" class="ipText ipTel ipNum devNoPh moveNext" onkeydown="handlerNum(this);" value="" style="ime-mode:disabled; float:left;" nextId="">
 							 -->	
@@ -329,7 +329,7 @@ function selectEmail() {
 							</tr>
 						
 							<tr>
-								<th class="contectInfo" rowspan="2" style="border-right:1px solid #e5e5e5;"><span class="blank"></span> 연락처 <img alt="필수입력사항" src="http://localhost/prj2/project_user/images/icon_b.gif"></th>
+								<th class="contectInfo" rowspan="2" style="border-right:1px solid #e5e5e5;"><span class="blank"></span> 연락처 <img alt="필수입력사항" src="http://localhost/devplanet/project_user/images/icon_b.gif"></th>
 								<th scope="row">휴대폰</th>
 								<td>
 									<div class="mbrHelpWrap">
@@ -386,7 +386,7 @@ function selectEmail() {
                                         <input type="text" id="zipcode" name="zipcode" style="width:300px;" class="ipText" maxlength="8" value="${ zipcode }" readonly="readonly" >
 										<span>
 
-											<button id="kakao" type="button" ><img src="http://localhost/prj2/project_admin/images/btn_jk_add_search.gif" alt="주소 검색"/></button>
+											<button id="kakao" type="button" ><img src="http://localhost/devplanet/project_admin/images/btn_jk_add_search.gif" alt="주소 검색"/></button>
 										</span>
 										<div style="left:389px;display:none;" class="mbrTplLayer mbrTplLayer_1 mbrLayerHelp" id="CautionResult4" name="CautionResult">
 											<div class="desc">

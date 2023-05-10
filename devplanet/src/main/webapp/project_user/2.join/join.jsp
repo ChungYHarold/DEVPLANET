@@ -7,9 +7,9 @@
 <title>DEVPLANET-회원가입</title>
     <link rel="SHORTCUT ICON" href="//www.jobkorea.co.kr/favicon.ico?v1904091400">
 
-    <link href="http://localhost/prj2/project_user/2.join/css/" rel="stylesheet" type="text/css" />
-    <link href="http://localhost/prj2/project_user/2.join/css/common-sv-202006161246.css" rel="stylesheet" type="text/css" />
-    <link href="http://localhost/prj2/project_user/2.join/css/join-sv-202203141106.css" rel="stylesheet" type="text/css" />
+    <link href="http://localhost/devplanet/project_user/2.join/css/" rel="stylesheet" type="text/css" />
+    <link href="http://localhost/devplanet/project_user/2.join/css/common-sv-202006161246.css" rel="stylesheet" type="text/css" />
+    <link href="http://localhost/devplanet/project_user/2.join/css/join-sv-202203141106.css" rel="stylesheet" type="text/css" />
 
 <!-- jQuery CDN 시작 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -201,7 +201,7 @@ $(function() {
 
 			<h3 class="skip">글로벌 메뉴</h3>
 			<ul class="gnb f_clear">
-				<li><a href="http://localhost/prj2/project_user/1.main/main_page.jsp">홈</a></li>
+				<li><a href="http://localhost/devplanet/project_user/1.main/main_page.jsp">홈</a></li>
 			</ul>
 
 			<h3 class="skip">회원 형태별 가입</h3>

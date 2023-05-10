@@ -363,7 +363,7 @@ $(function() {
 		
 		if (confirm("정말로 취소하시겠습니까?")) {
 		    // 확인 버튼 클릭 시 실행될 코드
-		    location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp";
+		    location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp";
 		  }//end if 
 		  
 	});// click
@@ -409,7 +409,7 @@ $(function() {
 <div id="wrap">
 	<div id="header">
 		<div id="innerBar">
-			<p><a style="color: #f1f1f1" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">메인 페이지</a></p>
+			<p><a style="color: #f1f1f1" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">메인 페이지</a></p>
 		</div>
 		<div id="titlee">
 			<h1>DEVPLANET </h1> 
@@ -449,7 +449,7 @@ $(function() {
 		%>	
 		<script>
 			alert("서버에 문제 발생! 잠시 후 다시 시도해주세요.");
-			location.href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp";
+			location.href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp";
 		</script>
 		
 		<%	
@@ -462,7 +462,7 @@ $(function() {
 %>	
 			<script>
 			alert("서버에 문제 발생! 잠시 후 다시 시도해주세요.");
-			location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp";
+			location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp";
 		</script>
 			
 <%	
@@ -474,7 +474,7 @@ $(function() {
 		
 %>
 
-		<form action="http://localhost/prj2/project_admin/5.recruitAd/recruitmod_process.jsp" name="recruitAdMod" id="recruitAdMod" method="post"
+		<form action="http://localhost/devplanet/project_admin/5.recruitAd/recruitmod_process.jsp" name="recruitAdMod" id="recruitAdMod" method="post"
 		enctype="multipart/form-data">
 		<input type="hidden" id="jobNum" name="jobNum" value="${mVO.jobNum}">
 		<div id="corpName">
@@ -578,7 +578,7 @@ $(function() {
 			<input type="hidden" class="contxtR" id="descriptionHidden" readonly="readonly" name="descriptionHidden" value="<c:out value="${mVO.description}"/>"/>
 			
 			 <div id="previewDiv">
-			 	<img id="preview" src="http://localhost/prj2/upload/${mVO.description}">
+			 	<img id="preview" src="http://localhost/devplanet/upload/${mVO.description}">
 			 </div>
 		</div>
 		

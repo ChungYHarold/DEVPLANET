@@ -19,6 +19,6 @@
 	
 %>
 <script>
-	alert("삭제 되었습니다.")/* window.location.replace('http://localhost/prj2/project_user/4.resume/resume_present.jsp?rNum='); */
-	window.location.href = "http://localhost/prj2/project_user/4.resume/resume_present.jsp";
+	alert("삭제 되었습니다.")/* window.location.replace('http://localhost/devplanet/project_user/4.resume/resume_present.jsp?rNum='); */
+	window.location.href = "http://localhost/devplanet/project_user/4.resume/resume_present.jsp";
 </script>

@@ -28,14 +28,14 @@ if(result>=1){ //1행 삭제에 성공한 것
 %>
 	<script>
 		alert("삭제에 성공했습니다. 채용공고 현황으로 이동합니다.");
-		location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp";
+		location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp";
 	</script>
 	
 <%} else{ %>
 
 	<script>
 		alert("삭제에 실패했습니다. 잠시 후 다시 시도해주세요.");
-		location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp";
+		location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp";
 	</script>
 
 <% 

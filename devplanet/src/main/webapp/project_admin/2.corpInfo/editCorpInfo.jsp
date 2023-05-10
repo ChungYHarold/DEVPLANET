@@ -340,11 +340,11 @@ function img() {
 	<div class="gnbWrap gnbWrap_mMng">
 		<div id="gnb">
 			<!--// 기업회원 -->
-			<h1><a class="logo" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">
-			<img alt="데브플래닛" src="http://localhost/prj2/project_admin/images/devplanet_logo.png"></a>
+			<h1><a class="logo" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">
+			<img alt="데브플래닛" src="http://localhost/devplanet/project_admin/images/devplanet_logo.png"></a>
 			<span class="bar"></span><span style="font-size:23px">&nbsp;기업정보 수정</span>
 			</h1>
-			<a id="main_page" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
+			<a id="main_page" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">메인페이지</a>
 		</div>
 	</div>
 </div>
@@ -365,7 +365,7 @@ function img() {
 	
 		<div id="content">
 			<h1 class="skip"><!-- 회원정보 수정 --></h1>
-<!--폼태그 --><form action="http://localhost/prj2/project_admin/2.corpInfo/edit_process.jsp?corp_num=<%= corpNum %>" id="frm" name="frm" method="post" enctype="multipart/form-data">
+<!--폼태그 --><form action="http://localhost/devplanet/project_admin/2.corpInfo/edit_process.jsp?corp_num=<%= corpNum %>" id="frm" name="frm" method="post" enctype="multipart/form-data">
 					<div class="mbrSec mbrMngInfo">
 						<h2 class="mbrHeading2">
 							<span>기본정보 수정</span>
@@ -493,7 +493,7 @@ function img() {
 						<div class="imgDiv">
 						<br>
 							<div id="profile">
-								<img id="profile" src="http://localhost/prj2/upload/<%= acVO.getLogo() %>" onerror="this.src='http://localhost/prj2/upload/no.png'"/>
+								<img id="profile" src="http://localhost/devplanet/upload/<%= acVO.getLogo() %>" onerror="this.src='http://localhost/devplanet/upload/no.png'"/>
 							</div>
 							<br/> 
 							<label class="input-file-button" for="file" onclick="img()"> 
@@ -511,7 +511,7 @@ function img() {
 				<br>
 				<p class="mbrBtnFunc" style="text-align:center">
 					<span class="mbrBtn mbrBtnModify_1"><a id="modifyBtn" style="cursor:pointer;"><span>수정하기</span></a></span>
-					<span class="mbrBtn mbrBtnCancel_1"><input type="button" id="cancelBtn" onclick="location.href='http://localhost/prj2/project_admin/2.corpInfo/company_info.jsp'"><span>취소</span></span>
+					<span class="mbrBtn mbrBtnCancel_1"><input type="button" id="cancelBtn" onclick="location.href='http://localhost/devplanet/project_admin/2.corpInfo/company_info.jsp'"><span>취소</span></span>
 				</p>
 <!--폼태그 -->	</form>
 		</div>

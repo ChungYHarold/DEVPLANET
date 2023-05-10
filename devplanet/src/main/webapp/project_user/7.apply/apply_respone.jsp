@@ -84,7 +84,7 @@ $(function() {
 });//ready
 
 function change_page(cName, cTitle, jobNum) {
-	var url="http://localhost/prj2/project_user/7.apply/apply_list.jsp?name="+cName+"&title="+cTitle+"&jobNum="+jobNum;
+	var url="http://localhost/devplanet/project_user/7.apply/apply_list.jsp?name="+cName+"&title="+cTitle+"&jobNum="+jobNum;
 	location.href=url;
 }//change
 
@@ -120,7 +120,7 @@ function change_page(cName, cTitle, jobNum) {
                         <div class="txResumeBx">
                             <p class="jkResume">
                                 <input type="hidden" name="SelAttachFileName" id="SelAttachFileName" />
-                                <a href="http://localhost/prj2/project_user/4.resume/1.resume_modify.jsp?rNum=${ rNum }" id="devResumeTitle" target="_new">${ title }</a>
+                                <a href="http://localhost/devplanet/project_user/4.resume/1.resume_modify.jsp?rNum=${ rNum }" id="devResumeTitle" target="_new">${ title }</a>
                             </p>
                         </div>
 

@@ -30,5 +30,5 @@ int result = uDAO.updatePass(rpVO);
 %>
 <script type="text/javascript">
 	alert("비밀번호 수정 완료");
-	location.href="http://localhost/prj2/project_user/1.main/main_page.jsp";
+	location.href="http://localhost/devplanet/project_user/1.main/main_page.jsp";
 </script>

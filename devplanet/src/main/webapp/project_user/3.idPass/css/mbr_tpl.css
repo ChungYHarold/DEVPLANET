@@ -192,7 +192,7 @@
 /* Template - Desc
 ------------------------------------------------------------------------------------ */
 .mbrTplDesc {margin-bottom:10px;}
-.mbrTplDesc p {padding:2px 0 2px 7px; background:url(http://localhost/prj2/project_user/idPass/images/mbr_tpl_icon_1.gif) no-repeat 0 -34px;  line-height:1.4; color:#767676; letter-spacing:-1px;}
+.mbrTplDesc p {padding:2px 0 2px 7px; background:url(http://localhost/devplanet/project_user/idPass/images/mbr_tpl_icon_1.gif) no-repeat 0 -34px;  line-height:1.4; color:#767676; letter-spacing:-1px;}
 .mbrTplDesc p em {color:#46a5ff;}
 
 
@@ -226,7 +226,7 @@
 /* Template - button
 ------------------------------------------------------------------------------------ */
 .mbrBtn, .mbrBtn button, .mbrBtn input, .mbrBtn a {display:inline-block;}
-.mbrBtn {height:21px; background:url(http://localhost/prj2/project_user/3.idPass/images/mbr_tpl_btn_1.gif) no-repeat 0 0; overflow:hidden; vertical-align:middle;}
+.mbrBtn {height:21px; background:url(http://localhost/devplanet/project_user/3.idPass/images/mbr_tpl_btn_1.gif) no-repeat 0 0; overflow:hidden; vertical-align:middle;}
 .mbrBtn button {width:100%; height:100%;}
 .mbrBtn button span {position:absolute; top:-9999em; width:1px; height:1px; overflow:hidden;}
 .mbrBtn input {border:0 none; background:transparent; cursor:pointer; padding-top:50px;}

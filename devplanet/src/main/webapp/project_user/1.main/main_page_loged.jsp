@@ -58,7 +58,7 @@ if(session.getAttribute("sesVO")==null) { // 정상적인 접근이라면 세션
 	%>
 	<script type="text/javascript">
 	alert("로그인 후 이용해 주세요.");
-	location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+	location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 	</script>  
 	<%															//로그인 창으로 보내는 예시
 }else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -71,7 +71,7 @@ if(session.getAttribute("sesVO")==null) { // 정상적인 접근이라면 세션
 
 $(function() {
 	$("#apply").click(function() {
-		location.href="http://localhost/prj2/project_user/4.resume/job_application.jsp";
+		location.href="http://localhost/devplanet/project_user/4.resume/job_application.jsp";
 	});//click
 	
 	$("#searchBtn").click(function() {
@@ -108,7 +108,7 @@ function logout() {
         <!-- // headInner -->
         <div class="headInner">
             <h1 class="jkLogo" >
-                        <a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp"><img id="jkLogo" src="http://localhost/prj2/images/devplanet_big.png" /></a>
+                        <a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp"><img id="jkLogo" src="http://localhost/devplanet/images/devplanet_big.png" /></a>
             </h1>
         </div>
         <!-- headInner // -->
@@ -131,7 +131,7 @@ function logout() {
 
                         <!-- 메뉴 활성화 클래스 navFixed 마우스 오버시 active 클래스 추가 -->
                         <li id="gnbGi" class="navItem gi ">
-                            <a href="http://localhost/prj2/project_user/6.recruit/adPage.jsp" class="linkItem" ><span class="spNav"><span class="txIr">채용정보</span></span></a>
+                            <a href="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" class="linkItem" ><span class="spNav"><span class="txIr">채용정보</span></span></a>
                         </li>
                     </ul>
                 </div>
@@ -146,7 +146,7 @@ function logout() {
 
  <div class="search">
     <h2 class="skip">검색</h2>
-    <form name="search_bar" id="searchFrm" action="http://localhost/prj2/project_user/6.recruit/adPage.jsp" >
+    <form name="search_bar" id="searchFrm" action="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" >
         <fieldset>
             <div class="smKey">
                 <input type="text" id="stext" title="검색어 입력" name="stext" placeholder="기업명과 직무검색" maxlength="50">
@@ -162,8 +162,8 @@ function logout() {
  <div id="loginbox">
  
  <input type="text" id="named" readonly="readonly" value="<%= userName%>"/><label id="lab">님</label>
- <span id="appli"><a href="http://localhost/prj2/project_user/5.memberInfo/confrimInfo.jsp">회원정보 수정</a></span>
- <a href="http://localhost/prj2/project_user/4.resume/resume_present.jsp"><button type="button" id="loginb"><strong>이력서 현황</strong></button></a>
+ <span id="appli"><a href="http://localhost/devplanet/project_user/5.memberInfo/confrimInfo.jsp">회원정보 수정</a></span>
+ <a href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp"><button type="button" id="loginb"><strong>이력서 현황</strong></button></a>
  <button type="button" id="apply"><strong>지원 현황</strong></button>
  <button type="button" id="logout" onclick="logout()">로그아웃</button>
  
@@ -194,11 +194,11 @@ function logout() {
                             <li>
                                 <div class="company">
                                     <span class="name">
-                                        <a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank"><span class="logo"><img src="http://localhost/prj2/upload/${ corps.logo }" width="180" height="72" alt="" onerror="this.src='//img.jobkorea.co.kr/Images/Logo/180/l/o/logo_none_180.gif';"></span>${ corps.cName }</a>
+                                        <a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank"><span class="logo"><img src="http://localhost/devplanet/upload/${ corps.logo }" width="180" height="72" alt="" onerror="this.src='//img.jobkorea.co.kr/Images/Logo/180/l/o/logo_none_180.gif';"></span>${ corps.cName }</a>
                                     </span>
                                 </div>
-                                <div class="description"><a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank">${ corps.title }<br /></a></div>
-                                <div class="company-background-image"><img src="http://localhost/prj2/upload/${ corps.logo }" alt="${ corps.cName }" onerror="this.src='//file1.jobkorea.co.kr/banner/images/100006303.jpg';"></div>
+                                <div class="description"><a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank">${ corps.title }<br /></a></div>
+                                <div class="company-background-image"><img src="http://localhost/devplanet/upload/${ corps.logo }" alt="${ corps.cName }" onerror="this.src='//file1.jobkorea.co.kr/banner/images/100006303.jpg';"></div>
                             </li>
             </c:forEach>
             </ul>
@@ -221,7 +221,7 @@ function logout() {
          <div class="footer__service">
             <h3 class="blind">잡코리아 서비스 링크</h3>
             <ul>
-                <li><a href="http://localhost/prj2/project_user/1.main/main_page.jsp" target="_blank">회사소개</a></li>
+                <li><a href="http://localhost/devplanet/project_user/1.main/main_page.jsp" target="_blank">회사소개</a></li>
             </ul>
         </div>  
         

@@ -106,7 +106,7 @@ $(function(){
 
 	function openPop(name,  jobNum, title) {
 		
-		var url="http://localhost/prj2/project_user/7.apply/apply.jsp?name="+name+"&title="+title+"&jobNum="+jobNum;
+		var url="http://localhost/devplanet/project_user/7.apply/apply.jsp?name="+name+"&title="+title+"&jobNum="+jobNum;
 		window.open(url,"subWin","width=500, height=600,top="+(window.screenY+100)+", left="+(window.screenX+100));
 		
 	}//openPop
@@ -130,7 +130,7 @@ $(function(){
         <!-- // headInner -->
         <div class="headInner">
             <h1 class="jkLogo" >
-                        <a href=" ${ lrVO.userId ne null?"http://localhost/prj2/project_user/1.main/main_page_loged.jsp":" http://localhost/prj2/project_user/1.main/main_page.jsp" }"><img id="jkLogo" src="http://localhost/prj2/project_admin/images/devplanet_logo.png" alt="데브플래닛"></a>
+                        <a href=" ${ lrVO.userId ne null?"http://localhost/devplanet/project_user/1.main/main_page_loged.jsp":" http://localhost/devplanet/project_user/1.main/main_page.jsp" }"><img id="jkLogo" src="http://localhost/devplanet/project_admin/images/devplanet_logo.png" alt="데브플래닛"></a>
             </h1>
         </div>
         <!-- headInner // -->
@@ -153,7 +153,7 @@ $(function(){
 
                         <!-- 메뉴 활성화 클래스 navFixed 마우스 오버시 active 클래스 추가 -->
                         <li id="gnbGi" class="navItem gi ">
-                            <a href="http://localhost/prj2/project_user/6.recruit/adPage.jsp" class="linkItem" ><span class="spNav"><span class="txIr">채용정보</span></span></a>
+                            <a href="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" class="linkItem" ><span class="spNav"><span class="txIr">채용정보</span></span></a>
                         </li>
                     </ul>
                 </div>
@@ -175,7 +175,7 @@ $(function(){
 
  <div class="search">
     <h2 class="skip">검색</h2>
-    <form name="search_bar" id="searchFrm" action="http://localhost/prj2/project_user/6.recruit/adPage.jsp" >
+    <form name="search_bar" id="searchFrm" action="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" >
         <fieldset>
             <div class="smKey">
                 <input type="text" id="stext" title="검색어 입력" name="stext" placeholder="기업명과 직무검색" maxlength="50">
@@ -214,12 +214,12 @@ $(function(){
                             <th scope="row">
                             </th>
                             <td class="tplCo">
-                                <a href="#void" name="logo" id="logo" class="link normalLog" data-clickctgrcode="B01" target="_blank" ><img src="http://localhost/prj2/upload/${ corps.logo }" width="125" height="100"></a>
+                                <a href="#void" name="logo" id="logo" class="link normalLog" data-clickctgrcode="B01" target="_blank" ><img src="http://localhost/devplanet/upload/${ corps.logo }" width="125" height="100"></a>
                             </td>
                             <td class="tplTit">
                                 <div class="titBx">
-	                                    <a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" id="cName" name="cName" title="기업 이름" target="_blank" >${ corps.cName }</a><br>
-                                        <strong><a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" id="title" class="link normalLog" title="${ corps.title }"  target="_blank">${ corps.title }</a></strong><br><br>
+	                                    <a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" id="cName" name="cName" title="기업 이름" target="_blank" >${ corps.cName }</a><br>
+                                        <strong><a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" id="title" class="link normalLog" title="${ corps.title }"  target="_blank">${ corps.title }</a></strong><br><br>
                                         <span id="field" name="field">모집 분야 : #${ corps.field }</span>
                                 </div>
                             </td>

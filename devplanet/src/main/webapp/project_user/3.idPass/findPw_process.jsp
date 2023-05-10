@@ -9,7 +9,7 @@ request.setCharacterEncoding("UTF-8");
 
 if(!request.getMethod().equals("POST")) {
 	String msg1 = "<script>alert('정상적인 접근방식이 아닙니다. 메인페이지로 이동합니다.');</script>";
-	String msg2 = "<script>location.href='http://localhost/prj2/project_user/1.main/main_page.jsp';</script>";
+	String msg2 = "<script>location.href='http://localhost/devplanet/project_user/1.main/main_page.jsp';</script>";
 	out.print(msg1);
 	out.print(msg2);
 	return;

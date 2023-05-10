@@ -8,7 +8,7 @@ AdminResultVO arVO=null;
 arVO=(AdminResultVO)session.getAttribute("arVO");
 
 if(arVO==null) {
-	String msg="<script>alert('로그인 후 이용해 주세요');  location.href='http://localhost/prj2/project_admin/1.mainAdmin/adminLogin.jsp'; </script>";
+	String msg="<script>alert('로그인 후 이용해 주세요');  location.href='http://localhost/devplanet/project_admin/1.mainAdmin/adminLogin.jsp'; </script>";
 	out.print(msg);
 	return;
 }//end if

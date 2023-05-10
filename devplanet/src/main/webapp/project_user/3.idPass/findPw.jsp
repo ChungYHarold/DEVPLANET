@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>비밀번호 찾기</title>
-<link rel="SHORTCUT ICON" href="http://localhost/prj2/project_user/3.idPass/images/favicon.png">
+<link rel="SHORTCUT ICON" href="http://localhost/devplanet/project_user/3.idPass/images/favicon.png">
 
 <meta name="title" content="채용, 공채, 취업, 공고, 구인, 구직 정보는 잡코리아">
 <meta name="description" content="신입공채, 경력채용, 채용정보, 공채정보, 정규직채용, 인턴 등의 구인공고와 채용정보가 제일 먼저 올라오는 곳, 잡코리아에 오세요. 입사 지원은 무료이며 지원팁, 합격자소서, 면접후기 등의 지원자를 위한 지원정보, 합격 꿀팁도 얻을 수 있습니다.">
@@ -16,15 +16,15 @@
 <meta name="verify-v1" content="wfOOCE9Vtx+Z5etOXJnS9LU03yGpBxkK74T/yU63Xqs=">
 <meta name="Robots" content="noindex,nofollow">
 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/footer_sub.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/gnb.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/gnb_sub.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/footer_sub.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/gnb.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/gnb_sub.css"/>
 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_common.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_tpl.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_style.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_common.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_tpl.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
 
 <style type="text/css">
 	.mbrTplData1 li {clear:both; padding:5px 0 5px 24px;  overflow:inherit;}
@@ -80,25 +80,25 @@ function selectEmail() {
 				<div class="innerBar">
 					<ul class="lnb">
 						<li class="mn highlight"><a
-							href="http://localhost/prj2/project_user/2.join/login.jsp">로그인</a></li>
-						<li class="mn"><a href="http://localhost/prj2/project_user/2.join/join.jsp">회원가입</a></li>
+							href="http://localhost/devplanet/project_user/2.join/login.jsp">로그인</a></li>
+						<li class="mn"><a href="http://localhost/devplanet/project_user/2.join/join.jsp">회원가입</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div id="gnb">
 				<h1>
-					<a class="logo" href="http://localhost/prj2/project_user/1.main/main_page.jsp"><img alt="데브플래닛" src="http://localhost/prj2/project_user/3.idPass/images/devplanet_logo_id_white.png"></a>
+					<a class="logo" href="http://localhost/devplanet/project_user/1.main/main_page.jsp"><img alt="데브플래닛" src="http://localhost/devplanet/project_user/3.idPass/images/devplanet_logo_id_white.png"></a>
 					<span class="bar"> 
 						<span class="title"> 
-							<img src="http://localhost/prj2/project_user/3.idPass/images/h_cc_schpwd.gif" alt="비밀번호 찾기">
+							<img src="http://localhost/devplanet/project_user/3.idPass/images/h_cc_schpwd.gif" alt="비밀번호 찾기">
 						</span>
 					</span>
 				</h1>
 				<div class="secNav">
 					<ol>
-						<li class="mn1"><a href="http://localhost/prj2/project_user/3.idPass/findId.jsp"><span></span>아이디 찾기</a></li>
-						<li class="mn2"><a href="http://localhost/prj2/project_user/3.idPass/findPw.jsp"><span></span>비밀번호 찾기</a></li>
+						<li class="mn1"><a href="http://localhost/devplanet/project_user/3.idPass/findId.jsp"><span></span>아이디 찾기</a></li>
+						<li class="mn2"><a href="http://localhost/devplanet/project_user/3.idPass/findPw.jsp"><span></span>비밀번호 찾기</a></li>
 					</ol>
 				</div>
 			</div>
@@ -114,7 +114,7 @@ function selectEmail() {
 			<h1 class="skip">비밀번호 찾기</h1>
 			<div class="mbrSec mbrSch mbrSchPwd">
 				<form action="completePw.jsp" id="findPwFrm" name="findPwFrm" method="post">
-				<h2 class="mbrHeading2"><img src="http://localhost/prj2/project_user/3.idPass/images/mbr_h_reg_gg.gif" alt="회원정보 입력"></h2>
+				<h2 class="mbrHeading2"><img src="http://localhost/devplanet/project_user/3.idPass/images/mbr_h_reg_gg.gif" alt="회원정보 입력"></h2>
 				<div class="mbrTplDesc">
 					<p>회원구분별로 가입 시 입력한 본인정보를 입력해 주세요.</p>
 				</div>
@@ -135,7 +135,7 @@ function selectEmail() {
 				        <fieldset>
 				        <legend>개인회원-이메일인증 입력폼</legend>	
 					    <div class="mbrTplBox">
-						    <h3><img src="http://localhost/prj2/project_user/3.idPass/images/mbr_h_sub_gg.gif" alt="개인회원"></h3>
+						    <h3><img src="http://localhost/devplanet/project_user/3.idPass/images/mbr_h_sub_gg.gif" alt="개인회원"></h3>
 						    <ul class="mbrTplData1">
 							    <li>
 								    <div class="option">

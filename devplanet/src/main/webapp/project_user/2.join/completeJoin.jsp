@@ -13,7 +13,7 @@ request.setCharacterEncoding("UTF-8");
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
 <title>회원가입 완료</title>
-<link rel="SHORTCUT ICON" href="http://localhost/prj2/project_user/2.join/images/favicon.png">
+<link rel="SHORTCUT ICON" href="http://localhost/devplanet/project_user/2.join/images/favicon.png">
 
 <link href="./css/css/banner.promotion-sv-202211241151.css" rel="stylesheet" type="text/css">
 
@@ -82,9 +82,9 @@ history.back();
 <div class="resumePage resumePageComplete">
 	<div class="resumeHeader">
 		<div class="container">
-			<a href="http://localhost/prj2/project_user/1.main/main_page.jsp" class="logo"><img alt="데브플래닛" src="http://localhost/prj2/project_user/2.join/images/devplanet_logo_small.png"></a>
+			<a href="http://localhost/devplanet/project_user/1.main/main_page.jsp" class="logo"><img alt="데브플래닛" src="http://localhost/devplanet/project_user/2.join/images/devplanet_logo_small.png"></a>
 			<div class="links">
-				<a href="http://localhost/prj2/project_user/1.main/main_page.jsp" class="link linkHome">데브플래닛 홈</a> 
+				<a href="http://localhost/devplanet/project_user/1.main/main_page.jsp" class="link linkHome">데브플래닛 홈</a> 
 			</div>
 		</div>
 	</div>

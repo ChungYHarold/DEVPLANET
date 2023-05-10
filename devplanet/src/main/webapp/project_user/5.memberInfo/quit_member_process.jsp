@@ -45,7 +45,7 @@ if(result>0) {
 %>
 <script>
 alert("탈퇴되었습니다. 감사합니다.");
-location.href="http://localhost/prj2/project_user/1.main/main_page.jsp";
+location.href="http://localhost/devplanet/project_user/1.main/main_page.jsp";
 </script>
 <%
 }//end if

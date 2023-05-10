@@ -284,8 +284,8 @@ border-top: 1px solid #000;
 	<div class="resume-view-page">
 		<div class="resumeHeader">
 			<div class="container">
-				<a href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp" class="logo"><img
-					src="http://localhost/prj2/images/devplanet_logo.png" style="width: 100px; height: auto;"
+				<a href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp" class="logo"><img
+					src="http://localhost/devplanet/images/devplanet_logo.png" style="width: 100px; height: auto;"
 					alt="JOBKOREA"></a>
 				<div class="links">
 					<a href="#" onclick="location.href="
@@ -302,7 +302,7 @@ border-top: 1px solid #000;
 						<div class="photo">
 						<!--이미지를 어떻게 가져와서 보여줄 것인가  -->
 							<img name="user_photo"
-								src="http://localhost/prj2/upload/${rVO.img}" alt="프로필"><!--이미지-->
+								src="http://localhost/devplanet/upload/${rVO.img}" alt="프로필"><!--이미지-->
 						</div>
 						<div class="info-container">
 							<div class="info-general">

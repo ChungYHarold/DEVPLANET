@@ -15,13 +15,13 @@
 
 <!--////////////////////////////////css///////////////////////////////////////////////////////////////////////////  -->
 
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/footer_sub.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/gnb_sub.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/gnb.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_common.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_style.css"/>
-		<link rel="stylesheet" type="text/css" href="http://localhost/prj2/css/mbr_tpl.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/footer_sub.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/gnb_sub.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/gnb.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_common.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_style.css"/>
+		<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/css/mbr_tpl.css"/>
 
 
 	    
@@ -84,18 +84,18 @@ $(function() {
 
 		<div id="gnb">
 			<!--// 개인회원 -->
-			<h1><a class="logo"href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp"><img alt="데브플래닛" src="http://localhost/prj2/project_admin/images/devplanet_logo.png"></a>
-			<span class="bar"><span class="title"><img src="http://localhost/prj2/project_user/images/h_mng_gg.gif" alt="회원정보 관리"></span></span>
+			<h1><a class="logo"href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp"><img alt="데브플래닛" src="http://localhost/devplanet/project_admin/images/devplanet_logo.png"></a>
+			<span class="bar"><span class="title"><img src="http://localhost/devplanet/project_user/images/h_mng_gg.gif" alt="회원정보 관리"></span></span>
 			</h1>
 <!--skip은 안보임  -->	<h2 class="skip"><!--주요링크--></h2>
 			<ul class="lnb">
-				<li><a href="http://localhost/prj2/project_user/1.main/main_page.jsp">개인회원 홈</a></li>
+				<li><a href="http://localhost/devplanet/project_user/1.main/main_page.jsp">개인회원 홈</a></li>
 			</ul>
 			<!-- <br><br><br> -->
 			<div class="secNav">
 				<ol>
 					<li class="mn1"><a href=""><span></span>개인정보 수정</a></li>
-					<li class="mn2"><a href="http://localhost/prj2/project_user/5.memberInfo/confirmPass.jsp"><span></span>비밀번호변경</a></li>
+					<li class="mn2"><a href="http://localhost/devplanet/project_user/5.memberInfo/confirmPass.jsp"><span></span>비밀번호변경</a></li>
 					<li class="mn3 end"><a href="/Customer_C/ETC/CC_leave.asp?Customer_C_Oem_No=1" target="_blank"><span class="span"></span>회원탈퇴</a></li>
 					<!-- <li class="mn4"><a href="/Text_User/User_Mailing_Mng.asp?OEM_No=1"><span></span>메일링/문자메시지 설정</a></li>
 					<li class="mn3 end"><a href="/Customer_C/ETC/CC_leave.asp?Customer_C_Oem_No=1" target="_blank"><span></span>회원탈퇴</a></li> -->
@@ -112,7 +112,7 @@ $(function() {
 	<!--// Contents Area -->
 	<div id="container">
 		<div id="content">
-			<form id="con_frm" name="con_frm" method="post" action="http://localhost/prj2/project_user/5.memberInfo/quit_member_process.jsp">
+			<form id="con_frm" name="con_frm" method="post" action="http://localhost/devplanet/project_user/5.memberInfo/quit_member_process.jsp">
 <!--skip은 안보임  -->	<h1 class="skip"><!--비밀번호 확인--></h1>
 			<fieldset>
 				<!-- <legend>비밀번호 확인 정보 입력폼</legend> -->
@@ -153,7 +153,7 @@ $(function() {
 				<hr>
 				<p class="mbrBtnFunc">
 					<span class="mbrBtn mbrBtnOk_3"><button type="button" id="okBtn" name="okBtn" ><span>탈퇴하기</span></button></span>
-					<span class="mbrBtn mbrBtnCancel_1"><button type="button" onclick="location.href='http://localhost/prj2/project_user/1.main/main_page_loged.jsp'"><span>취소</span></button></span>
+					<span class="mbrBtn mbrBtnCancel_1"><button type="button" onclick="location.href='http://localhost/devplanet/project_user/1.main/main_page_loged.jsp'"><span>취소</span></button></span>
 				</p>
 			</fieldset>
 			</form>

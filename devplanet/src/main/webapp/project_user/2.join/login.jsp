@@ -4,13 +4,13 @@
 <html lang="ko">
 <head>
 <title>DEVPLANET-로그인</title>
-<link rel="SHORTCUT ICON" href="http://localhost/prj2/project_user/3.idPass/images/favicon.png">
+<link rel="SHORTCUT ICON" href="http://localhost/devplanet/project_user/3.idPass/images/favicon.png">
 
 <link rel="SHORTCUT ICON" href="//www.jobkorea.co.kr/favicon.ico"> 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/2.join/css/gnb.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/2.join/css/gnb_sub.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/2.join/css/login-sv-202203141106.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/2.join/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/2.join/css/gnb.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/2.join/css/gnb_sub.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/2.join/css/login-sv-202203141106.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/2.join/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
 
 <!-- jQuery CDN 시작 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -48,14 +48,14 @@ $(function() {
 	<div id="container">
 		<div class="logtop logtop_login">
 			<h1 class="hd"><span class="logo"></span></h1>
-			<p class="lnb"><a href="http://localhost/prj2/project_user/1.main/main_page.jsp">홈</a> 
+			<p class="lnb"><a href="http://localhost/devplanet/project_user/1.main/main_page.jsp">홈</a> 
 		</div>
 
 		<div class="secLogin">
 			<div class="logWrap" id="loginFormWrite">
 				<h2 class="blind">로그인</h2>
 
-				<form action="http://localhost/prj2/project_user/2.join/login_process.jsp" id="loginFrm" name="loginFrm" method="post">
+				<form action="http://localhost/devplanet/project_user/2.join/login_process.jsp" id="loginFrm" name="loginFrm" method="post">
 				<fieldset class="login_form"><legend class="blind">로그인 입력폼</legend>
 					
 
@@ -86,9 +86,9 @@ $(function() {
 						<input type="checkbox" name="lb_idSave" id="lb_idSave" value="Y" style="display:none"> <label for="lb_idSave">.</label>
 						<!--<span id="ipNotice" class="devHide"><img src="https://i.jobkorea.kr/content/images/login/ver_1/ip_layer_bg.png" alt="개인정보 보호를 위해 IP보완을 ON으로 변경해주세요"></span>-->
 						<p class="sch">
-							<a href="http://localhost/prj2/project_user/3.idPass/findId.jsp" target="_new">아이디 찾기</a> 
+							<a href="http://localhost/devplanet/project_user/3.idPass/findId.jsp" target="_new">아이디 찾기</a> 
 							<span class="txtBar"> | </span> 
-							<a href="http://localhost/prj2/project_user/3.idPass/findPw.jsp" target="_new">비밀번호 찾기</a>
+							<a href="http://localhost/devplanet/project_user/3.idPass/findPw.jsp" target="_new">비밀번호 찾기</a>
 						</p>
 					</div>
 

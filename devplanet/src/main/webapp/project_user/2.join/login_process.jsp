@@ -24,7 +24,7 @@ lrVO=uDAO.selectLogin(lVO);
 if(lrVO == null) { // lrVO는 selectLogin의 반환값을 받을 VO인데 null이라면, 아무것도 받지 못했다는 것이고 그렇다면 selectLogin에서 문제가 발생한 것 대표적으로 비번이 틀렸다.
 	%>
 	<script>
-	location.href="http://localhost/prj2/project_user/2.join/login_fail.jsp"; /* 비번이 틀렸으니까 로그인 창으로 다시 보내줘 */
+	location.href="http://localhost/devplanet/project_user/2.join/login_fail.jsp"; /* 비번이 틀렸으니까 로그인 창으로 다시 보내줘 */
 	</script>
 	<%
 }else { //else면 lrVO가 null이 아니라는 것 => selectLogin메소드를 실행하고 값이 나와서 VO에 저장됐다는 말.
@@ -36,7 +36,7 @@ if(lrVO == null) { // lrVO는 selectLogin의 반환값을 받을 VO인데 null�
 	session.setAttribute("sesVO", lrVO);         // 얘의 데이터형이 object이야 가장 상위 부모의 데이터형 거의  
 	%>
 	<script>
-	location.href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp";
+	location.href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp";
 	</script>
 	<%
 }//end else

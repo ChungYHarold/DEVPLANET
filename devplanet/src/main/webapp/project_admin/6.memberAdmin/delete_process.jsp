@@ -12,7 +12,7 @@ try {
     out.println("<script>");
     out.println("alert('회원이 삭제되었습니다.');");
     out.println("location.href = 'member_manage.jsp';");
-    // response.sendRedirect("http://localhost/prj2/project_admin/6.memberAdmin/member_manage.jsp");
+    // response.sendRedirect("http://localhost/devplanet/project_admin/6.memberAdmin/member_manage.jsp");
     out.println("</script>");
 } catch (SQLException e) {
     e.printStackTrace();

@@ -25,7 +25,7 @@ if(result > 0) {
 	%>
 	<script>
 	alert("비밀번호가 변경되었습니다.");
-	location.href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp";
+	location.href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp";
 	</script>
 	<%
 }else {

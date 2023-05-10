@@ -19,7 +19,7 @@ request.setCharacterEncoding("UTF-8");
 <%
 		AdminCorpVO acVO = new AdminCorpVO();
 		// 1. 저장 디렉토리를 설정
-		File saveDirectory = new File("C:/Users/user/git/prj2/prj2/src/main/webapp/upload");
+		File saveDirectory = new File("C:/Users/user/git/devplanet/devplanet/src/main/webapp/upload");
 		int totalMaxSize = 1024*1024*500;
 		int fileSize = 1024*1024*10;
 		// 2. FileUpload Component 생성 (MultipartRequest) => 생성함과 동시에 파일이 업로드된다.

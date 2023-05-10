@@ -92,7 +92,7 @@ function openPop(name, title, jobNum) {
 		return;
 	}//end if
 	
-	var url="http://localhost/prj2/project_user/7.apply/apply.jsp?name="+name+"&title="+title+"&jobNum="+jobNum;
+	var url="http://localhost/devplanet/project_user/7.apply/apply.jsp?name="+name+"&title="+title+"&jobNum="+jobNum;
 	window.open(url,"subWin","width=500, height=600,top="+(window.screenY+100)+", left="+(window.screenX+100));
 }//openPop
 
@@ -169,7 +169,7 @@ function openPop(name, title, jobNum) {
                     <div class="tbLogo">
                         <div class="logo">
                             <p>
-                                <img src="http://localhost/prj2/upload/${ job.logo }" id="cologo" name="cologo" alt="${ job.cName }" onload="go_logo_size(this, 100, 40);" />
+                                <img src="http://localhost/devplanet/upload/${ job.logo }" id="cologo" name="cologo" alt="${ job.cName }" onload="go_logo_size(this, 100, 40);" />
                             </p>
                         </div>
                     </div>
@@ -218,7 +218,7 @@ function openPop(name, title, jobNum) {
 </div>
 
 <div id="detail">
-<img src="http://localhost/prj2/upload/${ job.description }"/>
+<img src="http://localhost/devplanet/upload/${ job.description }"/>
 </div>
 <!-- 상세요강 끝 -->
 <!-- 마감 -->

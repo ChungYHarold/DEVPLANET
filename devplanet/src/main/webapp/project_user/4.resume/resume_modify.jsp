@@ -28,7 +28,7 @@ if(session.getAttribute("sesVO")==null) { // 정상적인 접근이라면 세션
 	%>
 	<script type="text/javascript">
 	alert("로그인 후 이용해 주세요.");
-	location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+	location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 	</script>  
 	<%															//로그인 창으로 보내는 예시
 } else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -219,7 +219,7 @@ $(function() {
 		*/
 		
 		if(!confirm("이력서를 수정하시겠습니까?")) {
-			/* location.href="http://localhost/prj2/project_user/4.resume/2.resume_complete.jsp" */
+			/* location.href="http://localhost/devplanet/project_user/4.resume/2.resume_complete.jsp" */
 			$("#title").focus();
 		} else {
 			$(function(){
@@ -372,7 +372,7 @@ $(function() {
 	 		} else {
 		        // 이미지 요소의 src 속성 값을 빈 문자열로 설정하여 ${imageFileInput}을 지움.
 				alert("삭제 되었습니다.");
-		        $('#preview img').attr('src', 'http://localhost/prj2/upload/no.png').on('error', function() {
+		        $('#preview img').attr('src', 'http://localhost/devplanet/upload/no.png').on('error', function() {
 		            // 이미지 로드 실패 시 onerror 이벤트 핸들러에서 처리할 로직을 작성.
 		            $(this).hide();
 			    });
@@ -405,7 +405,7 @@ $(function () {
 						skillView +=	"<div class='row'><div id='skill'>스킬(스킬명)"+
 									"<div class='input input-certificate-name is-label is-value' style='width: 300px;'>"+
 									"<label>스킬명 <span class='star'>*</span></label> <input type='text' readonly='readonly' value='"+jsonObj.name+"'></div>"+
-									"<a href='http://localhost/prj2/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
+									"<a href='http://localhost/devplanet/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
 									"<button type='button' style='height: 30px; width: 60px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px; margin-right: 20px;' id='deleteSkill'>"+
 									"<span style=''>- 삭제</span></button></a></div></div>"
 						
@@ -444,7 +444,7 @@ $(function () {
 								  "<label>점수 <span class='star'>*</span></label>"+
 								  "<input type='text' readonly='readonly' value='"+jsonObj.score+"'></div><div class='input input-certificate-term is-label is-value'>"+
 								  "<label>취득일</label><input type='text' maxlength='10' oninput='formatDate(this)' readonly='readonly' value='"+jsonObj.getDate+"'></div>"+
-								  "<a href='http://localhost/prj2/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
+								  "<a href='http://localhost/devplanet/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
 									"<button type='button' style='height: 30px; width: 60px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px; margin-right: 20px;' id='deleteSkill'>"+
 									"<span style=''>- 삭제</span></button></a>"
 					});//each
@@ -480,7 +480,7 @@ $(function () {
 								 "<label>발행처/기관<span class='star'>*</span></label>"+
 								 "<input placeholder='' type='text' readonly='readonly' value='"+jsonObj.issuer+"'></div> <div class='input input-certificate-term is-label is-value'>"+
 								 "<label>취득일</label><input type='text' maxlength='10' oninput='formatDate(this)' readonly='readonly' value='"+jsonObj.getDate+"'></div>"+
-								 "<a href='http://localhost/prj2/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
+								 "<a href='http://localhost/devplanet/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
 								  "<button type='button'style='height: 30px; width: 60px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px;'class='minusLang'><span style=''>-삭제</span></button></a>"
 					});//each
 					
@@ -550,7 +550,7 @@ $(function () {
 								 			"<label style='" + (jsonObj.schoolType === '고등학교' ? 'visibility:hidden;' : '') + "'>전공명</label> <input type='text' id='maj1' readonly='readonly' value='"+jsonObj.major+"' autocomplete='off' maxlength='50'/>"+
 								 		"</div>"+
 								 	"</div>"+
-								 	"<a href='http://localhost/prj2/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
+								 	"<a href='http://localhost/devplanet/project_user/4.resume/CLSE_delete.jsp?num="+jsonObj.num+"'>"+
 									 	"<button type='button'style='height: 30px; width: 60px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px;'class='minusEdu'><span style=''>삭제</span></button>"+
 									 "</a>"+
 								"</div>"
@@ -716,12 +716,12 @@ pageContext.setAttribute("rNum", rNum);
 
 		<div class="resumeHeader">
 			<div class="container">
-				<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="logo linkLogo"><img
-					src="http://localhost/prj2/images/devplanet_logo.png"
+				<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="logo linkLogo"><img
+					src="http://localhost/devplanet/images/devplanet_logo.png"
 					style="width: 100px; height: auto;" alt="JOBKOREA"></a>
 				<div class="links">
-					<a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a> <a
-						href="http://localhost/prj2/project_user/4.resume/resume_present.jsp"
+					<a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a> <a
+						href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp"
 						class="link linkManage">이력서 관리</a>
 				</div>
 			</div>
@@ -818,7 +818,7 @@ pageContext.setAttribute("rNum", rNum);
 										style="display: none;"> 사진등록 </a> -->
 									
 									<div class="picture dropped" id="preview" class="image" aria-hidden="true">
-									<img src="http://localhost/prj2/upload/${imageFileInput}" onerror="this.src='http://localhost/prj2/upload/no.png'"/>
+									<img src="http://localhost/devplanet/upload/${imageFileInput}" onerror="this.src='http://localhost/devplanet/upload/no.png'"/>
 
 									</div>
 							</div>

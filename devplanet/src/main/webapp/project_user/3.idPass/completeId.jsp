@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>아이디 찾기 결과</title>
-<link rel="SHORTCUT ICON" href="http://localhost/prj2/project_user/3.idPass/images/favicon.png">
+<link rel="SHORTCUT ICON" href="http://localhost/devplanet/project_user/3.idPass/images/favicon.png">
     
 <meta name="title" content="채용, 공채, 취업, 공고, 구인, 구직 정보는 잡코리아">
 <meta name="description" content="신입공채, 경력채용, 채용정보, 공채정보, 정규직채용, 인턴 등의 구인공고와 채용정보가 제일 먼저 올라오는 곳, 잡코리아에 오세요. 입사 지원은 무료이며 지원팁, 합격자소서, 면접후기 등의 지원자를 위한 지원정보, 합격 꿀팁도 얻을 수 있습니다.">
@@ -17,15 +17,15 @@
 <meta name="verify-v1" content="wfOOCE9Vtx+Z5etOXJnS9LU03yGpBxkK74T/yU63Xqs=">
 <meta name="Robots" content="noindex,nofollow">
 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/footer_sub.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/gnb.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/gnb_sub.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/footer_sub.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/gnb.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/gnb_sub.css"/>
 
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_common.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_tpl.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/mbr_style.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/prj2/project_user/3.idPass/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_common.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_tpl.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/mbr_style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost/devplanet/project_user/3.idPass/css/footer-sv-202301261521.css"/> <!-- (JK-9495) PC Main Footer 변경 (2021.02.18) -->
 
 <%@ include file="findId_process.jsp" %>
 </head>
@@ -44,23 +44,23 @@
 		<div class="globalBar globalBarSub" id="globalBar">
 			<div class="innerBar">
 				<ul class="lnb">
-					<li class="mn highlight"><a href="http://localhost/prj2/project_user/2.join/login.jsp">로그인</a></li>
-					<li class="mn"><a href="http://localhost/prj2/project_user/2.join/join.jsp">회원가입</a></li>
+					<li class="mn highlight"><a href="http://localhost/devplanet/project_user/2.join/login.jsp">로그인</a></li>
+					<li class="mn"><a href="http://localhost/devplanet/project_user/2.join/join.jsp">회원가입</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="gnb">
-			<h1><a class="logo" href="http://localhost/prj2/project_user/1.main/main_page.jsp"><img alt="데브플래닛" src="http://localhost/prj2/project_user/3.idPass/images/devplanet_logo_id_white.png"></a>
+			<h1><a class="logo" href="http://localhost/devplanet/project_user/1.main/main_page.jsp"><img alt="데브플래닛" src="http://localhost/devplanet/project_user/3.idPass/images/devplanet_logo_id_white.png"></a>
 			<span class="bar">
 				<span class="title">
-					<img src="http://localhost/prj2/project_user/3.idPass/images/h_cc_schid.gif" alt="아이디 찾기">
+					<img src="http://localhost/devplanet/project_user/3.idPass/images/h_cc_schid.gif" alt="아이디 찾기">
 				</span>
 			</span>
 			</h1>
 			<div class="secNav">
 				<ol>
-					<li class="mn1"><a href="http://localhost/prj2/project_user/3.idPass/findId.jsp"><span></span>아이디 찾기</a></li>
-					<li class="mn2"><a href="http://localhost/prj2/project_user/3.idPass/findPw.jsp"><span></span>비밀번호 찾기</a></li>
+					<li class="mn1"><a href="http://localhost/devplanet/project_user/3.idPass/findId.jsp"><span></span>아이디 찾기</a></li>
+					<li class="mn2"><a href="http://localhost/devplanet/project_user/3.idPass/findPw.jsp"><span></span>비밀번호 찾기</a></li>
 				</ol>
 			</div>
 		</div>
@@ -75,7 +75,7 @@
 		<div id="content">
 			<h1 class="skip">아이디 찾기</h1>
 			<div class="mbrSec mbrSchIDResult">
-				<h2 class="mbrHeading2"><img src="http://localhost/prj2/project_user/3.idPass/images/mbr_h_msch_id_2.gif" alt="아이디조회"></h2>
+				<h2 class="mbrHeading2"><img src="http://localhost/devplanet/project_user/3.idPass/images/mbr_h_msch_id_2.gif" alt="아이디조회"></h2>
 				<div class="mbrTplDesc">
 					<p>개인정보보호를 위해 일부분은 *로 표시됩니다.</p>
 					<p>동명이인이 있는 경우, 본인 외의 ID가 노출될 수 있습니다.</p>
@@ -90,7 +90,7 @@
 						</ul>
 					</div>
 				</div>
-				<p class="mbrBtnFunc"><span class="mbrBtn mbrBtnLogin_1"><a href="http://localhost/prj2/project_user/2.join/login.jsp">로그인</a></span> <span class="mbrBtn mbrBtnSearch_2"><a href="http://localhost/prj2/project_user/3.idPass/findPw.jsp">비밀번호 찾기</a></span></p>
+				<p class="mbrBtnFunc"><span class="mbrBtn mbrBtnLogin_1"><a href="http://localhost/devplanet/project_user/2.join/login.jsp">로그인</a></span> <span class="mbrBtn mbrBtnSearch_2"><a href="http://localhost/devplanet/project_user/3.idPass/findPw.jsp">비밀번호 찾기</a></span></p>
 			</div>
 			<hr>
 		</div>

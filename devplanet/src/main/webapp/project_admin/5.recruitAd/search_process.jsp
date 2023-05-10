@@ -36,7 +36,7 @@ resultFlag = jDAO.selectFindcName(cName);
 	%>
 	<script>
 		alert("조회할 수 없는 회사명입니다. 다시 입력해주세요.");
-		location.href="http://localhost/prj2/project_admin/5.recruitAd/recruit.jsp";
+		location.href="http://localhost/devplanet/project_admin/5.recruitAd/recruit.jsp";
 	</script>
 	<%
 }else{	//end if
@@ -46,7 +46,7 @@ resultFlag = jDAO.selectFindcName(cName);
 	//cname받음
 	//String cName = request.getParameter("cName");
 
-	String location="http://localhost/prj2/project_admin/5.recruitAd/recruit.jsp?flag=y&name="+URLEncoder.encode(cName, "UTF-8");
+	String location="http://localhost/devplanet/project_admin/5.recruitAd/recruit.jsp?flag=y&name="+URLEncoder.encode(cName, "UTF-8");
 	response.sendRedirect(location);
 	
 }//end else

@@ -58,11 +58,11 @@ pageContext.setAttribute("corpList", list);
 	
 $(function() {
 	$("#loginb").click(function() {
-		location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+		location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 	});//click loginb
 	
 	$("#join").click(function() {
-		location.href="http://localhost/prj2/project_user/2.join/join.jsp";
+		location.href="http://localhost/devplanet/project_user/2.join/join.jsp";
 	});//click join
 	
 	$("#searchBtn").click(function() {
@@ -91,7 +91,7 @@ $(function() {
         <!-- // headInner -->
         <div class="headInner">
             <h1 class="jkLogo" onclick="GA_Event('공통_PC', '헤더', '잡코리아로고');">
-                        <a href=""><img id="jkLogo" src="http://localhost/prj2/images/devplanet_big.png" /></a>
+                        <a href=""><img id="jkLogo" src="http://localhost/devplanet/images/devplanet_big.png" /></a>
             </h1>
         </div>
         <!-- headInner // -->
@@ -114,7 +114,7 @@ $(function() {
 
                         <!-- 메뉴 활성화 클래스 navFixed 마우스 오버시 active 클래스 추가 -->
                         <li id="gnbGi" class="navItem gi ">
-                            <a href="http://localhost/prj2/project_user/6.recruit/adPage.jsp" class="linkItem" onclick="GA_Event('공통_PC', 'gnb', '전체서비스_채용정보');"><span class="spNav"><span class="txIr">개인회원 홈</span></span></a>
+                            <a href="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" class="linkItem" onclick="GA_Event('공통_PC', 'gnb', '전체서비스_채용정보');"><span class="spNav"><span class="txIr">개인회원 홈</span></span></a>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +130,7 @@ $(function() {
 
  <div class="search">
     <h2 class="skip">검색</h2>
-    <form name="search_bar" id="searchFrm" action="http://localhost/prj2/project_user/6.recruit/adPage.jsp" >
+    <form name="search_bar" id="searchFrm" action="http://localhost/devplanet/project_user/6.recruit/adPage.jsp" >
         <fieldset>
             <div class="smKey">
                 <input type="text" id="stext" title="검색어 입력" name="stext" placeholder="기업명과 직무검색" maxlength="50">
@@ -151,12 +151,12 @@ $(function() {
  
  <span class="links">
   <span class="idBx" id="idbx">
-  <a href="http://localhost/prj2/project_user/3.idPass/findId.jsp"class="devHref devClick" data-click-value="56" 
+  <a href="http://localhost/devplanet/project_user/3.idPass/findId.jsp"class="devHref devClick" data-click-value="56" 
     onclick="GA_Event('홈_PC', '회원정보', 'ID 찾기');">ID / </a>
   </span>
 
   <span class="pwBx" id="pwbx">
-  <a href="http://localhost/prj2/project_user/3.idPass/findPw.jsp" class="devHref devClick" data-click-value="56"
+  <a href="http://localhost/devplanet/project_user/3.idPass/findPw.jsp" class="devHref devClick" data-click-value="56"
 	onclick="GA_Event('홈_PC', '회원정보', 'PW 찾기');"> PW 찾기</a>
 	</span>
 </span>
@@ -186,11 +186,11 @@ $(function() {
                             <li>
                                 <div class="company">
                                     <span class="name">
-                                        <a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank"><span class="logo"><img src="http://localhost/prj2/upload/${ corps.logo }" width="180" height="72" alt="" onerror="this.src='//img.jobkorea.co.kr/Images/Logo/180/l/o/logo_none_180.gif';"></span>${ corps.cName }</a>
+                                        <a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank"><span class="logo"><img src="http://localhost/devplanet/upload/${ corps.logo }" width="180" height="72" alt="" onerror="this.src='//img.jobkorea.co.kr/Images/Logo/180/l/o/logo_none_180.gif';"></span>${ corps.cName }</a>
                                     </span>
                                 </div>
-                                <div class="description"><a href="http://localhost/prj2/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank">${ corps.title }<br /></a></div>
-                                <div class="company-background-image"><img src="http://localhost/prj2/upload/${ corps.logo }" alt="${ corps.cName }" onerror="this.src='//file1.jobkorea.co.kr/banner/images/100006303.jpg';"></div>
+                                <div class="description"><a href="http://localhost/devplanet/project_user/7.apply/company.jsp?name=${ corps.cName }&jobNum=${ corps.jobNum }" onclick="Job_DB_window(this.href,1000,500);SpaceClick(41119625,42);return false;" target="_blank">${ corps.title }<br /></a></div>
+                                <div class="company-background-image"><img src="http://localhost/devplanet/upload/${ corps.logo }" alt="${ corps.cName }" onerror="this.src='//file1.jobkorea.co.kr/banner/images/100006303.jpg';"></div>
                             </li>
             </c:forEach>
             </ul>
@@ -214,7 +214,7 @@ $(function() {
          <div class="footer__service">
             <h3 class="blind">잡코리아 서비스 링크</h3>
             <ul>
-                <li><a href="http://localhost/prj2/project_user/1.main/main_page.jsp" target="_blank">회사소개</a></li>
+                <li><a href="http://localhost/devplanet/project_user/1.main/main_page.jsp" target="_blank">회사소개</a></li>
             </ul>
         </div>  
         

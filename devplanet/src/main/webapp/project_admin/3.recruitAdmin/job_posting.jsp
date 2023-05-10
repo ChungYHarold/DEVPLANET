@@ -81,7 +81,7 @@ $(function() {
 	
 	//등록 버튼
 	$("#regist_btn").click(function() {
-		location.href="http://localhost/prj2/project_admin/5.recruitAd/recruit.jsp";
+		location.href="http://localhost/devplanet/project_admin/5.recruitAd/recruit.jsp";
 	});//regist_btn
 	
 	
@@ -101,7 +101,7 @@ $(function() {
 <div id="header">
 
 <div class="logo">
-<a href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp"><img src="http://localhost/prj2/images/devplanet_big.png" alt="데브플래닛"></a>
+<a href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp"><img src="http://localhost/devplanet/images/devplanet_big.png" alt="데브플래닛"></a>
 </div>
 
 <div class="page_name">	
@@ -109,7 +109,7 @@ $(function() {
 </div>
 
 <div class="main_page">
-<a href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp" class="list" >메인페이지</a>
+<a href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp" class="list" >메인페이지</a>
 </div>
 
 </div>
@@ -177,7 +177,7 @@ try{
 %>	
 	<script>
 		alert("서버에 문제 발생! 잠시 후 다시 시도해주세요.");
-		location.href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp";
+		location.href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp";
 	</script>
 	
 <%	
@@ -196,7 +196,7 @@ pageContext.setAttribute("cList", cList);
 
 <div class="title">
 <span class="title_text" style="text-align:center; top:10px; left:10px">
-<strong><a href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp"  style="text-decoration: none; color: inherit;">채용공고 현황</a></strong></span>
+<strong><a href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp"  style="text-decoration: none; color: inherit;">채용공고 현황</a></strong></span>
 </div>
 
 <div class="board">
@@ -216,10 +216,10 @@ pageContext.setAttribute("cList", cList);
 </div><!-- board -->
 
 <div class="search">
-<form name="search_frm" id="search_frm" method="post" action="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp">
+<form name="search_frm" id="search_frm" method="post" action="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp">
 <input type="text" placeholder="기업명 검색" style="width:110px; height:25px" name="searchCorp" id="corp_text"/>
 <input type="button" class="btn" value="검색" id="corp_btn"/> 
-<input type="button" class="btn" value="새로고침" style="width:70px" id="refresh_btn" onclick="location.href='http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp'"/>
+<input type="button" class="btn" value="새로고침" style="width:70px" id="refresh_btn" onclick="location.href='http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp'"/>
 </form>
 </div>
 
@@ -230,7 +230,7 @@ pageContext.setAttribute("cList", cList);
 
 
 <div class="chart">
-<form name="ongoingFrm" id="ongoingFrm" action="http://localhost/prj2/project_admin/3.recruitAdmin/total_applicant.jsp">
+<form name="ongoingFrm" id="ongoingFrm" action="http://localhost/devplanet/project_admin/3.recruitAdmin/total_applicant.jsp">
 <table class="chart_table table1">
 <colgroup>
 			<col style="width:3%">
@@ -288,14 +288,14 @@ if(sList.size()==0){ //검색된 결과가 없으면
  		 session.setAttribute("jobTitle", jobTitle); */
 
   	%>
-    <a href="http://localhost/prj2/project_admin/3.recruitAdmin/total_applicant.jsp?jobNum=${sVO.jobNum}&cName=${sVO.cName}&jobTitle=${sVO.title}">  
+    <a href="http://localhost/devplanet/project_admin/3.recruitAdmin/total_applicant.jsp?jobNum=${sVO.jobNum}&cName=${sVO.cName}&jobTitle=${sVO.title}">  
    총 지원자 <c:out value="${sVO.totalApply}"/>명</a>
    </td> <!-- 총 지원자 수 출력 -->
    <td><c:out value="${sVO.inputDate}"/></td><!-- 공고 등록일 출력 -->
    <td><c:out value="${sVO.endDate}"/></td><!-- 공고 마감일 출력 -->
 
-   <td><a href="http://localhost/prj2/project_admin/5.recruitAd/recruitmod.jsp?jobNum=${sVO.jobNum}">수정</a><!--공고 수정페이지  -->
-    / <a href="http://localhost/prj2/project_admin/5.recruitAd/delete_process.jsp?jobNum=${sVO.jobNum}" onclick="return confirm('[${sVO.cName}] 기업의 해당 공고를 삭제하시겠어요?')" id="delete">삭제</a></td><!--삭제처리 페이지  -->
+   <td><a href="http://localhost/devplanet/project_admin/5.recruitAd/recruitmod.jsp?jobNum=${sVO.jobNum}">수정</a><!--공고 수정페이지  -->
+    / <a href="http://localhost/devplanet/project_admin/5.recruitAd/delete_process.jsp?jobNum=${sVO.jobNum}" onclick="return confirm('[${sVO.cName}] 기업의 해당 공고를 삭제하시겠어요?')" id="delete">삭제</a></td><!--삭제처리 페이지  -->
 </tr>
 </c:forEach>
 </tbody>
@@ -321,16 +321,16 @@ if(sList.size()==0){ //검색된 결과가 없으면
 </div><!-- board -->
 
 <div class="search2">
-<form action="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp" name="deadline_frm" id="deadline_frm">
+<form action="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp" name="deadline_frm" id="deadline_frm">
 <input type="text" placeholder="기업명 검색" style="width:110px; height:25px" name="searchCorp2" id="dead_text" >
 <input type="button" class="btn" value="검색" id="dead_btn"> 
-<input type="button" class="btn" value="새로고침" style="width:70px" id="refresh_btn" onclick="location.href='http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp'"/>
+<input type="button" class="btn" value="새로고침" style="width:70px" id="refresh_btn" onclick="location.href='http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp'"/>
 
 </form>
 </div>
 
 <div class="chart2">
-<form name="deadlineFrm" id="deadlineFrm" action="http://localhost/prj2/project_admin/3.recruitAdmin/total_applicant.jsp">
+<form name="deadlineFrm" id="deadlineFrm" action="http://localhost/devplanet/project_admin/3.recruitAdmin/total_applicant.jsp">
 <table class="chart_table">
 <colgroup>
 			<col style="width:3%">
@@ -385,7 +385,7 @@ if(cList.size()==0){ //검색된 결과가 없으면
  		 session.setAttribute("jobTitle", jobTitle);
 
   	%>
-    <a href="http://localhost/prj2/project_admin/3.recruitAdmin/total_applicant.jsp?jobNum=${cVO.jobNum}&cName=${cVO.cName}&jobTitle=${sVO.title}">  
+    <a href="http://localhost/devplanet/project_admin/3.recruitAdmin/total_applicant.jsp?jobNum=${cVO.jobNum}&cName=${cVO.cName}&jobTitle=${sVO.title}">  
    총 지원자 <c:out value="${cVO.totalApply}"/>명</a>
    </td> <!-- 총 지원자 수 출력 -->
    <td><c:out value="${cVO.inputDate}"/></td><!-- 공고 등록일 출력 -->
@@ -393,8 +393,8 @@ if(cList.size()==0){ //검색된 결과가 없으면
    
    <!--날 좀 고쳐라  -->
    <!--페이지 연결 해야함-->
-   <td><a href="http://localhost/prj2/project_admin/5.recruitAd/recruitmod.jsp?jobNum=${cVO.jobNum}">수정</a><!--공고 수정페이지  -->
-    / <a href="http://localhost/prj2/project_admin/5.recruitAd/delete_process.jsp?jobNum=${cVO.jobNum}" onclick="return confirm('[${cVO.cName}] 기업의 해당 공고를 삭제하시겠어요?')">삭제</a></td><!--삭제처리 페이지  -->
+   <td><a href="http://localhost/devplanet/project_admin/5.recruitAd/recruitmod.jsp?jobNum=${cVO.jobNum}">수정</a><!--공고 수정페이지  -->
+    / <a href="http://localhost/devplanet/project_admin/5.recruitAd/delete_process.jsp?jobNum=${cVO.jobNum}" onclick="return confirm('[${cVO.cName}] 기업의 해당 공고를 삭제하시겠어요?')">삭제</a></td><!--삭제처리 페이지  -->
 </tr>
 </c:forEach>
 </tbody>

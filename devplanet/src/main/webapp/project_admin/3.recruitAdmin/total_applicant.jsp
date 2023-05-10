@@ -90,7 +90,7 @@ $(function() {
 	//목록으로
 	$("#refreshBtn").click(function(){
 		//history.back();		
-		location.href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp";
+		location.href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp";
 		
 		window.scrollTo({
 		    top: 0,
@@ -114,7 +114,7 @@ $(function() {
 <div id="header">
 
 <div class="logo">
-<a href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp"><img src="http://localhost/prj2/images/devplanet_big.png" alt="데브플래닛"></a>
+<a href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp"><img src="http://localhost/devplanet/images/devplanet_big.png" alt="데브플래닛"></a>
 </div>
 
 <div class="page_name">
@@ -122,7 +122,7 @@ $(function() {
 </div>
 
 <div class="main_page">
-<a href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp" class="list" >메인페이지</a>
+<a href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp" class="list" >메인페이지</a>
 </div>
 	
 </div>
@@ -244,7 +244,7 @@ cntApply = aDAO.selectCountApply(jobNum);
 </div><!-- board -->
 
 <div class="search">
-<form action="http://localhost/prj2/project_admin/3.recruitAdmin/total_applicant.jsp" name="searchPeople" id="searchPeople">
+<form action="http://localhost/devplanet/project_admin/3.recruitAdmin/total_applicant.jsp" name="searchPeople" id="searchPeople">
 <input type="text" placeholder="지원자 검색" style="width:110px; height:25px" id="people_text" name="people_text"/>
 <input type="hidden" name="jobNum" value="<%=jobNum%>"> 
 <input type="hidden" name="jobTitle" value="<%=jobTitle%>"> 
@@ -297,8 +297,8 @@ if(list.size()==0){ //검색된 결과가 없으면
 <tr class="hover">
    <td><c:out value="${i.count }"/></td>
    <%-- <td><c:out value="${aVO.cName}" /></td>기업명 --%>
-   <%-- <td><a href="http://localhost/prj2/project_admin/4.resumeView/resumeView.jsp?id=${aVO.id}&rNum=${aVO.rNum}&applyNum=${aVO.applyNum}"> --%>
-   <td><a href="http://localhost/prj2/project_admin/4.resumeView/resumeView.jsp?jobNum=<%=jobNum%>&id=${aVO.id}&rNum=${aVO.rNum}&applyNum=${aVO.applyNum}">
+   <%-- <td><a href="http://localhost/devplanet/project_admin/4.resumeView/resumeView.jsp?id=${aVO.id}&rNum=${aVO.rNum}&applyNum=${aVO.applyNum}"> --%>
+   <td><a href="http://localhost/devplanet/project_admin/4.resumeView/resumeView.jsp?jobNum=<%=jobNum%>&id=${aVO.id}&rNum=${aVO.rNum}&applyNum=${aVO.applyNum}">
    <c:out value="${aVO.resumeTitle}" /></a></td><%-- 이력서 제목 --%>
    <td><c:out value="${aVO.name }"/></td>
    <td>

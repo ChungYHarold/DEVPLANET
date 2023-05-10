@@ -34,7 +34,7 @@
 		%>
 		<script type="text/javascript">
 		alert("로그인 후 이용해 주세요.");
-		location.href="http://localhost/prj2/project_user/2.join/login.jsp";
+		location.href="http://localhost/devplanet/project_user/2.join/login.jsp";
 		</script>  
 		<%															//로그인 창으로 보내는 예시
 	} else { // 세션의 값을 불렀는데 null이 아니다 (= 세션에 값이 있다 ) => 세션에 저장할 때는 로그인 할 때 밖에 없으니까 세션에 값이 있다는 것 자체가 정상적인 접근이다.
@@ -77,10 +77,10 @@
 
     <div class="resumeHeader">
         <div class="container">
-            <a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="logo"><img src="http://localhost/prj2/images/devplanet_logo.png" style="width: 100px; height: auto;" ></a>
+            <a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="logo"><img src="http://localhost/devplanet/images/devplanet_logo.png" style="width: 100px; height: auto;" ></a>
             <div class="links">
-                <a href="http://localhost/prj2/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a>
-                <a href="http://localhost/prj2/project_user/4.resume/resume_present.jsp" class="link linkManage">이력서 관리</a>
+                <a href="http://localhost/devplanet/project_user/1.main/main_page_loged.jsp" class="link linkHome">개인회원 홈</a>
+                <a href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp" class="link linkManage">이력서 관리</a>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
     <div class="resumeWrapper">
     	<div class="resumeContainer resumeContainerComplete">
             <h1 class="header"><img src="//i.jobkorea.kr/content/images/text_user/resume/header-complete.gif" alt="이력서 작성 완료">완성도를 더 높여 더 많은 기회를 만나세요!</h1>
-            <a href="http://localhost/prj2/project_user/4.resume/resume_present.jsp" class="button buttonViewWritten">작성한 이력서 보기</a>
+            <a href="http://localhost/devplanet/project_user/4.resume/resume_present.jsp" class="button buttonViewWritten">작성한 이력서 보기</a>
 <div class="asd">
 </div>
  <!-- footer 시작 -->

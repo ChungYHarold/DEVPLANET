@@ -381,7 +381,7 @@ pageContext.setAttribute("nameC", company);
 <div wrap="">
 	<div id="header">
 		<div id="innerBar">
-			<p><a style="color: #f1f1f1" href="http://localhost/prj2/project_admin/1.mainAdmin/main.jsp">메인 페이지</a></p>
+			<p><a style="color: #f1f1f1" href="http://localhost/devplanet/project_admin/1.mainAdmin/main.jsp">메인 페이지</a></p>
 		</div>
 		<div id="mainTitle">
 			<h1>DEVPLANET </h1> 
@@ -395,7 +395,7 @@ pageContext.setAttribute("nameC", company);
 	<hr/>
 	
 	<div id="container">
-		<form id="frm" name="frm" action="http://localhost/prj2/project_admin/5.recruitAd/search_process.jsp">
+		<form id="frm" name="frm" action="http://localhost/devplanet/project_admin/5.recruitAd/search_process.jsp">
 		<div id="corpName">
 			<p class="titles">기업명</p>
 			<p class="p">채용공고를 등록하기 위해 기업명을 입력해주세요.</p>
@@ -408,7 +408,7 @@ pageContext.setAttribute("nameC", company);
 		</form>
 		</div>
 	<div id="container1" style="display:none">
-		<form id="frm2" name="frm2" method="post" action="http://localhost/prj2/project_admin/5.recruitAd/recruit_process.jsp" enctype="multipart/form-data">
+		<form id="frm2" name="frm2" method="post" action="http://localhost/devplanet/project_admin/5.recruitAd/recruit_process.jsp" enctype="multipart/form-data">
 		
 		<input type="hidden" value="${ nameC }" name="company"> <!-- 히든이 유용한 이유.... -규미 -->
 		<div id="recruitTitle">
@@ -513,7 +513,7 @@ pageContext.setAttribute("nameC", company);
 			
 		<div class="find-btn">
 			<input type="button" id="save" value="저장"/>
-			<a href="http://localhost/prj2/project_admin/3.recruitAdmin/job_posting.jsp"><input type="button" id="cancel" value="취소"/></a>
+			<a href="http://localhost/devplanet/project_admin/3.recruitAdmin/job_posting.jsp"><input type="button" id="cancel" value="취소"/></a>
 		</div>
 		</form>
 	</div>

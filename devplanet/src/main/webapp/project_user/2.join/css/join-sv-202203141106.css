@@ -16,7 +16,7 @@ body.jkJoin {background-color:#f5f6f8;}
 .jkJoin #header .joinTop {margin:0;}
 #header .joinTop h2 {overflow:hidden; width:640px; white-space:nowrap; box-sizing:border-box; padding-top:26px;}
 #header .joinTop h2 > span{text-indent:-99999px; overflow:hidden;}
-#header .joinTop h2 > span{width:620px; height:41px; margin:5px auto 0px; background-image:url("http://localhost/prj2/project_user/2.join/images/devplanet_logo.png");  background-repeat:no-repeat; display:block;}
+#header .joinTop h2 > span{width:620px; height:41px; margin:5px auto 0px; background-image:url("http://localhost/devplanet/project_user/2.join/images/devplanet_logo.png");  background-repeat:no-repeat; display:block;}
 #header .joinTop h2 > span.slogun_1{background-position: 50% 6px;}
 #header .joinTop h2 > span.slogun_2 {background-position: 50% -38px;}
 #header .joinTop h2 > span.slogun_3 {background-position: 50% -95px;}
@@ -165,10 +165,10 @@ body.jkJoin {background-color:#f5f6f8;}
 
 .mbrRegist .policy input[type="checkbox"] {overflow:hidden; position:absolute; clip:rect(0 0 0 0); clip:rect(0, 0, 0, 0); width:1px; height:1px; margin: -1px; border:0; padding:0;}
 .mbrRegist .policy label {position:relative; display:block; z-index:1; font-size:16px; color:#666; letter-spacing:-1px; cursor:pointer;}
-.mbrRegist .policy label:after {content:''; display:block; position:absolute; right:0; top:3px; width:20px; height:20px; background:#fff url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -283px;}
+.mbrRegist .policy label:after {content:''; display:block; position:absolute; right:0; top:3px; width:20px; height:20px; background:#fff url('http://localhost/devplanet/project_user/2.join/images/sprite-icon.png') no-repeat 0 -283px;}
 .mbrRegist .policy input:checked + label:after {background-position:0 -253px;}
 .mbrRegist .policy .policy_check_all label {font-size:18px; color:#333; cursor:pointer;}
-.mbrRegist .policy .policy_check_all label:after {content:''; display:block; position:absolute; right:0; top:0px; width:26px; height:26px; background:#fff url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -403px;}
+.mbrRegist .policy .policy_check_all label:after {content:''; display:block; position:absolute; right:0; top:0px; width:26px; height:26px; background:#fff url('http://localhost/devplanet/project_user/2.join/images/sprite-icon.png') no-repeat 0 -403px;}
 .mbrRegist .policy .policy_check_all label .txt{display:inline-block; width:552px}
 .mbrRegist .policy .policy_check_all input:checked + label:after {background-position:0 -439px;}
 .mbrRegist .policy label strong {font-size:16px; font-weight:normal; color:#ff3333; }
@@ -236,7 +236,7 @@ body.jkJoin {background-color:#f5f6f8;}
 .mbrRegist .mbr_passwd .lyHelp:after {content:''; position:absolute; right:14px; bottom:-9px; width:16px; height:9px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -46px;}
 .mbrRegist .mbrBtnAuth {display:block; position:absolute; right:0; top:0; width:61px; height:62px; vertical-align:top;}
 .mbrRegist .mbrBtnAuth span {display:block; width:61px; height:62px; padding:23px 0 0 34px; font-size:14px; color:#999; text-align:left; box-sizing:border-box; letter-spacing:-1px;}
-.mbrRegist .mbrBtnAuth span:before {content:''; position:absolute; left:11px; top:23px; width:20px; height:20px; background:url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -373px;}
+.mbrRegist .mbrBtnAuth span:before {content:''; position:absolute; left:11px; top:23px; width:20px; height:20px; background:url('http://localhost/devplanet/project_user/2.join/images/sprite-icon.png') no-repeat 0 -373px;}
 .mbrRegist .mbrBtnAuth.selected span {color:#3399ff;}
 .mbrRegist .mbrBtnAuth.selected span:before {background-position:0 -193px;}
 

@@ -81,7 +81,7 @@ String userId=lrVO.getUserId();
  
  session.setAttribute("resumeList", list);
 }catch(NullPointerException ne){
-	String msg="<script>alert('로그인 후 이용해주시기 바랍니다.'); self.close(); location.href='http://localhost/prj2/project_user/1.main/main_page.jsp'</script>";
+	String msg="<script>alert('로그인 후 이용해주시기 바랍니다.'); self.close(); location.href='http://localhost/devplanet/project_user/1.main/main_page.jsp'</script>";
 	out.print(msg);
 	return;
 }catch(SQLException se) {
@@ -106,7 +106,7 @@ $(function() {
 });//ready
 
 function change_page(cName, cTitle, jobNum) {
-	var url="http://localhost/prj2/project_user/7.apply/apply_list.jsp?name="+cName+"&title="+cTitle+"&jobNum="+jobNum;
+	var url="http://localhost/devplanet/project_user/7.apply/apply_list.jsp?name="+cName+"&title="+cTitle+"&jobNum="+jobNum;
 	location.href=url;
 }//change
 
@@ -143,7 +143,7 @@ function change_page(cName, cTitle, jobNum) {
                         <div class="txResumeBx">
                             <p class="jkResume">
                                 <input type="hidden" name="SelAttachFileName" id="SelAttachFileName" />
-                                <a href="http://localhost/prj2/project_user/4.resume/resume_modify.jsp?rNum=${ list.get(0).rNum }" id="devResumeTitle" target="_new">${ list.get(0).title }</a>
+                                <a href="http://localhost/devplanet/project_user/4.resume/resume_modify.jsp?rNum=${ list.get(0).rNum }" id="devResumeTitle" target="_new">${ list.get(0).title }</a>
                             </p>
                         </div>
 

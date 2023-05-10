@@ -19,7 +19,7 @@ request.setCharacterEncoding("UTF-8");
 <!-- 이미지 폴더에 저장 -->
 <%
 		// 1. 저장 디렉토리를 설정
-		File saveDirectory = new File("C:/Users/user/git/prj2/prj2/src/main/webapp/upload");
+		File saveDirectory = new File("C:/Users/user/git/devplanet/devplanet/src/main/webapp/upload");
 		int totalMaxSize = 1024*1024*500;
 		int fileSize = 1024*1024*10;
 		// 2. FileUpload Component 생성 (MultipartRequest) => 생성함과 동시에 파일이 업로드된다.
@@ -66,7 +66,7 @@ try{
 	
 	out.println("<script>");
     out.println("alert('기업이 등록되었습니다.');");
-    out.println("location.href = 'http://localhost/prj2/project_admin/2.corpInfo/company_info.jsp';"); // 수정 후 이동할 페이지 경로
+    out.println("location.href = 'http://localhost/devplanet/project_admin/2.corpInfo/company_info.jsp';"); // 수정 후 이동할 페이지 경로
     out.println("</script>"); 
 }catch(SQLException se) {
 	se.printStackTrace();
