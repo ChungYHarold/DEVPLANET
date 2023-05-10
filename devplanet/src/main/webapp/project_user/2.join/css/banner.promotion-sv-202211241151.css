@@ -1,0 +1,30 @@
+.jk-banner-promotion {position:relative; overflow:hidden; width:100%; text-align:center;}
+.jk-banner-promotion-container {width:1080px; height:80px; margin:0 auto; font-size:0;}
+.jk-banner-promotion .button-close {overflow:hidden; display:block; z-index:10; position:absolute; right:0; top:0; width:80px; height:80px; font-size:0; line-height:0; color:transparent;}
+.jk-banner-promotion .button-close:before {content:''; display:inline-block; width:29px; height:28px; background:url('/content/images/event/tx_hide_3day_ba.png?202203301400') no-repeat;}
+
+.jk-tvc-promotion-container { }
+.jk-tvc-promotion-container .promotion-link{display:block; width:100%; height:260px;}
+.jk-banner-promotion .jk-tvc-promotion-container .button-promotion-close{position:absolute; right:26px; top:26px; font-size:13px; color:#fff;}
+.jk-banner-promotion .jk-tvc-promotion-container .button-promotion-close:after{content:""; display:inline-block; width:28px; height:28px; background:url('/content/images/event/2018/tvc_promotion/btn_bann_close.png?202203301400') no-repeat; margin-left:10px; vertical-align:-9px;}
+
+/* 메인에서만 사용 */
+/* .byWd .jk-banner-promotion{position: static;} */
+.byWd .jk-banner-promotion{position: relative;}
+
+
+.jk-banner-tvc{ overflow: hidden; width: 100%; text-align: center; background-color: #2c3949;}
+.jk-banner-tvc .jk-banner-tvc-container{ position: relative; width: 1260px; height: 260px; margin: 0 auto; font-size: 0; background-image: url(/content/images/banner/futurelab/top_fixed_banner.jpg?202203301400); background-repeat: no-repeat;}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-link{display: block; width: 1260px; height: 260px;}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video{position: absolute; top:21px; left: 5px; width: 314px;}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .tvc-video-tab{margin-top: 8px; display: flex; justify-content: space-between;}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .tvc-video-tab .futurelab-video-tab{box-sizing: border-box; border: 1px solid rgba(255,255,255,0.3); height: 34px; padding: 0 7px; font-size:13px; font-weight: bold; letter-spacing: -0.8px; color: rgba(255,255,255,0.3); outline: none; cursor:pointer;}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .tvc-video-tab .futurelab-video-tab.on{border: 1px solid rgba(255,255,255,1); color: rgba(255,255,255,1)}
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video { display: none; width: 100% }
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video.on { display: block }
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; -webkit-box-shadow: 3px 3px 8px #222f40; -moz-box-shadow: 3px 3px 8px #222f40; box-shadow: 3px 3px 8px #222f40 }
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video .video-container object { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+.jk-banner-tvc .jk-banner-tvc-container .jk-banner-tvc-video .futurelab-video .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+.jk-banner-tvc .jk-banner-tvc-container .button-close {overflow:hidden; display:block; z-index:10; position:absolute; right:0; top:30px; width:30px; height:30px; font-size:0; line-height:0; color:transparent;}
+.jk-banner-tvc .jk-banner-tvc-container .button-close::before{content: ''; display: inline-block; width: 29px; height: 28px; background: url(/content/images/banner/futurelab/btn_banner_close.png?202203301400) no-repeat;}

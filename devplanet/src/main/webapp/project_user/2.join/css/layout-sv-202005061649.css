@@ -1,0 +1,17 @@
+html, body { height: 100%; }
+html.hidden { overflow: hidden; }
+.resume-write { background-color: #e8ecef; }
+.resumePage { position: relative; width: 100%; text-align: center; }
+.resumePage.resumePageComplete { background-color: #fff; }
+.resumePage.resumePageComplete .resumeHeader { margin-bottom: 0; }
+.resumePage.resumePageComplete .resumeContainer { width: 900px; padding-top: 150px; text-align: center; }
+.resumePage.resumePageComplete #subFooter { width: 890px; margin: 0 auto; }
+.resumeWrapper { position: relative; width: 100%; }
+.resumeContainer { position: relative; width: 1200px; margin: 0 auto; padding-bottom: 200px; text-align: left; }
+.resumeTitle { overflow: hidden; position: relative; width: 940px; height: 80px; margin-bottom: 20px; background-color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #dbe0e9; }
+.resumeTitle input { overflow: hidden; display: block; width: 100%; height: 80px; padding: 0 28px; border: 0; -webkit-box-sizing: border-box; box-sizing: border-box; color: #333; letter-spacing: -2px; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 30px; }
+.resumeTitle input::-ms-clear { display: none; }
+.resumeTitle input::-webkit-input-placeholder { letter-spacing: -2px; color: #a8a8a8; font-size: 30px; }
+.resumeTitle input::-moz-placeholder { letter-spacing: -2px; color: #a8a8a8; font-size: 30px; }
+.resumeTitle input:-moz-placeholder { letter-spacing: -2px; color: #a8a8a8; font-size: 30px; }
+.resumeTitle input:-ms-input-placeholder { letter-spacing: -2px; color: #a8a8a8; font-size: 30px; }

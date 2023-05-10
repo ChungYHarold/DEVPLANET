@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*
+.File Name		: /content/css/ver_1/mbr/mbr_common.css
+.Final Editor	: 김정윤 (2015-05-08)
+*/
+
+/* Reset Style
+-------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, label {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family:'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+input, label {margin:0; padding:0; vertical-align:middle;}
+button {overflow:visible; margin:0; padding:0; border:none; background:none; cursor:pointer; font:inherit;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+/* Avoid grey background on IE 10 anchors / links */
+a:focus {background:transparent;}
+
+/* Common
+-------------------------------------------------------------------------- */
+body {font:normal 12px 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif; text-align:center; background:#fff; color:#333;}
+.skip, .blind, legend {position:absolute; top:-5000em; width:1px; height:1px; overflow:hidden; line-height:0; font-size:0;}
+a {text-decoration:none;}
+
+/*f_clear */
+.f_clear:after {content: "."; height: 0; display: block; visibility: hidden; clear: both;}
+* html .f_clear {height: 1px;}
+.f_clear {display: block;min-height:1px;}
+
+/* Layout
+-------------------------------------------------------------------------- */
+#wrap {width:620px; margin:0 auto; text-align:left;}
+
+#skipNavigation {position:relative; width:100%; z-index:1;}
+#skipNavigation a {display:block; position:absolute; left:0; top:-1px; overflow:hidden; width:1px; height:1px; font-weight:bold; text-align:center;}
+#skipNavigation a:hover, #skipNavigation a:focus, #skipNavigation a:active { width: 200px; top: 0; background-color: #fff; padding: 5px; height: auto; border: 1px solid #333; color:#000;}
+
+/* Header
+-------------------------------------------------------------------------- */
+#header {position:relative; padding-bottom:15px;}
+#header h1 {padding:18px 0 0 2px;}
+
+#header .gnb {position:absolute; top:22px; right:0;}
+#header .gnb li {float:left; padding-left:7px; background:url('/content/images/member/sprites/mbr_header.png') no-repeat 0 -175px;}
+#header .gnb li:first-child {padding-right:8px; background:none;}
+#header .gnb li a {font-size:11px; color:#888; letter-spacing:-1px;}
+
+#header .joinTop {text-align:center; margin:60px 0 48px 0;}
+#header .joinTop h2 {overflow:hidden; width:620px; white-space:nowrap; }
+#header .joinTop h2 {font:normal 38px 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif; letter-spacing:-2px;}
+#header .joinTop h2 strong {font-weight:normal; color:#39f; }
+#header .joinTop p {color:#666; font:normal 13px/1.5 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif; letter-spacing:-1px; margin-top:22px;}
+#header .joinTop p strong {display:block; color:#000; font:bold 16px 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif;}
+
+#header .joinOem {margin:40px 0 48px 0;}
+#header .joinOem h2 {overflow:hidden; height:39px; margin:35px auto 0; background:url('/content/images/member/sprites/mbr_header.png') no-repeat; white-space:nowrap; text-indent:-1000em;}
+#header .joinOem p em {color:#40a1ff;}
+#header .joinOem .hd_GG {width:185px; background-position:-360px -210px;}
+#header .joinOem .hd_GI {width:255px; background-position:0 -210px;}
+#header .joinOem .hd_HR {width:298px; background-position:0 -260px;}
+#header .joinOem .hd_HH {width:351px; background-position:0 -310px;}
+#header .joinOem .hd_EDU {width:334px; background-position:0 -360px;}
+
+#header .snb {margin-top:41px;}
+#header .snb li {float:left; width:124px; height:74px;}
+#header .snb li span, #header .snb li a {overflow:hidden; display:block; height:100%; background:url('/content/images/member/sprites/mbr_header.png') no-repeat 0 0; white-space:nowrap; text-indent:-1000em;}
+#header .snb .gg a {background-position:0 0;}
+#header .snb .gi a {background-position:-124px 0;}
+#header .snb .hr a {background-position:-249px 0;}
+#header .snb .hh a {background-position:-373px 0;}
+#header .snb .edu a {background-position:-496px 0;}
+
+#header .snb .gg span {background-position:0 -88px;}
+#header .snb .gi span {background-position:-124px -88px;}
+#header .snb .hr span {background-position:-248px -88px;}
+#header .snb .hh span {background-position:-373px -88px;}
+#header .snb .edu span {background-position:-496px -88px;}
+
+/* Footer
+-------------------------------------------------------------------------- */
+#footer {margin-top:40px; padding:20px 0; border-top:1px solid #eaeaea; text-align:center;}
+#footer address {position:relative; width:283px; height:22px; margin:0 auto; background: url('/content/images/common/footer/copyright.png') no-repeat 0 0;}
+#footer address a {overflow:hidden; position:absolute; top:0; left:114px; width:67px; height:19px; white-space:nowrap; text-indent:-999em;}

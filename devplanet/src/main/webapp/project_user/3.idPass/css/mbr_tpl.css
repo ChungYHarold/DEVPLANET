@@ -1,0 +1,445 @@
+@charset "euc-kr";
+/*
+.File Name		: /inc/css/ver_2/mbr/mbr_tpl.css
+.Final Editor	: 김수아(2013-03-22: 개명서비스 버튼 추가)
+*/
+
+
+/* Template - Layer
+------------------------------------------------------------------------------------ */
+.mbrHelpWrap {position:relative;}
+.mbrHelpWrap .mbrLayerHelp {position:absolute; top:1px; *top:-3px;}
+
+.mbrTplLayerWrap {position:relative; zoom:1;}
+.mbrTplLayerWrap_2 {display:inline; position:relative; zoom:1; z-index:1000;}
+.mbrTplLayer .close {position:absolute; top:5px; right:11px;}
+.mbrTplLayer .close button span {display:block; width:17px; height:0; padding-top:17px; overflow:hidden; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat -78px -398px;}
+.mbrTplLayer .arrow {overflow:hidden; position:absolute; left:-4px; top:9px; width:4px; height:7px; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat left -165px;}
+.mbrTplLayer .arrow_top {overflow:hidden; position:absolute; left:7px; top:-4px; width:7px; height:4px; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat -31px -165px;}
+.mbrTplLayer .arrow_btm {overflow:hidden; position:absolute; right:22px; bottom:-6px; width:9px; height:6px; background:url(/img/common/popup/bubble_temp_arrow_1.gif) no-repeat left -72px; z-index:1000;}
+
+/* mbrLayer 1(말풍선) */
+.mbrTplLayer {position:absolute; background-color:#fff; text-align:left; letter-spacing:-1px; z-index:2000;}
+.mbrTplLayer_1 {border:1px solid #565656; font-weight:normal;}
+.mbrTplLayer_1 .desc {margin:2px; padding:5px 8px 2px 8px; font:11px dotum, "돋움", sans-serif; letter-spacing:-1px; line-height:1.4;}
+.mbrTplLayer_1 .desc em {color:#46a5ff; font-weight:bold;}
+
+/* mbrLayer 2 */
+.mbrTplLayer_2 {border:1px solid #565656; font-weight:normal;}
+.mbrTplLayer_2 .desc {margin:2px; padding:9px 10px 27px 10px; background-color:#fbfbfb;}
+.mbrTplLayer_2 .desc dt {font:bold 12px gulim, "굴림", sans-serif; color:#46a5ff; margin-bottom:5px;}
+
+/* mbrLayer 3 */
+.mbrTplLayer_3 {position:absolute; display:block; border:1px solid #565656; font-weight:normal;}
+.mbrTplLayer_3 .desc {margin:2px; padding:10px 18px 10px 10px; background-color:#fbfbfb;}
+.mbrTplLayer_3 .desc strong {display:block; padding:3px 0 10px; font-size:12px; font-weight:normal; color:#333; line-height:1.4;}
+.mbrTplLayer_3 .desc li {padding:2px 0 2px 13px; position:relative;}
+.mbrTplLayer_3 .desc li:before {content:""; display:block; position:absolute; left:6px; top:8px; width:2px; height:2px; background:#666;}
+.mbrTplLayer_3 .close {top:3px; right:3px;}
+.mbrTplLayer_3 .shadow {display:block; width:100%; height:2px; background:#e5e5e5; position:absolute; bottom:-3px; left:0;}
+
+
+/* Template - Tab
+------------------------------------------------------------------------------------ */
+.mbrTplTab {position:relative; zoom:1; z-index:100;}
+.mbrTplTab .tabNav {height:34px; background:url(/content/images/member/sprites/mbr_tpl_list_1.gif) repeat-x 0 -78px;}
+.mbrTplTab .tabNav:after {content:""; display:block; height:0; clear:both;}
+.mbrTplTab .tabNav li {float:left; position:relative; height:34px; }
+.mbrTplTab .tabNav li a {display:block; width:150px; height:24px; padding:10px 0 0 0;  background:url(/content/images/member/sprites/mbr_tpl_list_1.gif) no-repeat -24px 0; text-align:center;}
+.mbrTplTab .tabNav li a span {position:absolute; top:0; right:0; width:4px; height:34px; background:url(/content/images/member/sprites/mbr_tpl_list_1.gif) no-repeat 0 0;}
+.mbrTplTab .tabNav li.hover a {height:22px; padding-top:12px; background-position:-24px -39px; font-weight:bold; color:#333; letter-spacing:-1px;}
+.mbrTplTab .tabNav li.hover a span {background-position:0 -39px;}
+
+
+/* Template - Tip
+------------------------------------------------------------------------------------ */
+.mbrTplTip {padding:0 10px 12px 0; letter-spacing:-1px;}
+.mbrTplTip dt {height:16px; padding:2px 0 13px 0; font-weight:bold; color:#494949;}
+.mbrTplTip dd {padding:0 0 0 7px; margin-bottom:8px; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat 0 -36px;  line-height:1.3; color:#767676; font:normal 12px gulim, "굴림", sans-serif;}
+.mbrTplTip dd em {color:#f60;}
+
+.mbrTplHow {margin-top:20px; border:1px solid #d9d9d9;}
+.mbrTplHow dl {padding:11px 19px; margin:2px; background:#f9f9f9; line-height:1.4; letter-spacing:-1px;}
+.mbrTplHow .check {padding-bottom:11px; margin-top:-2px; margin-bottom:2px; background:#f9f9f9; text-align:center; letter-spacing:-1px;}
+
+
+/* Template - Data Input
+------------------------------------------------------------------------------------ */
+/* 인증 */
+.mbrTplData1 {}
+.mbrTplData1 li {clear:both; padding:5px 0 5px 24px; overflow:hidden;}
+.mbrTplData1 li label {font-weight:bold; color:#333; letter-spacing:-1px;}
+.mbrTplData1 li input {}
+.mbrTplData1 li label,
+.mbrTplData1 li input,
+.mbrTplData1 li select,
+.mbrTplData1 li .delimiter {float:left;}
+.mbrTplData1 li .delimiter {padding:6px 3px; *padding:2px 3px;}
+.mbrTplData1 li .option {padding:7px 0 0 0; overflow:hidden;}
+.mbrTplData1 li .option input {width:13px; height:13px; position:relative; top:-1px; margin-right:5px;}
+.mbrTplData1 li .title {width:96px; padding-top:7px;}
+.mbrTplData1 li.oddType {background:#fafbff;}
+.mbrTplData1 li .assist {display:inline-block; margin:7px 0 0 5px; letter-spacing:-1px; }
+.mbrTplData1 li .check {clear:both; padding:8px 0 0 95px;}
+.mbrTplData1 li .check input {width:13px; height:13px;}
+.mbrTplData1 li .check label {margin-left:5px; font-weight:normal; color:#666;}
+
+/* 가입, 정보수정 */
+.mbrTplData2 table {
+  border-top: 2px solid #777a83;
+  border-bottom: 1px solid #dce1eb;
+  width: 100%;
+  background: #fff;
+  table-layout: inherit;
+}
+
+.mbrTplData2 table th,
+.mbrTplData2 table td {
+  height: 35px;
+  border-top: 1px solid #e5e5e5;
+  vertical-align: middle;
+}
+
+.mbrTplData2 table th {
+  padding: 8px 0 8px 23px;
+  background-color: #f9f9f9;
+  letter-spacing: -1px;
+  color: #333;
+  text-align: left;
+}
+
+.mbrTplData2 table td {
+  padding: 5px 0 5px 16px;
+  *padding: 4px 0 4px 16px;
+  word-wrap: break-word;
+}
+
+.mbrTplData2 table td .assist {
+  margin-top: 7px;
+  font: normal 11px dotum, "돋움", sans-serif;
+  letter-spacing: -1px;
+  color: #767676;
+}
+
+.mbrTplData2 table td span.assist {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.mbrTplData2 table td .assist a {
+  font-size: 12px;
+  /* font: normal 12px gulim, "굴림", sans-serif; */
+  letter-spacing: -1px;
+  text-decoration: underline;
+  color: #767676;
+}
+
+.mbrTplData2 table td .assist_1 {
+  color: #f60;
+}
+
+.mbrTplData2 table td .login-sns {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  /* font: 11px dotum, "돋움", sans-serif; */
+  margin-left: 20px;
+  padding-left: 21px;
+  color: #666666;
+}
+
+.mbrTplData2 table td .login-sns:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: '';
+  display: block;
+}
+
+.mbrTplData2 table td .login-sns.apple:before {
+  margin-top: -11px;
+  width: 17px;
+  height: 18px;
+  background-image: url('/content/images/login/ver_1/icon_apple.png');
+}
+
+/*  메일링 서비스 설정 */
+.mbrTplData3 {width:100%; border-top:2px solid #777a83;}
+.mbrTplData3 table {width:100%; table-layout:fixed; text-align:left;}
+.mbrTplData3 table th {padding:1px 0 0 19px; background-color:#F9F9F9; border-bottom:1px solid #E5E5E5;}
+.mbrTplData3 table th a {font-size:11px;}
+.mbrTplData3 table td {padding:13px 0 11px 16px; border-bottom:1px solid #E5E5E5;}
+
+
+/* Template - 파일첨부
+------------------------------------------------------------------------------------ */
+.mbrUploadTpl {position:relative;}
+.mbrUploadTpl .txtForm {padding-left:0; width:302px;}
+.mbrUploadTpl .btn {position:absolute; left:355px; top:5px; *top:1px; width:48px; height:21px; background:url(/content/images/member/sprites/mbr_tpl_btn_1.gif) no-repeat -100px -358px; text-align:center; z-index:10; overflow:hidden;}
+.mbrUploadTpl .btn .fileType {width:48px; height:25px; margin:0px; filter:alpha(opacity=0); opacity:0; cursor:pointer;}
+
+
+/* Template - Box
+------------------------------------------------------------------------------------ */
+.mbrTplBox {padding:19px 0 19px 0; margin-right:20px; border:1px solid #cccccc; border-top:2px solid #777a83; overflow:hidden;}
+.mbrTplBox .mbrTplBoxList {margin:0 29px 0 29px; height:128px; border:1px solid #ccc; overflow:auto}
+.mbrTplBox .mbrTplBoxList ul {margin:20px 20px 8px 12px;}
+.mbrTplBox .mbrTplBoxList ul li {padding:0 0 12px 8px; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat 0 -266px;}
+.mbrTplBox .info {padding:0 0 0 10px; margin:10px 29px 0 29px; background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif) no-repeat 0 -296px; letter-spacing:-1px; color:#333;}
+.mbrTplBox .info em {font-weight:bold; color:#f60;}
+.mbrTplBox .info em.odd {color:#2e7de4;}
+
+/* Template - Desc
+------------------------------------------------------------------------------------ */
+.mbrTplDesc {margin-bottom:10px;}
+.mbrTplDesc p {padding:2px 0 2px 7px; background:url(http://localhost/prj2/project_user/idPass/images/mbr_tpl_icon_1.gif) no-repeat 0 -34px;  line-height:1.4; color:#767676; letter-spacing:-1px;}
+.mbrTplDesc p em {color:#46a5ff;}
+
+
+/* Template - Icon , Icon Button, Icon Link
+------------------------------------------------------------------------------------ */
+.mbrIcon, .mbrIcon button, .mbrIcon input, .mbrIcon a, .mbrIcon label {display:inline-block;}
+.mbrIcon {background:url(/content/images/member/sprites/mbr_tpl_icon_1.gif?20160303) no-repeat 0 0; overflow:hidden; vertical-align:middle;}
+.mbrIcon button {width:100%; height:100%;}
+.mbrIcon button span {position:absolute; top:-9999em; width:1px; height:1px; overflow:hidden;}
+.mbrIcon label {padding-top:30px;}
+.mbrIcon input {border:0 none; background:transparent; cursor:pointer; padding-top:50px;}
+.mbrIcon a {width:100%; padding-top:50px;}
+
+/* 숫자 */
+.mbrIconNum {width:14px; height:16px;}
+.mbrIconNum_1 {background-position:0 -404px;}
+.mbrIconNum_2 {background-position:-20px -404px;}
+.mbrIconNum_3 {background-position:-40px -404px;} 
+.mbrIconNum_4 {background-position:0 -425px;}
+
+/* 멤버스 아이콘 */
+.memYellow, .memRed, .memBlack, .memBlue, .memPlatinum {padding-left:14px; font-weight:bold;}
+.memYellow {color:#f6b300; background:url(/img/common/icon_cycle_yellow_1.gif) no-repeat left 0px;}
+.memRed {color:#f03; background:url(/img/common/icon_cycle_red_1.gif) no-repeat left 0px;}
+.memBlack {color:#000; background:url(/img/common/icon_cycle_black_1.gif) no-repeat left 0px;}
+.memBlue {color:#09f; background:url(/img/common/icon_cycle_blue_1.gif) no-repeat left 0px;}
+.memPlatinum {color:#f60;background:url(/img/common/icon_cycle_platinum_1.gif) no-repeat left 0px;}
+
+.mbrFb {width:15px;height:17px;background-position:-24px -426px;}
+
+/* Template - button
+------------------------------------------------------------------------------------ */
+.mbrBtn, .mbrBtn button, .mbrBtn input, .mbrBtn a {display:inline-block;}
+.mbrBtn {height:21px; background:url(http://localhost/prj2/project_user/3.idPass/images/mbr_tpl_btn_1.gif) no-repeat 0 0; overflow:hidden; vertical-align:middle;}
+.mbrBtn button {width:100%; height:100%;}
+.mbrBtn button span {position:absolute; top:-9999em; width:1px; height:1px; overflow:hidden;}
+.mbrBtn input {border:0 none; background:transparent; cursor:pointer; padding-top:50px;}
+.mbrBtn a {width:100%; padding-top:50px;}
+
+/* 확인 */
+.mbrBtnOk_1 {width:97px; height:49px; background-position:0 0;} /* 다음단계 */
+.mbrBtnOk_2 {width:127px; height:49px; background-position:-112px 0;} /* 회원가입완료 */
+.mbrBtnOk_3 {width:88px; height:49px; background-position:-490px 0;} /* 확인 */
+.mbrBtnOk_4 {width:99px; height:49px; background-position:-595px 0;} /* 접수하기 */
+.mbrBtnOk_5 {width:31px; height:20px; background-position:0 -295px;} /* 확인 */
+.mbrBtnOk_6 {width:99px; height:49px; background-position:0 -176px;} /* 변경완료 */
+.mbrBtnOk_7 {width:88px; height:49px; background-position:-113px -236px;} /* 확인(GI) */
+.mbrBtnOk_8 {width:88px; height:49px; background-position:-330px -236px;} /* 확인(HH) */
+.mbrBtnOk_9 {width:88px; height:49px; background-position:-549px -236px;} /* 확인(Edu) */
+.mbrBtnOk_10 {width:88px; height:49px; background-position:-768px -236px;} /* 확인(SF) */
+.mbrBtnOk_11 {width:51px; height:21px; background-position:-287px -326px;} /* 등록확인 */
+.mbrBtnOk_12 {width:220px; height:49px; background-position:-344px -390px;}
+
+/* 수정 */
+.mbrBtnModify_1 {width:99px; height:49px; background-position:-641px -117px;} /* 수정 */
+.mbrBtnModify_2 {width:99px; height:49px; background-position:0 -236px;} /* 수정(GI) */
+.mbrBtnModify_3 {width:99px; height:49px; background-position:-216px -236px;} /* 수정(HH) */
+.mbrBtnModify_4 {width:99px; height:49px; background-position:-435px -236px;} /* 수정(Edu) */
+.mbrBtnModify_5 {width:99px; height:49px; background-position:-654px -236px;} /* 수정(SF) */
+
+/* 취소 */
+.mbrBtnCancel_1 {width:88px; height:49px; background-position:-708px 0;} /* 취소 */
+.mbrBtnCancel_2 {width:31px; height:20px; background-position:-46px -295px;} /* 취소 */
+.mbrBtnCancel_3 {width:220px; height:49px; background-position:-113px -176px;} /* 나중에 변경(2달동안 보지 않기) */
+.mbrBtnCancel_4 {width:99px; height:49px; background-position:-517px -176px;} /* 취소하기 */
+
+/* 변경 */
+.mbrBtnChange_1 {width:51px; height:21px; background-position:-92px -295px;} 
+.mbrBtnChange_2 {width:71px; height:21px; background-position:-159px -295px;} 
+
+/* 신청 */
+.mbrBtnApply_1 {width:99px; height:49px; background-position:-631px -176px;} 
+
+/* 로그인 */
+.mbrBtnLogin_1 {width:88px; height:49px; background-position:-387px 0;} 
+
+/* 전송 */
+.mbrBtnSubmit_1 {width:90px;  height:21px; background-position:0 -326px;}
+.mbrBtnSubmit_2 {width:81px;  height:21px; background-position:0 -358px;}
+
+/* 인증 */
+.mbrBtnCertify_1 {width:117px;  height:49px; background-position:-452px -58px;}
+.mbrBtnCertify_2 {width:117px;  height:49px; background-position:-254px 0;}
+.mbrBtnCertify_3 {width:160px;  height:42px; background-position:0 -390px;}
+.mbrBtnCertify_4 {width:160px;  height:42px; background-position:-175px -390px;}
+
+/* 체크 */
+.mbrBtnidcheck_1 {width:82px; height:21px; background-position:-105px -326px;}
+
+/* 검색 */
+.mbrBtnSearch_1 {width:70px; height:21px; background-position:-202px -326px;} /* 우편번호 검색 */
+.mbrBtnSearch_2 {width:122px; height:49px; background-position:-585px -58px;} /* 비밀번호 찾기(gray) */
+.mbrBtnSearch_3 {width:111px; height:49px; background-position:-723px -58px;} /* 비밀번호 찾기 */
+.mbrBtnSearch_4 {width:117px; height:49px; background-position:-509px -117px;} /* 아이디 찾기 */
+
+/* 서치펌선택 */
+.mbrBtnChoice_1 {width:67px; height:21px; background-position:-353px -326px;}
+
+/* 등록 */
+.mbrBtnReg_1 {width:140px; height:49px; background-position:-141px -58px;} /* 이력서 등록 */
+.mbrBtnReg_2 {width:155px; height:49px; background-position:0 -117px;} /* 채용공고 등록 */
+.mbrBtnReg_3 {width:155px; height:49px; background-position:-169px -117px;} /* 교육과정 등록 */
+.mbrBtnReg_4 {width:155px; height:49px; background-position:-339px -117px;} /* 헤드헌터 등록 */
+.mbrBtnReg_5 {width:129px; height:49px; background-position:0 -58px;} /* 신규회원 가입 */
+.mbrBtnReg_6 {width:181px; height:21px; background-position:-498px -326px;} /* 로그인후 소속 헤드헌터로 등록하기 */
+.mbrBtnReg_7 {width:78px; height:21px; background-position:-694px -326px;} /* 협회등록·변경 */
+.mbrBtnReg_8 {width:78px; height:21px; background-position:-787px -326px;} /* 단지등록·변경 */
+
+/* 보기 */
+.mbrBtnView_1 {width:140px; height:49px; background-position:-296px -58px;} /* 회원서비스 보기 */
+.mbrBtnView_2 {display:inline-block; *display:inline; height:18px; margin-left:8px; border-bottom:1px solid #f7f7f7;} /* 메일링/문자메시지 설정 샘플보기 */
+.mbrBtnView_2 a {position:relative; display:inline-block; height:13px; padding:3px 18px 0 3px; border:1px solid #cfd3d6;}
+.mbrBtnView_2 a span {position:absolute; top:3px; right:4px; display:inline-block; width:10px; height:10px; background:url(/img/member/icn_sample_view.gif) no-repeat 0 0;}
+
+/* 보내기 */
+.mbrBtnSend_1 {width:154px; height:49px; background-position:-348px -176px;} /* 임시비밀번호 재발송 */
+
+/* 위탁동의 */
+.mbrBtnAgree_1 {width:73px; height:21px; background-position:-335px -295px;}
+.mbrBtnAgree_2 {width:73px; height:21px; background-position:-246px -295px;}
+
+/* 개인정보 수집 및 이용에 대한 안내 */
+.mbrTplHow .privacy {overflow:hidden;}
+.mbrTplHow .privacy li {float:left; padding:0 20px 0 0; white-space:nowrap;}
+
+/* 위탁동의 테이블 */
+.mbrTplData2 .tbInner {border-top:0}
+.mbrTplData2 .tbInner th, .mbrTplData2 .tbInner td {padding:2px 0 0; height:31px; border-left:1px solid #dce1eb; font:11px dotum, "돋움", sans-serif; color:#666; text-align:center;}
+.mbrTplData2 .tbInner th:first-child, .mbrTplData2 .tbInner td:first-child {border-left:0}
+.mbrTplData2 .tbInner th {padding:4px 0 0; height:31px; font-weight:bold; line-height:100%;}
+.mbrTplData2 .containerValidity {position:relative;}
+.mbrTplData2 .buttonHelp {overflow:hidden; display:inline-block; width:14px; height:14px; margin-left:4px; vertical-align:top;}
+.mbrTplData2 .buttonHelp:before {content:''; display:block; width:14px; height:14px; background:url('/img/member/sprite-valid-term.png') no-repeat 0 -84px;}
+.mbrTplData2 .listValidity {padding:22px 0 21px; font-size:0;}
+.mbrTplData2 .listValidity .item {display:inline-block; zoom:1; *display:inline; margin:0 0 0 13px; box-sizing:border-box;}
+.mbrTplData2 .listValidity .item:first-child {margin-left:0;}
+.mbrTplData2 .listValidity .item label {display:block; position:relative; padding-left:18px; font-size:12px; color:#666;}
+.mbrTplData2 .listValidity .item label:before {content:''; display:block; position:absolute; left:0; top:1px; width:13px; height:13px; background:url('/img/member/sprite-valid-term.png') no-repeat 0 -38px;}
+.mbrTplData2 .listValidity .item input[type="radio"]:checked + label:before {background-position:0 -61px;}
+.mbrTplData2 .popupValidity {z-index:100; position:absolute; left:0; top:0; width:275px; padding:18px 24px 17px; border:1px solid #565d79; background-color:#fff; letter-spacing:-1px; box-sizing:border-box;}
+.mbrTplData2 .popupValidity.hidden {display:none;}
+.mbrTplData2 .popupValidity:after {content:''; display:block; position:absolute; left:20px; top:-6px; width:9px; height:6px; background:url('/img/member/sprite-valid-term.png') no-repeat 0 0;}
+.mbrTplData2 .popupValidity .popupHeader {margin-bottom:3px; font-size:12px; color:#333; font-weight:bold; line-height:1.55;}
+.mbrTplData2 .popupValidity .popupBody {font-size:12px; color:#666; font-weight:normal; line-height:1.55;}
+.mbrTplData2 .popupValidity .buttonClose {overflow:hidden; display:block; position:absolute; right:8px; top:8px; width:10px; height:9px;}
+.mbrTplData2 .popupValidity .buttonClose:before {content:''; display:block; width:10px; height:9px; background:url('/img/member/sprite-valid-term.png') no-repeat 0 -19px;}
+
+/* 개인정보 수집 및 이용동의 */
+.privacy-wrap {
+  margin: 10px 0;
+  max-width: 605px;
+}
+.privacy-wrap .privacy-title {
+  
+}
+.privacy-wrap .privacy-title::after {
+  clear: both;
+  content:''; 
+  display:block;
+}
+
+.privacy-wrap label {
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: #666666;
+  
+}
+
+.privacy-wrap label input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.privacy-wrap label .label-text {
+  position: relative;
+  display: inline-block;
+  height: 22px;
+  padding-left: 30px;
+}
+
+.privacy-wrap label .label-text::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  width: 20px;
+  height: 20px;
+  background: #fff url('/content/images/join/sprite-icon.png') no-repeat 0 -283px;
+}
+
+.privacy-wrap label input:checked + .label-text:after {
+  background-position: 0 -253px;
+}
+
+.privacy-wrap .privacy-title .policy-more-button {
+  float: right;
+  font-size: 13px;
+  color: #3399FF;
+  margin-top: 4px;
+  position: relative;
+  padding-right: 12px;
+}
+
+
+.privacy-wrap .privacy-title .policy-more-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 9px;
+  height: 5px;
+  background: url('/content/images/join/sprite-icon.png') no-repeat -20px -15px;
+}
+
+.privacy-wrap .privacy-title .policy-more-button.on::before {
+  background-position: -20px 0;
+}
+
+.privacy-wrap .policy-box {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3ms;
+}
+
+.privacy-wrap .policy-box.show {
+  height: auto;
+}
+
+.privacy-wrap .policy-box-content {
+  background-color: #FAFAFA;
+  border: 1px solid #EAEAEA;
+  padding: 26px 28px;
+  overflow-y: scroll;
+  height: 140px;
+  margin-top: 10px;
+  
+}
+
+.privacy-wrap .policy-box-content ol {
+  font-size: 12px;
+  letter-spacing: -0.9px;
+  color: #888888;
+}
+
+.privacy-wrap .policy-box-content ol li+li {
+  margin-top: 20px;
+}

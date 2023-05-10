@@ -1,0 +1,707 @@
+@charset "utf-8";
+/*
+.File Name		: /content/css/ver_1/join/join.css
+.Final Editor	: 김정윤 (2015-05-08)
+*/
+
+
+/* mbr_common.css 에서 사용중인 css 시작 */
+
+/* 헤더 슬로건 */
+body.jkJoin {background-color:#f5f6f8;}
+#wrap {width:640px !important; margin:0 auto; text-align:left; box-sizing:border-box;}
+#header{padding-bottom:0px !important; padding-top: 43px;}
+#header h1{display:none;}
+#header .joinTop {text-align:center; box-sizing: border-box; padding:42px 0 40px 0; min-height: 154px;}
+.jkJoin #header .joinTop {margin:0;}
+#header .joinTop h2 {overflow:hidden; width:640px; white-space:nowrap; box-sizing:border-box; padding-top:26px;}
+#header .joinTop h2 > span{text-indent:-99999px; overflow:hidden;}
+#header .joinTop h2 > span{width:620px; height:41px; margin:5px auto 0px; background-image:url("http://localhost/prj2/project_user/2.join/images/devplanet_logo.png");  background-repeat:no-repeat; display:block;}
+#header .joinTop h2 > span.slogun_1{background-position: 50% 6px;}
+#header .joinTop h2 > span.slogun_2 {background-position: 50% -38px;}
+#header .joinTop h2 > span.slogun_3 {background-position: 50% -95px;}
+#header .joinTop h2 > span.slogun_4 {background-position: 50% -138px;}
+#header .joinTop h2 > span.slogun_5 {background-position: 50% -187px;}
+#header .joinTop h2 > span.slogun_6 {background-position: 50% -235px;}
+#header .joinTop h2 {font:normal 38px 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif; letter-spacing:-2px;}
+#header .joinTop h2 strong {font-weight:normal; color:#39f; }
+#header .joinTop p {color:#666; font:normal 13px/1.5 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif; letter-spacing:-1px; margin-top:22px;}
+#header .joinTop p strong {display:block; color:#000; font:bold 16px 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif;}
+
+/* 탭 메뉴*/
+#header .snb {margin:0 0 0; position:relative;}
+/*#header .snb li span,*/
+#header .snb > li {float:left; width:220px; height:60px; box-sizing:border-box; font-weight:normal; letter-spacing:-1px; text-align:center; font-family: 'Malgun Gothic','맑은고딕', '돋움', Dotum, sans-serif;}
+#header .snb > li.on > a {padding-top:12px; font-size:22px; font-weight:bold; color:#fff; background-color:#3399ff;}
+#header .snb > li > a {overflow:hidden; display:block; height:60px; background:none; white-space:nowrap; text-indent:0; color:#666; box-sizing:border-box; padding-top:14px; color:#656565; font-size:18px; border-bottom:2px solid #3399ff; background-color:#fff;}
+#header .snb > .person.on {width:420px;}
+#header .snb > .corp.on {width:420px;}
+
+#header .snb > .corp .snb_type {display:none;}
+#header .snb > .corp.on {margin-bottom:20px; border-top:none; border-right:none;}
+
+#header .snb > .corp.on > a + .snb_type {display:block; position:absolute; width:640px; top:80px; left:0;}
+#header .snb > .corp.on > a + .snb_type li {float:left; position:relative; width:160px; height:50px; margin-left:-1px; text-align:center; color:#333; font-size:14px; border:1px solid #e1e5eb; box-sizing:border-box;}
+#header .snb > .corp.on > a + .snb_type li a {display:block; height:48px; padding-top:13px; color:#333; font-size:15px; background-image:none; letter-spacing:-0.5px; text-indent:0; box-sizing:border-box; background-color:#fff;}
+#header .snb > .corp.on > a + .snb_type li.on {z-index:10; border-color:#3399fe;} 
+#header .snb > .corp.on > a + .snb_type li.on a {display:block; color:#3399fe; font-weight:bold; background-image:none; letter-spacing:-0.5px; background-image:url("/content/images/member/icn_corpTab_on.png"); background-repeat:no-repeat; padding-left:6px;}
+#header .snb > .corp.on > a + .snb_type li.on a:before {content:''; display:inline-block; position:relative; top:6px; width:12px; height:10px; margin-right:5px; vertical-align:top; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -104px;}
+#header .snb > .corp.on > a + .snb_type li.gi {margin-left:0;}
+#header .snb > .corp.on > a + .snb_type li.hr {width:161px;}
+#header .snb > .corp.on > a + .snb_type li.hh {width:161px;}
+#header .snb > .corp.on > a + .snb_type li.edu {width:161px;}
+
+
+#header .snb > .corp.on > a + .snb_type .gi.on a {background-position:32px 50%;}
+#header .snb > .corp.on > a + .snb_type .hr.on a {background-position:23px 50%;}
+#header .snb > .corp.on > a + .snb_type .hh.on a {background-position:14px 50%;}
+#header .snb > .corp.on > a + .snb_type .edu.on a {background-position:15px 50%;}
+
+
+
+/* 공통 */
+.mbrPopWrap {position:absolute; left:0; top:0;}
+.mbrPop {position:relative; zoom:1; border:4px solid #46a5ff; background-color:#fff; text-align:left; letter-spacing:-1px; z-index:2000; margin:0 auto;}
+.mbrPop .mbrPopHeading {height:35px; margin:1px; padding:16px 0 0 19px; background:#f2f6ff url('/content/images/member/sprites/mbr_pop.png') repeat-x 0 -0;}
+.mbrPop .mbrPopDesc {padding:20px 25px;}
+.mbrPop .close {position:absolute; top:10px; right:10px;}
+.mbrPop .close button {display:block; width:25px; height:25px; overflow:hidden; background:url('/content/images/member/sprites/mbr_pop.png') no-repeat 7px -63px;}
+.mbrPop .close button span {position:absolute; top:-9999em;}
+
+/* 회원가입 공통 */
+.mbrRegist .row_group {position:relative; width:640px; padding:0 29px; margin-bottom:10px; border:1px solid #e2e6e9; background-color:#fff; box-sizing:border-box;}
+.mbrRegist .row_group h4 {font-size:18px; color:#333; margin-bottom:19px; padding-top:35px;}
+.mbrRegist .row_group .subTx {position:absolute; right:30px; top:41px; font-size:13px; color:#afb0b2;}
+.mbrRegist .row_group .subTx strong{font-size:16px; color:#ff3333;}
+.mbrRegist .row_group .headingGuide {position:absolute; right:29px; top:42px; font-size:12px; color:#afb0b2;}
+.mbrRegist .row_group .headingGuide i {margin-right:2px; color:#ff3333;}
+.mbrRegist .row_group .headingButtons {position:absolute; right:29px; top:42px; font-size:0; text-align:right;}
+.mbrRegist .row_group .headingButtons .button {display:inline-block; font-size:11px; color:#9d9d9d; text-decoration:underline;}
+.mbrRegist .row_group.line_none.noBtLinePd{padding:5px 0 0;}
+/* .mbrRegist .row_group.line_all {padding:0 0 17px 0; border-top-color:#dadada; border-right-color:#dadada; border-bottom-color:#dadada; border-left-color:#dadada;} */
+/* .mbrRegist .row_group.line_bottom {border-top-color:#fff; border-right-color:#fff; border-bottom-color:#dadada; border-left-color:#fff;} */
+/* .mbrRegist .row_group.line_none {border-top-color:#fff; border-right-color:#fff; border-bottom-color:#fff; border-left-color:#fff;} */
+
+.mbrRegist .row:after {content: "."; height: 0; display: block; visibility: hidden; clear: both;}
+* html .mbrRegist .row {height: 1px;}
+.mbrRegist .rows {font-size:0; position:relative;}
+.mbrRegist .rows .row {display:inline-block; zoom:1; *display:inline;}
+.mbrRegist .row {position:relative; display:block; margin-bottom:10px; font-size:0;}
+.mbrRegist .row .emailTxt{margin-bottom:10px; padding-left:120px;}
+.mbrRegist .mbr_name {z-index:100;}
+.jkJoin_searchfirm .mbrRegist .mbr_name {width:177px;}
+.jkJoin_searchfirm .mbrRegist .mbr_co_type {width:100%;}
+
+/* 입력 폼 z-index 초기화 */
+.mbrRegist .rows,
+.mbrRegist .mbr_name,
+.mbrRegist .mbr_id,
+.mbrRegist .mbr_passwd,
+.mbrRegist .mbr_email,
+.mbrRegist .mbr_phone,
+.mbrRegist .mbr_zipcode,
+.mbrRegist .authentication_check,
+.mbrRegist .mbr_email,
+.mbrRegist .mbr_agree,
+.mbrRegist .mbr_passwd{z-index:auto !important;}
+
+
+
+/* .mbrRegist .notice_msg .failure {color:#e51e1f;} */
+
+
+.mbrRegist .col_1 {z-index:10; position:absolute; transition:all 0.2s ease-out;}
+.mbrRegist .col_1 i.icon.required {margin-left:5px; margin-right: 10px; font-size:16px; color:#ff3333;}
+.mbrRegist .col_1 label {color:#afb0b2; font-size:16px; transition:all 0.2s ease-out;}
+.mbrRegist .col_1.focus {top:9px;}
+.mbrRegist .col_1.focus label {font-size:11px;}
+.mbrRegist .col_1.focus label i.icon.required {font-size:11px;}
+.mbrRegist .col_2 {position:relative; width:100%; height:62px; padding:0 12px; box-sizing:border-box; border:1px solid #ddd;}
+.mbrRegist .col_2.focus {padding-top:19px;}
+.mbrRegist .col_2.focus input {height:41px;}
+.mbrRegist .mbr_zipcode .notice_msg,
+.mbrRegist .col_2 .notice_msg {display:none; z-index:9100; position:absolute; left:-1px; top:60px; min-width:100px; padding:5px 7px 6px; border:1px solid #ffbcb9; background-color:#ffeeec; color:#555; box-sizing:border-box; white-space:nowrap; font-size:12px; letter-spacing:-1px;}
+.mbrRegist .mbr_zipcode .notice_msg:after,
+.mbrRegist .col_2 .notice_msg:after {content:''; display:block; position:absolute; left:9px; top:-11px; width:19px; height:11px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -145px;}
+.mbrRegist .mbr_zipcode .notice_msg.success,
+.mbrRegist .col_2 .notice_msg.success {border-color:#b7dbff; background-color:#f7fbff;}
+.mbrRegist .mbr_zipcode .notice_msg.success:after,
+.mbrRegist .col_2 .notice_msg.success:after {width:18px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -124px;}
+
+.mbrRegist .col_2.focus .select_wrap {height:41px; padding-top:10px;}
+
+.mbrRegist input[type=text], .mbrRegist input[type=password] {display:block; width:100%; height:60px; border:0; outline:0; box-sizing:border-box; font-size:16px; color:#333; font-family:'Malgun Gothic';background: transparent;}
+.mbrRegist input[type=text]::-ms-clear, .mbrRegist input[type=password]::-ms-clear {display:none;}
+.mbrRegist input[type=text]:-moz-placeholder, .mbrRegist input[type=password]:-moz-placeholder { color:#999999; font-size:12px; font-weight:normal;}/* ie */
+.mbrRegist input[type=text]:-ms-input-placeholder, .mbrRegist input[type=password]:-ms-input-placeholder { color:#999999;  font-size:12px; font-weight:normal; letter-spacing:-0.75px;}
+.mbrRegist input[type=text]::-moz-placeholder, .mbrRegist input[type=password]::-moz-placeholder { color:#999999;  font-size:12px; letter-spacing:-0.75px;} /* firefox 19+ */
+.mbrRegist input[type=text]::-webkit-input-placeholder, .mbrRegist input[type=password]::-webkit-input-placeholder { color:#999999;  font-size:12px; font-weight:normal; letter-spacing:-0.75px;}
+.mbrRegist input[type=password]::-ms-reveal {display:none;}
+
+
+.mbrRegist .select_wrap {padding-top:19px; height:60px; box-sizing:border-box;}
+.mbrRegist .select_wrap:after {content:''; display:block; position:absolute; right:12px; top:50%; width:11px; height:6px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -30px; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.mbrRegist .select_wrap select {width:100%; border:none; border-radius:0; background:transparent; font-size:16px; color:#333; outline:none; cursor:pointer; font-family:'Malgun Gothic';
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+	 appearance:none;
+	}
+.mbrRegist .select_wrap select::-ms-value {background: transparent; color:#333;}
+.mbrRegist .select_wrap select.selected {font-weight:bold; color:#333;}
+/* ie10이상 select박스 화살표 디자인 수정 */
+.mbrRegist select::-ms-expand{opacity:0}
+
+/* 약관동의 */
+.mbrRegist .policy {padding:0px;}
+.mbrRegist .policy .row{padding:0 30px; margin-bottom:19px;}
+.mbrRegist .policy .policy_check_all {padding:19px 30px; margin-bottom:14px; border-bottom: 1px solid #ddd} 
+.mbrRegist .policy .policy_check_service {margin-bottom:14px;}
+.mbrRegist .policy .policy_check_privacy {margin-bottom:14px;}
+.mbrRegist .policy .policy_check_privacyOptional{margin-bottom:14px;}
+.mbrRegist .policy .check_email{margin-bottom:14px;}
+.mbrRegist .policy .check_sms{margin-bottom:26px;}
+.mbrRegist .policy .required + .optional{padding: 10px 0 0; margin: 0px 30px 14px; border-top: 1px dashed #e6e6e6;}
+
+.mbrRegist .policy input[type="checkbox"] {overflow:hidden; position:absolute; clip:rect(0 0 0 0); clip:rect(0, 0, 0, 0); width:1px; height:1px; margin: -1px; border:0; padding:0;}
+.mbrRegist .policy label {position:relative; display:block; z-index:1; font-size:16px; color:#666; letter-spacing:-1px; cursor:pointer;}
+.mbrRegist .policy label:after {content:''; display:block; position:absolute; right:0; top:3px; width:20px; height:20px; background:#fff url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -283px;}
+.mbrRegist .policy input:checked + label:after {background-position:0 -253px;}
+.mbrRegist .policy .policy_check_all label {font-size:18px; color:#333; cursor:pointer;}
+.mbrRegist .policy .policy_check_all label:after {content:''; display:block; position:absolute; right:0; top:0px; width:26px; height:26px; background:#fff url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -403px;}
+.mbrRegist .policy .policy_check_all label .txt{display:inline-block; width:552px}
+.mbrRegist .policy .policy_check_all input:checked + label:after {background-position:0 -439px;}
+.mbrRegist .policy label strong {font-size:16px; font-weight:normal; color:#ff3333; }
+.mbrRegist .policy label.chk_entrust strong {color:#666}
+
+.mbrRegist .policy .mbrBtnPolicy {display:inline-block; margin-left:6px; padding-right:12px; font-size:12px; font-weight:normal; line-height:1; color:#3399ff; letter-spacing:-1px; position:absolute; right:56px; top:7px;}
+
+.mbrRegist .policy .mbrBtnPolicy:before {content:''; display:block; position:absolute; right:0; top:5px; width:9px; height:5px; background:url('/content/images/join/sprite-icon.png') no-repeat -20px -15px;}
+.mbrRegist .policy .mbrBtnPolicy.on:before {background-position:-20px 0;}
+.mbrRegist .policy .policyTplBox {
+	display:none;
+	overflow-y:scroll;
+	height:122px;
+	margin-top:10px;
+	padding:0 15px 15px 15px;
+	border:1px solid #eaeaea;
+	background-color:#fafafa;
+	line-height:2; letter-spacing:-1px;
+	color:#888; font-size:12px;
+}
+.mbrRegist .policy .notice_msg p:first-child {padding-top:14px;}
+
+.mbrRegist .policy .pvsSec.pvsCntTp > p:first-child,
+.mbrRegist .policy .pvsSec.pvsTpList > p:first-child {
+	margin-top: 25px;
+}
+
+.mbrRegist .policy .notice_msg {display:none; z-index:9100; position:absolute; right:22px; top:60px; min-width:100px; padding:5px 7px 6px; border:1px solid #ffbcb9; background-color:#ffeeec; color:#555; box-sizing:border-box; white-space:nowrap; font-size:12px; letter-spacing:-1px;}
+.mbrRegist .policy .notice_msg:after {content:''; display:block; position:absolute; right:9px; top:-11px; width:19px; height:11px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -145px;}
+.mbrRegist .policy .notice_msg p:first-child {padding-top:0;}
+.mbrRegist .policy .policy-table {table-layout: auto; width: 100%; border-top: 1px solid #ddd; border-left: 1px solid #ddd;}
+.mbrRegist .policy .policy-table th {padding: 5px; font-weight: bold; text-align: center; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; line-height: 1.6;}
+.mbrRegist .policy .policy-table td {padding: 5px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; line-height: 1.6;}
+
+
+
+.jkJoin_company .mbrRegist .mbr_id {width:225px; margin-right:10px;}
+.jkJoin_company .mbrRegist .mbr_passwd {width:284px;}
+.jkJoin_company .member-switch .mbr_passwd,
+.jkJoin_company .member-switch .mbr_passwd_recheck{width: 519px;}
+.jkJoin_searchfirm .mbrRegist .mbr_id {width:225px; margin-right:10px;}
+.jkJoin_searchfirm .mbrRegist .mbr_passwd {width:284px;}
+.jkJoin_hh .mbrRegist .mbr_id {width:225px; margin-right:10px;}
+.jkJoin_hh .mbrRegist .mbr_passwd {width:284px;}
+.jkJoin_edu .mbrRegist .mbr_id {width:225px; margin-right:10px;}
+.jkJoin_edu .mbrRegist .mbr_passwd {width:284px;}
+
+/* 비밀번호 */
+.mbrRegist .mbr_passwd {z-index:20;}
+.mbrRegist .mbr_passwd .btnHelp {position:absolute; right:8px; top:22px; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -343px;}
+.mbrRegist .mbr_passwd {width:519px;}
+.mbrRegist .mbr_passwd .col_3 {position:absolute; right:-61px; top:0; width:61px; height:62px;}
+.mbrRegist .mbr_passwd .lyHelp {display:none; z-index:10000; left:55px; top:-180px; width:440px; padding:14px 12px 15px 12px}
+.jkJoin_company .mbrRegist .mbr_passwd .lyHelp {left:-180px;}
+.jkJoin_searchfirm .mbrRegist .mbr_passwd .lyHelp {left:-180px;}
+.jkJoin_hh .mbrRegist .mbr_passwd .lyHelp {left:-180px;}
+.jkJoin_edu .mbrRegist .mbr_passwd .lyHelp {left:-180px;}
+.jkJoin_company .member-switch .mbr_passwd .lyHelp {left: auto; right: -5px;}
+.mbrRegist .mbr_passwd .lyHelp dl dt {margin-bottom:10px; font-size:14px; color:#333; font-weight:normal;}
+.mbrRegist .mbr_passwd .lyHelp dl dd {}
+.mbrRegist .mbr_passwd .lyHelp dl ol {padding-left:0; list-style:none;}
+.mbrRegist .mbr_passwd .lyHelp dl ol li {position:relative; margin-top:8px; padding-left:13px; font-size:13px; color:#484848;}
+.mbrRegist .mbr_passwd .lyHelp dl ol li:before {content:''; display:block; position:absolute; left:4px; top:8px; width:2px; height:2px; background-color:#747474;}
+.mbrRegist .mbr_passwd .lyHelp dl ol li:first-child {margin-top:0;}
+.mbrRegist .mbr_passwd .lyHelp:after {content:''; position:absolute; right:14px; bottom:-9px; width:16px; height:9px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -46px;}
+.mbrRegist .mbrBtnAuth {display:block; position:absolute; right:0; top:0; width:61px; height:62px; vertical-align:top;}
+.mbrRegist .mbrBtnAuth span {display:block; width:61px; height:62px; padding:23px 0 0 34px; font-size:14px; color:#999; text-align:left; box-sizing:border-box; letter-spacing:-1px;}
+.mbrRegist .mbrBtnAuth span:before {content:''; position:absolute; left:11px; top:23px; width:20px; height:20px; background:url('http://localhost/prj2/project_user/2.join/images/sprite-icon.png') no-repeat 0 -373px;}
+.mbrRegist .mbrBtnAuth.selected span {color:#3399ff;}
+.mbrRegist .mbrBtnAuth.selected span:before {background-position:0 -193px;}
+
+.member-switch .mbr_passwd-certification_notice{font-size: 13px; letter-spacing: -1px; color: #3399ff; padding-top: 2px; padding-bottom: 18px; padding-left: 1px;}
+.member-switch .mbr_passwd-notice{font-size: 13px; letter-spacing: -1px; color: #3399ff; padding-top: 5px; padding-bottom: 11px; padding-left: 1px;}
+
+/* 생년월일 */
+.mbrRegist .mbr_birthday select {float:left;}
+.mbrRegist .mbr_birthday .delimiter {float:left; margin:8px 2px 0; color:#fff;}
+.mbrRegist .mbr_birthday .col_3 {padding-top:6px;}
+.mbrRegist .mbr_birthday .col_3 input[type=radio] {margin-left:9px; vertical-align:top;}
+.mbrRegist .mbr_birthday .col_3 input[type=radio]:first-child {margin-left:5px;}
+.mbrRegist .mbr_birthday .col_3 label {vertical-align:bottom;}
+
+/* 기업형태 */
+.mbrRegist .mbr_co_type .col_1 {z-index:0;}
+
+/* 외국계 국가정보 */
+.mbrRegist .mbr_foreign_type {width:285px;}
+.mbrRegist .mbr_foreign_type .col_1 {z-index:0;}
+.mbrRegist .mbr_foreign_type .select_wrap  {width:100%;}
+.mbrRegist .mbr_foreign_type .delimiter {float:left; margin:8px 2px 0;}
+.mbrRegist .mbr_foreign_type1 {margin-right:10px;}
+.mbrRegist .mbr_foreign_type2 {}
+
+/* 사업자등록번호 */
+.mbrRegist .company_num {}
+.mbrRegist .company_num .col_3 {margin:0;}
+.mbrRegist .company_num .mbrBtnAuth {width:82px; height:30px; border:1px solid #e6e6e6; vertical-align:top;}
+.mbrRegist .company_num .btnHelp {z-index:10; overflow:hidden; position:absolute; right:13px; top:20px; width:20px; height:20px; background:none;}
+.mbrRegist .company_num .btnHelp:before {content:''; display:block; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -343px;}
+.mbrRegist .company_num .lyHelp {z-index:9010; left:113px; top:-95px; width:440px; padding:14px 12px 15px 12px; font-size:13px; color:#484848;}
+.mbrRegist .company_num .lyHelp:after {content:''; position:absolute; right:14px; bottom:-9px; width:16px; height:9px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -46px;}
+
+
+/* Company */
+.mbrRegist .company_name {width:393px; margin-right:10px;}
+
+/* Boss Name */
+.mbrRegist .company_bossname {width:177px;}
+
+/* Customer-Center */
+.mbrRegist .company_customer-center {display: block; font-size: 12px; letter-spacing: -1px; color: #666666; padding: 5px 0 20px;}
+
+/* 우편번호 */
+.mbrRegist .mbr_zipcode label {color:#999;}
+/* .mbrRegist .mbr_zipcode input {width:71px;} */
+.mbrRegist .mbr_zipcode input {width:100%;}
+.mbrRegist .mbr_zipcode .col_2 {width:auto;}
+.mbrRegist .mbr_zipcode .col_3 {float:left; margin:0 0 0 10px;}
+.mbrRegist .mbr_zipcode .mbrBtnAuth {width:82px; height:30px; border:1px solid #e6e6e6; vertical-align:top;}
+.mbrRegist .mbr_zipcode .icon-search {display:block; position:absolute; right:10px; top:22px; width:18px; height:17px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -166px;}
+
+/* 주소입력 */
+.mbrRegist .mbr_address {padding:14px 14px 0 20px;}
+.mbrRegist .mbr_address input {width:163px;}
+.mbrRegist .mbr_address .col_2 input:first-child {margin-right:6px;}
+
+/* 휴대폰 */
+.mbrRegist .mbr_phone select {float:left;}
+.mbrRegist .mbr_phone .delimiter {float:left; margin:8px 2px 0; color:#aaa;}
+.mbrRegist .mbr_phone input[type=text] {}
+.mbrRegist .mbr_phone_1 input[type=text] {width:219px;}
+.mbrRegist .mbr_phone .col_3 {position:relative; padding-top:10px;}
+.mbrRegist .mbr_phone .col_3 input[type="checkbox"] {position:absolute; right:0; top:0; width:23px; height:23px; margin:0; padding:0; outline:none; -webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; border-radius: 0;}
+.mbrRegist .mbr_phone .col_3 label {position:relative; display:block; height:23px; letter-spacing:-1px; font-size:13px; color:#666; box-sizing:border-box;}
+.mbrRegist .mbr_phone .col_3 label:after {content:''; display:block; position:absolute; right:0; top:0; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -253px;}
+.mbrRegist .mbr_phone .col_3 label.on:after {background-position:0 -253px;}
+.mbrRegist .mbr_phone .buttonSendCertification {display:block; position:absolute; right:0; top:0; width:150px; height:60px; border-left:1px solid #ddd; background-color:#f2f4f7; box-sizing:border-box; text-align:center;}
+.mbrRegist .mbr_phone .buttonSendCertification span {display:block; height:60px; padding-top:18px; box-sizing:border-box; font-size:16px; color:#666; letter-spacing:-1px;}
+
+/* 이메일 */
+.mbrRegist .mbr_email input[type=text]:first-child {margin:0;}
+.mbrRegist .mbr_email .delimiter {float:left; margin:8px 0 0 1px; color:#333;}
+.mbrRegist .mbr_email select {letter-spacing:-1px;}
+.mbrRegist .mbr_email .col_3 {position:relative; padding-top:10px;}
+.mbrRegist .mbr_email .col_3 input[type="checkbox"] {position:absolute; right:0; top:0; width:23px; height:23px; margin:0; padding:0; outline:none; -webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; border-radius: 0;}
+.mbrRegist .mbr_email .col_3 label {position:relative; display:block; height:23px; letter-spacing:-1px; font-size:13px; color:#666; box-sizing:border-box;}
+.mbrRegist .mbr_email .col_3 label:after {content:''; display:block; position:absolute; right:0; top:0; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -283px;}
+.mbrRegist .mbr_email .col_3 label.on:after {background-position:0 -253px;}
+
+/* 인증방법 선택 - 2015.11.17 수정 */
+.mbrRegist .row_group.mbr_authentication {width:620px; padding:0; margin-top:20px; margin-bottom:10px; z-index:2;}
+.mbrRegist .mbr_authentication {position:relative;}
+.mbrRegist .mbr_authentication .type {height:167px;}
+.mbrRegist .mbr_authentication .type:after {content:" "; display:block; height:0; clear:both;}
+.mbrRegist .mbr_authentication .type li {float:left; width:310px; height:49px;}
+.mbrRegist .mbr_authentication .btnType {font-size:14px; font-weight:bold; color:#a4a7a9; width:100%; height:100%; border-left:1px solid #dadada; border-bottom:1px solid #dadada; background-color:#f1f6fa;}
+.mbrRegist .mbr_authentication .btnType span {position:relative;}
+.mbrRegist .mbr_authentication li:first-child .btnType {border-left:none;}
+.mbrRegist .mbr_authentication li.on .btnType {color:#333; height:48px; border-bottom:1px solid #fff; background-color:#fff;}
+.mbrRegist .mbr_authentication span.btnDis {display:inline-block; width:309px; height:32px; padding-top:16px; text-align:center;}
+.mbrRegist .mbr_authentication li:first-child span.btnDis {width:310px;}
+.mbrRegist .mbr_authentication li.on span.btnDis {padding-top:15px; height:33px;}
+.mbrRegist .mbr_authentication .row {position:absolute; left:0; top:48px; width:580px; height:104px;}
+.mbrRegist .mbr_authentication .info {margin:9px 0 0 48px; line-height:20px;}
+.mbrRegist .mbr_authentication .info strong {color:#40a1ff; font-weight:bold;}
+.mbrRegist .mbr_authentication .info .btn {display:block; font-size:11px; font-weight:bold; margin-top:6px; text-decoration:underline; letter-spacing:-1px;}
+.mbrRegist .mbr_authentication .info_1 {margin:38px 0 0 48px;}
+.mbrRegist .mbr_authentication .info_2 {margin-top:26px;}
+.mbrRegist .mbr_authentication .btnSend {position:absolute; top:39px; right:88px; color:#fff; font-weight:bold; width:126px; height:40px; background-color:#38425d;}
+.mbrRegist .mbr_authentication .btnSend span {position:relative;}
+.mbrRegist .mbr_authentication .btnForeign {position:absolute; right:0; bottom:-22px;}
+.mbrRegist .mbr_authentication .btnForeign a {font-size:11px; color:#9d9d9d; text-decoration:underline; letter-spacing:-1px;}
+.mbrRegist .mbr_authentication .btnFinish {position:absolute; top:39px; right:88px; color:#fff; font-weight:bold; width:126px; height:27px; padding-top:13px; background-color:#666; text-align:center;}
+
+/* 휴대폰 인증 팝업 */
+.mbrRegist .mbrPopAuthMobile {top:88px; width:425px;}
+.mbrRegist .mbrPopAuthMobile input[type=text] {display:inline-block; font:12px dotum, "돋움", gulim, "굴림", sans-serif; font-weight:normal; height:18px; line-height:21px; padding:0 3px; border:1px solid #cdcdcd; border-right-color:#ececec; border-bottom-color:#ececec; vertical-align:top;}
+.mbrRegist .mbrPopAuthMobile select {display:inline-block; font:12px dotum, "돋움", gulim, "굴림", sans-serif; height:20px; vertical-align:middle; border:1px solid #ccc; vertical-align:top;}
+.mbrRegist .mbrPopAuthMobile select::-ms-expand{opacity:100}
+.mbrRegist .mbrPopAuthMobile .authMobile {zoom:1; border-bottom:1px solid #dddddd; padding-bottom:5px;}
+.mbrRegist .mbrPopAuthMobile .authMobile:after {content:" "; display:block; height:0; clear:both;}
+.mbrRegist .mbrPopAuthMobile .authMobile li {width:auto; height:auto; margin:5px 0;}
+.mbrRegist .mbrPopAuthMobile .authMobile label {float:left; font-size:12px; width:98px; margin:4px 0 0 0;}
+.mbrRegist .mbrPopAuthMobile .authMobile .delimiter {display:inline-block; color:#666; vertical-align:middle;}
+.mbrRegist .mbrPopAuthMobile .authMobile .assist {display:inline-block; font-size:11px; color:#999; margin:4px 0 0 12px;}
+.mbrRegist .mbrPopAuthMobile .authMobile .btnAuth {display:inline-block; width:80px; height:20px; margin-left:9px; background:url('/content/images/member/sprites/mbr_pop.png') no-repeat 0 -100px;}
+.mbrRegist .mbrPopAuthMobile .authMobile .btnAuth_1 {width:90px; background-position:0 -130px;}
+.mbrRegist .mbrPopAuthMobile .btnCheck {margin-top:15px; text-align:center;}
+.mbrRegist .mbrPopAuthMobile .btnCheck button {display:inline-block; width:67px; height:28px; background:url('/content/images/member/sprites/mbr_pop.png') no-repeat 0 -160px;}
+.mbrRegist .mbrPopAuthMobile button span {position:relative; display:block; text-indent:-999em;}
+
+/* 인증방법 선택 */
+.mbrRegist .authentication_type .col_2 {margin-top:9px;}
+.mbrRegist .authentication_type .col_2 input {vertical-align:top;}
+.mbrRegist .authentication_type .col_2 label {margin-right:26px; vertical-align:bottom; letter-spacing:-1px;}
+
+/* 인증번호 입력 */
+.mbrRegist .authentication_check button {display:block; position:absolute; right:0; top:-1px; height:62px; border:1px solid #ddd; background-color:#f2f4f7; box-sizing:border-box;}
+.mbrRegist .authentication_check button span {display:block; height:60px; box-sizing:border-box; font-size:16px; color:#666; letter-spacing:-1px; padding-top:18px;}
+.mbrRegist .authentication_check .btnConfirm {right:-85px; width:85px;}
+.mbrRegist .authentication_check .btnSend {right:-247px; width:150px;}
+.mbrRegist .authentication_check .col_2 {width:334px;}
+.mbrRegist .authentication_check .col_3 {padding-top:28px;}
+.mbrRegist .authentication_check .col_3 input[type="checkbox"] {overflow:hidden; position:absolute; clip:rect(0 0 0 0); clip:rect(0, 0, 0, 0); width:1px; height:1px; margin: -1px; border:0; padding:0;}
+.mbrRegist .authentication_check .col_3 label {position:relative; display:block; height:23px; letter-spacing:-1px; font-size:13px; color:#666; box-sizing:border-box; cursor:pointer;}
+.mbrRegist .authentication_check .col_3 label:after {content:''; display:block; position:absolute; right:0; top:0; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -283px;}
+.mbrRegist .authentication_check .col_3 label.on:after {background:url('/content/images/join/sprite-icon.png') no-repeat 0 -253px;}
+
+/* 회원가입 경로 인지 옵션 */
+.mbrRegist .how_to_know .row {padding-top:19px;}
+.mbrRegist .how_to_know label {float:left; margin:7px 38px 0 0;}
+.mbrRegist .how_to_know .select_wrap {width:222px;}
+
+/* 회원가입 버튼 */
+.mbrRegist .regist_complete {padding:0; border:0; background-color:transparent;}
+.mbrRegist .regist_complete .row {margin-bottom:0;}
+.mbrRegist .mbrBtnRegist {width:100%; padding:0px; vertical-align: middle; height: 75px; background-color: #3399ff; font-size: 21px; color: #fff; font-weight: bold; letter-spacing: -1px; border: none;}
+.mbrRegist .mbrBtnRegist:hover {
+	cursor: pointer;
+}
+.mbrRegist .mbrBtnRegist span {margin:0 auto; line-height: 23px;}
+.mbrRegist .regist_complete .goJoinFaq {display:block; margin:7px 0 0; text-align:right;}
+.mbrRegist .regist_complete .goJoinFaq a {font-family:"Malgun Gothic", "맑은고딕"; font-size:11px; color:#9d9d9d; text-decoration:underline; letter-spacing:-1px;}
+
+
+/* regist switch message*/
+.mbrRegist .message{text-align: center; margin-top: 4px; margin-bottom: 25px;}
+.mbrRegist .message_title{font-size: 28px; color: #333333; letter-spacing: -2.5px; margin-bottom: 15px;}
+.mbrRegist .message_text{font-size: 15px; color: #666666; letter-spacing: -1.5px; line-height: 25px;}
+.mbrRegist .message_text em{color: #f95454}
+
+
+/* Family Site */
+.mbrRegist .familysite {margin-top:10px; font-weight:bold; text-align:center; color:#333;}
+.mbrRegist .familysite ul {width:100%; margin:9px 0 0; text-align:center; font-size:0;}
+.mbrRegist .familysite ul li {display:inline-block; position:relative; overflow:hidden; height:15px; padding-left:13px; margin-left:13px; box-sizing:border-box; vertical-align:top;}
+.mbrRegist .familysite ul li:before {content:''; display:block; position:absolute; left:0; top:6px; width:3px; height:3px; background:url('/content/images/member/sprites/mbr_familysite.png') no-repeat -173px -8px;}
+.mbrRegist .familysite ul li a {display:block; background-image:url('/content/images/member/sprites/mbr_familysite.png'); background-repeat:no-repeat;}
+.mbrRegist .familysite ul li.albamon {margin-left:0; padding-left:0;}
+.mbrRegist .familysite ul li.albamon:before {display:none; padding-left:0; margin-left:0;}
+.mbrRegist .familysite ul li.albamon a {width:56px; height:15px; background-position:-10px -1px;}
+.mbrRegist .familysite ul li.hrpartners {width:83px;}
+.mbrRegist .familysite ul li.devjob {width:98px;}
+.mbrRegist .familysite ul li.campusmon a {width:71px; height:15px; background-position:-185px -2px;}
+.mbrRegist .familysite ul li.jobbusan {width:90px;}
+.mbrRegist .familysite ul li a {overflow:hidden; display:block; height:15px; white-space:nowrap; text-indent:-999em;}
+
+/* 휴면회원 인증 */
+.mbrResting #wrap {width:960px;}
+.mbrResting div.gnbMbr {border-bottom:4px solid #31363b; background:none;}
+.mbrResting .gnbMbr #gnb {width:960px; padding-top:75px;}
+.mbrResting .gnbMbr #gnb h1 {top:26px;}
+.mbrResting .gnbMbr #gnb h2 {left:156px; top:39px;}
+.mbrResting .gnbMbr #gnb h2 span {margin-left:9px;}
+.mbrResting .gnbMbr #gnb .lnb {position:absolute; top:50px; right:0; font:11px dotum, "돋움", gulim, "굴림", sans-serif;}
+.mbrResting .gnbMbr #gnb .lnb li {float:left; padding-left:7px; background:url('/content/images/member/sprites/mbr_header.png') no-repeat -10px -9px;}
+.mbrResting .gnbMbr #gnb .lnb li:first-child {padding-right:8px; background:none;}
+.mbrResting .gnbMbr #gnb .lnb li a {font-size:11px; color:#888; letter-spacing:-1px;}
+
+.mbrResting .restingSec {margin:60px 0; text-align:center;}
+.mbrResting .restingSec .desc {margin-bottom:60px;}
+.mbrResting .restingSec .restingbx {width:845px; margin:0 auto; border-top:2px solid #777a83;}
+.mbrResting .restingSec .restingbx .inr {padding:30px 0; border-left:1px solid #cecece; border-right:1px solid #cecece; border-bottom:1px solid #cecece; background-color:#f9f9f9;}
+.mbrResting .restingSec .captchaBx {width:354px; height:40px; margin:0 auto 8px auto; border:1px solid #d4e4f3; text-align:left;}
+.mbrResting .restingSec .captchaBx .captcha {display:block; float:left; width:265px; height:40px; border-right:1px solid #d4e4f3; background-color:#eff7ff;}
+.mbrResting .restingSec .captchaBx .captcha img {width:100%; height:100%;}
+.mbrResting .restingSec .captchaBx .btnRefresh {font-family:gulim, "굴림", sans-serif; color:#666; width:88px; height:40px; padding-left:20px; border:0; background:#fff url('/content/images/member/icn_refresh.png') no-repeat 13px 13px; letter-spacing:-1px;}
+.mbrResting .restingSec .captchaBx .btnRefresh span {position:relative; top:2px;}
+.mbrResting .restingSec .security {position:relative; font-family:gulim, "굴림", sans-serif; color:#666; width:354px; margin:0 auto; letter-spacing:-1px;}
+.mbrResting .restingSec .security label {position:absolute; left:10px; top:8px;}
+.mbrResting .restingSec .security input[type=text] {width:333px; height:16px; padding:6px 10px; border:1px solid #999; border-right-color:#ddd; border-bottom-color:#ddd; color:#666;}
+.mbrResting .restingSec .btnResting {margin-top:38px;}
+.mbrResting .restingSec .help {color:#888; margin-top:80px; letter-spacing:-1px;}
+.mbrResting .restingSec .help dl {overflow:hidden; zoom:1;}
+.mbrResting .restingSec .help dl dt, .restingSec .help dl dd {display:inline-block; line-height:24px;}
+.mbrResting .restingSec .help dl dt {padding-right:10px; background:url('/content/images/member/icn_dvs.png') no-repeat right 7px;}
+.mbrResting .restingSec .help dl dd {margin-left:4px;}
+.mbrResting .restingSec .help dl dd strong {color:#f60; font-weight:bold;}
+
+/* 서치펌명 */
+.mbrRegist .searchfirm_name {width:393px; margin-right:10px;}
+.mbrRegist .searchfirm_name input {width:352px;}
+.mbrRegist .searchfirm_name .col_3 {position:absolute; right:45px; top:21px; margin:0;}
+.mbrRegist .searchfirm_name .btnSf {font-size:12px; color:#4ba4fe; text-decoration:underline; letter-spacing:-1px;}
+.mbrRegist .searchfirm_name .btnHelp {z-index:10; overflow:hidden; position:absolute; right:13px; top:20px; width:20px; height:20px; background:none;}
+.mbrRegist .searchfirm_name .btnHelp:before {content:''; display:block; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -343px;}
+.mbrRegist .searchfirm_name .lyHelp {z-index:9010; left:-73px; top:-60px; width:440px; padding:14px 12px 15px 12px; font-size:13px; color:#484848;}
+.mbrRegist .searchfirm_name .lyHelp:after {content:''; position:absolute; right:14px; bottom:-9px; width:16px; height:9px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -46px;}
+
+.mbrRegist .oem_regist_complete {padding:0; background-color:transparent; border:0; margin-bottom:0;}
+/* .jkJoin_searchfirm .notice_msg {padding:25px 0 29px;} */
+.jkJoin_searchfirm .notice_msg .br {margin-bottom:20px;}
+.jkJoin_searchfirm .notice_msg .info {padding:29px 0; letter-spacing:-1px; line-height:1.55; color:#666; font-size:13px;}
+.jkJoin_searchfirm .notice_msg .info:after {display:block; content:""; clear:both; }
+.jkJoin_searchfirm .notice_msg .info strong, .mbrRegist .oem_regist_complete .notice_msg .info dt {font-weight:bold; color:#333;}
+.jkJoin_searchfirm .notice_msg .info p {padding:0;}
+.jkJoin_searchfirm .notice_msg .info dt > span {font-weight:normal; }
+.jkJoin_searchfirm .notice_msg .info dd.floatL {margin-left:3px; }
+.jkJoin_searchfirm .notice_msg .info a {color:#333; text-decoration:none;}
+.jkJoin_searchfirm .notice_msg .info .highlight {color:#39f;}
+.jkJoin_searchfirm .notice_msg .info .floatL {float:left;}
+.jkJoin_searchfirm .notice_msg .info .insert {padding-left:13px;}
+.mbrRegist .oem_regist_complete .row {text-align: center;}
+
+
+/* 소셜로그인 추가(네이버,페이스북,구글,카카오) */
+/* 구버전 */
+/* .mbrRegist .social_row {overflow:hidden;}
+.mbrRegist .social_row ul {zoom:1; overflow:hidden; position:relative; width:588px;}
+.mbrRegist .social_row ul:after {content:""; display:block; height:0; clear:both;}
+.mbrRegist .social_row ul li {float:left; width:287px; margin:0 5px 5px 0;}
+.mbrRegist .social_row .btSocial {width:100%;min-height:44px;text-align:center;border: 1px solid #d2d2d2;font:15px "Malgun Gothic","맑은 고딕", verdana, dotum,"돋움",sans-serif;letter-spacing:-1px;}
+.mbrRegist .social_row .icn {display:inline-block;width:36px;height:22px;margin-right:10px;background:url(/content/images/Login/ver_1/icn_social.png) 0 0 no-repeat;vertical-align:middle;}
+.mbrRegist .social_row .btSocial .icnFb {width:12px; height:21px; background-position:-15px -78px;}
+.mbrRegist .social_row .btSocial .icnNa {width:17px; height:16px; background-position:-52px -80px;}
+.mbrRegist .social_row .btSocial .icnGl {width:21px; height:22px; background-position:-100px -77px;}
+.mbrRegist .social_row .btSocial .icnKo {width:20px; height:18px; background-position:-151px -79px;} */
+
+.mbrRegist .list-social {display: table; width: auto; margin: 30px auto 0;}
+.mbrRegist .list-social ul:after {content: ''; display: block; clear: both;}
+.mbrRegist .list-social li {float: left;}
+.mbrRegist .list-social li:nth-child(n+2) {margin-left: 30px;}
+.mbrRegist .list-social li a {display: block; width: 54px; height: 54px; border-radius: 50%; background: no-repeat center; background-size: 100%; font-size: 0; text-indent: -9999px;}
+.mbrRegist .list-social li a.naver {background-image: url(/content/images/login/sns/icon_naver_54.png);}
+.mbrRegist .list-social li a.kakao {background-image: url(/content/images/login/sns/icon_kakao_54.png);}
+.mbrRegist .list-social li a.facebook {background-image: url(/content/images/login/sns/icon_facebook_54.png);}
+.mbrRegist .list-social li a.google {background-image: url(/content/images/login/sns/icon_google_54.png);}
+.mbrRegist .list-social li a.apple {background-image: url(/content/images/login/sns/icon_apple_54.png);}
+
+
+.mbrRegist .row_group_social {padding-bottom:30px;}
+.mbrRegist .row_group_social h4 {margin-bottom:19px; padding-top:35px;}
+
+.mbr_info {padding-bottom:20px !important;}
+.mbr_info h4 {margin-bottom:19px; padding-top:35px;}
+.jkJoin_searchfirm .mbrRegist .mbr_info .mbr_name {width:100% !important;}
+.jkJoin_searchfirm .mbrRegist .mbr_info .mbr_name input {width:100% !important;}
+
+.mbrRegist .certification {overflow:hidden; position:relative; height:129px; margin-bottom:10px; border:1px solid #ddd; background-color:#f7fbff; box-sizing:border-box;}
+.mbrRegist .certification .col {float:left; position:relative; overflow:hidden; width:289px; height:127px; padding:15px 22px 0 101px; border-right:1px solid #ddd; box-sizing:border-box; text-align:left;}
+.mbrRegist .certification .col:before {content:''; display:block; position:absolute; background-image:url('/content/images/join/sprite-icon.png'); background-repeat:no-repeat;}
+.mbrRegist .certification .colHp:before {left:35px; top:24px; width:42px; height:74px; background-position:0 -555px;}
+.mbrRegist .certification .colIpin {padding:15px 10px 0 120px; border-right:0;}
+.mbrRegist .certification .colIpin:before {left:25px; top:20px; width:75px; height:70px; background-position:0 -475px;}
+
+.mbrRegist .certification .col .header {margin-bottom:17px; font-size:16px; font-weight:bold; color:#333; text-align:left;}
+.mbrRegist .certification .col .header:after {content:''; display:inline-block; position:relative; top:6px; width:7px; height:10px; margin-left:5px; vertical-align:top; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -84px;}
+.mbrRegist .certification .col .description {font-size:13px; color:#666; line-height:1.42857; text-align:left; letter-spacing:-1px;}
+.mbrRegist .certification .colIpin a {z-index:10; position:absolute; left:25px; top:20px; width:75px; padding-top:79px; font-size:12px; color:#a7a8a9; text-decoration:underline; text-align:center;}
+.mbrRegist .certification .colIpin.completed .header:after {display:none;}
+.mbrRegist .certification .colIpin.completed .description {color:#39f; font-weight:bold;}
+
+.tabsGiCateogry {overflow:hidden; width:580px; height:50px; margin-bottom:10px;}
+.tabsGiCateogry .tab {position:relative; display:block; float:left; width:290px; height:50px; margin-left:-1px; padding-top:14px; box-sizing:border-box; border:1px solid #e1e5eb; font-size:15px; color:#333; text-align:center; letter-spacing:-1px;}
+.tabsGiCateogry .tab:first-child {margin-left:0; width:291px}
+.tabsGiCateogry .tab.active {z-index:10; border-color:#3399fe; color:#3399fe;}
+.tabsGiCateogry .tab.active:before {content:''; display:inline-block; position:relative; top:6px; width:12px; height:10px; margin-right:5px; vertical-align:top; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -104px;}
+
+.favor {overflow:hidden; position:relative; height:168px; margin-bottom:20px; border:1px solid #e1e5eb; background-color:#f1f4f5; box-sizing:border-box;}
+.favor .item {float:left; position:relative; overflow:hidden; width:33.33%; height:166px; padding-top:76px; text-align:center; letter-spacing:-1px; box-sizing:border-box;}
+.favor .item:before {content:''; display:block; position:absolute; left:0; top:20px; width:1px; height:121px; background-color:#e2e6ec;}
+.favor .item:first-child:before {display:none;}
+.favor .item i.icon {display:block; position:absolute; left:50%; top:25px; background-image:url('/content/images/join/sprite-favor.png'); background-repeat:no-repeat;}
+.favor .item .header {margin-bottom:13px; font-size:14px; color:#555;}
+.favor .item .description {font-size:12px; color:#666; line-height:1.5;}
+.favor .item .description strong {font-weight:bold; color:#333;}
+.favor .item.first i.icon {top:31px; width:39px; height:22px; margin-left:-20px; background-position:0 0;}
+.favor .item.latestReleases i.icon {width:35px; height:34px; margin-left:-18px; background-position:0 -75px;}
+.favor .item.paySale i.icon {width:34px; height:34px; margin-left:-17px; background-position:0 -119px;}
+.favor .item.mobileSale i.icon {width:28px; height:33px; margin-left:-14px; background-position:0 -32px;}
+
+/*
+ * Input Component
+ */
+.input {position:relative; display:inline-block; zoom:1; *display:inline; width:100%; height:62px; border:1px solid #ddd; box-sizing:border-box; vertical-align:top; text-align:left; background-color:#fff;}
+.input .icon-search {display:block; position:absolute; right:10px; top:22px; width:18px; height:17px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -166px;}
+.input.error {z-index:1000; border-color:#eb8f8a;}
+.input.focus {z-index:100; border-color:#3399ff;}
+.input div.label,
+.input label {position:absolute; left:15px; top:18px; color:#999; font-size:16px; transition:all .2s ease-out;}
+.input input {display:block; width:100%; height:60px; padding:0 15px; border:0; color:#333; outline:none; box-sizing:border-box; font-size:16px;}
+.input .value {width:100%; height:60px; padding:0 15px; font-size:16px; color:#333;}
+.input.is-label div.label i.icon.required,
+.input.is-label label i.icon.required {margin-left:5px; font-size:16px; color:#ff3333;}
+.input.is-label.is-value {padding-top:19px;}
+.input.is-label.is-value .label,
+.input.is-label.is-value label {top:9px; font-size:11px; color:#a8a8a8;}
+.input.is-label.is-value div.label i.icon.required,
+.input.is-label.is-value label i.icon.required {font-size:11px;}
+.input.is-label.is-value input {height:41px;}
+.input.is-label.is-value .value {height:41px; padding-top:10px; box-sizing:border-box;}
+.input.is-label.focus {padding-top:19px;}
+.input.is-label.focus label {top:9px; font-size:11px;}
+.input.is-label.focus label i.icon.required {font-size:11px;}
+.input.is-label.focus input {height:41px;}
+
+.input .validation {z-index:9100; position:absolute; left:-1px; top:60px; padding:5px 7px 6px; border:1px solid #ffbcb9; background-color:#ffeeec; color:#555; box-sizing:border-box; white-space:nowrap; font-size:12px;}
+.input .validation:after {content:''; display:block; position:absolute; left:9px; top:-11px; width:19px; height:11px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -145px;}
+.input .validation.hidden {display:none;}
+/*
+ * Checkbox Component
+ */
+.checkbox {}
+.input-individual-password {width:519px;}
+.input-company-name {width:393px; margin-right:10px;}
+.input-company-bossname {width:177px;}
+.input-manager-id {width:225px; margin-right:10px;}
+.input-manager-password {width:283px;}
+.jkJoin_searchfirm .mbrRegist .mbr_validity {margin-bottom:10px;}
+
+.mbrRegist .mbr_validity {margin-bottom:30px; padding:26px 0 30px 367px;}
+.mbr_validity div.header {position:absolute; left:30px; top:25px; font-size:0;}
+.mbr_validity div.header h4.header {display:inline-block; zoom:1; *display:inline; margin-bottom:0; padding-top:0;font-size:18px; color:#333; vertical-align:top; letter-spacing:-1px;}
+.mbr_validity div.header h4.header .required {color: #ff3333;}
+.mbr_validity div.header .buttonHelp {overflow:hidden; position:relative; display:inline-block; zoom:1; *display:inline; top:4px; width:20px; height:20px; margin-left:8px; vertical-align:top;}
+.mbr_validity div.header .buttonHelp:before {content:''; display:block; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -343px;}
+.mbr_validity .list {font-size:0;}
+.mbr_validity .list .item {position:relative; display:inline-block; zoom:1; *display:inline; margin-left:19px; padding-left:28px; vertical-align:top;}
+.mbr_validity .list .item:first-child {margin-left:0;}
+.mbr_validity .list .item label {font-size:16px; color:#666; letter-spacing:-1px; cursor:pointer;}
+.mbr_validity .list .item label:before {content:''; display:block; position:absolute; left:0; top:2px; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -223px;}
+.mbr_validity .list .item input[type="radio"]{top:0; left:-9999px;}
+.mbr_validity .list .item input[type="radio"]:checked + label:before {background-position:0 -313px;}
+.mbr_validity .popup {z-index:100; position:absolute; left:0; top:0; width:399px; padding:13px 0 14px 13px; border:1px solid #565d79; background-color:#fff; letter-spacing:-1px; box-sizing:border-box;}
+.mbr_validity .popup.hidden {display:none;}
+.mbr_validity .popup:after {content:''; display:block; position:absolute; left:14px; top:-9px; width:16px; height:9px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -65px;}
+.mbr_validity .popup .popupHeader {margin-bottom:10px; font-size:14px; color:#333;}
+.mbr_validity .popup .popupBody {font-size:13px; color:#484848; line-height:1.55;}
+
+/* Agree Newsletter */
+.mbrRegist .mbr_agree {padding-top:12px;}
+.mbrRegist .mbr_agree input {left:-9999px !important;}
+.mbrRegist .mbr_agree label {position:relative; display:block; height:23px; letter-spacing:-1px; font-size:13px; color:#666; box-sizing:border-box; cursor:pointer;}
+.mbrRegist .mbr_agree label:after {content:''; display:block; position:absolute; right:0; top:0; width:20px; height:20px; background:url('/content/images/join/sprite-icon.png') no-repeat 0 -283px;}
+.mbrRegist .mbr_agree input:checked + label:after {background:url('/content/images/join/sprite-icon.png') no-repeat 0 -253px;}
+
+/* Agree 파견 도급 */
+.mbrRegist .mbr_agree.mbr_agree_hh {margin-bottom:30px;}
+
+
+
+/* 200305 기업 회원가입 하단 회사 소개 */
+.mbrRegist .familysite .text {font-size: 13px; font-weight: normal; letter-spacing: -0.5px;}
+
+.section-start {padding: 50px 0; background: #34344e;}
+.section-start .inner {width: 983px; margin: 0 auto;}
+.section-start .inner img {display: block;}
+
+.section-company {margin-top: 80px;}
+.section-company .inner {width: 983px; margin: 0 auto;}
+.section-company .inner img {display: block;}
+.section-company .article-jobkorea {padding: 90px 0; background: #34344e;}
+.section-company .article-jobkorea img {margin: 0 auto;}
+.section-company .article-super {padding: 205px 0; background: url('/content/images/join/company/bg_compnay_02.png') no-repeat right center #e3eeff;}
+.section-company .article-super img {margin-left: 7px;}
+.section-company .article-smart {padding: 50px 0 0; background: #f6f9fe;}
+.section-company .article-smart .inner {width: 1012px;}
+.section-company .article-search {padding: 80px 0 105px; background: #e3eeff;}
+.section-company .article-search img {margin: 0 auto;}
+.section-company .article-hunting {padding: 105px 0 260px; background: url('/content/images/join/company/bg_compnay_05.png') no-repeat center #e1ddde;}
+.section-company .article-hunting img {margin-left: 7px;}
+.section-company .article-learning {padding: 85px 0; background: #f6f9fe;}
+.section-company .article-learning img {margin: 0 auto;}
+.section-company .article-start {padding: 85px 0; background: #e3eeff;}
+.section-company .article-start img {margin: 0 auto;}
+.section-company .article-start .btn-start {display: block; margin: 50px auto 0; width: 320px; height: 80px;}
+.section-company .article-switch {padding: 90px 0; background: #e3eeff;}
+.section-company .article-switch img {margin: 0 auto;}
+
+.section-company .btn-fixed-right {display: none; position: fixed; top: 50%; margin-top: -67px; right: 100px;}
+.section-company .btn-fixed-right a {display: block; margin: 0 auto;}
+.section-company .btn-fixed-right .btn-join-right{display:block; width: 194px; height: 84px; background-image: url('/content/images/join/company/btn_join_right.png'); background-repeat: no-repeat; background-position-x: 0px; background-position-y: 0px;  text-indent: -9999px; overflow: hidden;}
+.section-company .btn-fixed-right .btn-join-right:hover{ background-position-y: -84px;}
+.section-company .btn-fixed-right img {display: block;}
+.section-company .btn-fixed-right .btn-top {width: 55px; margin-top: -5px;}
+
+.section-company + #footer {margin: 0; border: none; padding: 25px 0 65px; background: #fff;}
+.section-company + #footer .copyright {font-family: Tahoma, sans-serif; font-size: 11px; color: #888; text-align: center;}
+.section-company + #footer .copyright strong {font-weight: bold;}
+
+.disabled{background: #f4f4f4;}
+.disabled > input{ background: transparent; }
+
+/* .business_license .regFileLabel{ display: inline-block; color: #fff; font-size: inherit; line-height: normal; vertical-align: middle; background-color: transparent; cursor: pointer; } */
+
+.business_license .col_1{position: relative; top: auto; right: auto; left: auto;}
+.business_license .label{position: absolute; top: 19px; left: 12px; z-index: 10; color: #afb0b2; font-size: 16px; z-index:10; position: absolute; left: 12px; top: 19px;}
+.business_license .label .fileLabel{overflow: hidden; max-width: 410px; text-overflow: ellipsis; white-space: nowrap; padding-right: 24px;}
+.business_license .label.attached .fileLabel{ color: #333; }
+.business_license .label.attached .fileDeleteButton{display: block;}
+.business_license .regFileLabel{position: absolute; top: 0px; right: 0px;  display: inline-block; color: #666666; font-size: inherit; line-height: normal; vertical-align: middle; background-color: transparent; cursor: pointer; width: 110px; height: 62px; background-color: #f2f4f7; border: 1px solid #ddd; box-sizing: border-box; padding-top: 19px; text-align: center; letter-spacing: -1px;}
+.business_license input[type=file]{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+.fileDeleteButton{ display: none; width: 18px; height: 18px; position: absolute; right: 0px; top: 3px; z-index:99999; overflow: hidden; text-indent: -9999px; background-repeat: no-repeat; outline: none; border: 1px solid #d5d7d9;}
+.fileDeleteButton span{ display: block; width: 8px; height: 8px; position: absolute; left: 50%; top: 50%; margin: -4px 0px 0px -4px; z-index:99999; background-position: -92px -2px; background-image: url("/content/images/ver_1/gnb/sp_gnb.png?2020090917"); background-repeat: no-repeat; }
+
+.mbrRegist .attach-file {cursor:pointer;}
+.mbrRegist .attach-file .col_2 {min-height:62px; height:inherit;}
+.mbrRegist .attach-file .input-file {position:absolute; display:flex; right:0; top:0; top:0; bottom:0; width:119px; height:100%; border-left:1px solid #ddd; background-color:#fafbfc; text-align:center; font-size:16px; color:#666; line-height:22px; box-sizing:border-box; justify-content: center; align-items: center;}
+.mbrRegist .attach-file label {cursor:pointer;}
+.mbrRegist .attach-file input {width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1;}
+.mbrRegist .attached {padding:16px 120px 14px 0; font-size:0;}
+.mbrRegist .attach-item {display:inline-block; position:relative; padding:3px 21px 3px 0; margin-right:20px; vertical-align:top;}
+.mbrRegist .attach-item .name {font-size:16px; color:#000; line-height:22px;}
+.mbrRegist .attach-item button {overflow:hidden; display:block; position:absolute; right:0; top:5px; width:17px; height:17px; font-size:0; color:transparent;}
+.mbrRegist .attach-item button:before {content:''; display:block; width:100%; height:100%; background:url('/content/images/join/delete.png') no-repeat;}
+.mbrRegist .attach-file-help {margin:11px 0 35px;}
+.mbrRegist .attach-file-help p {font-size:13px; color:#666; line-height:20px; letter-spacing:-1px;}
+.mbrRegist .attach-file-help p:last-child {margin-top:5px;}
+.mbrRegist .attach-file-help p a {text-decoration: underline;}
+
+
+.policy-table {width:100%; margin:5px 0 8px 0; background:#fff; font-size: 12px; color: #888888; line-height: 24px;}
+.policy-table,
+.policy-table th,
+.policy-table td {border:1px solid #eaeaea;}
+.policy-table caption.skip {display:none;}
+.policy-table caption {text-align:left; padding:0 0 5px 0;}
+.policy-table th {padding:7px 0 5px 0; background-color:#f7f7f7; text-align:center;}
+.policy-table td {padding:15px; letter-spacing:-1px; vertical-align:top;}
+.policy-table td.end {text-align:center;}
+
+/* id */
+.mbrRegist .col_id {position:relative; width:330px; height:62px; padding:0 12px; box-sizing:border-box; border:1px solid #ddd;}
+.mbrRegist .col_id button span {display:block; height:60px; box-sizing:border-box; font-size:16px; color:#666; letter-spacing:-1px; padding-top:18px;}
+.mbrRegist .col_id .btnSend {right:-247px; width:150px;}
+.mbrRegist .col_id button {display:block; position:absolute; right:0; top:-1px; height:62px; border:1px solid #ddd; background-color:#f2f4f7; box-sizing:border-box;}
+
+/* zipcode */
+.mbrRegist .col_zipcode {position:relative; width:330px; height:62px; padding:0 12px; box-sizing:border-box; border:1px solid #ddd;}
+.mbrRegist .col_zipcode button span {display:block; height:60px; box-sizing:border-box; font-size:16px; color:#666; letter-spacing:-1px; padding-top:18px;}
+.mbrRegist .col_zipcode .btnSend {right:-247px; width:150px;}
+.mbrRegist .col_zipcode button {display:block; position:absolute; right:0; top:-1px; height:62px; border:1px solid #ddd; background-color:#f2f4f7; box-sizing:border-box;}
+
+/* addr */
+.mbrRegist .col_addr {float: left; position:relative; width:280px; height:62px; padding:0 12px; box-sizing:border-box; border:1px solid #ddd; margin-right: 15px;}
+.mbrRegist .col_addr2 {float: left; position:relative; width:280px; height:62px; padding:0 12px; box-sizing:border-box; border:1px solid #ddd;}

@@ -1,0 +1,850 @@
+@charset "UTF-8";
+/*
+.File Name		: /inc/css/ver_1/gnb_sub.css
+.Final Editor	: 유영미 (2015-03-23 : 학교교육기관 인재관 메뉴 추가)
+*/
+
+/* GNB 배경 */
+div.gnbStd {background:url(/img/common/gnb/bg_body_sub.gif) repeat-x 0 0;}
+#textUser div.gnbStd,
+#textMemHh div.gnbStd {background:none;}
+
+
+div.gnbWrap_C {background:url(/images/common_v02/servicejk_blueBar.gif) repeat-x 0 0;} /* Type_C */
+body.gnbEventMainBody div.gnbStd {background:url(/images/event/main/gnbbg.gif) repeat-x 0 0;} /* Type_Event */
+
+/* Quirks div#header? 
+#header {position:relative;}
+*/
+#gnb,
+#location,
+#topWrapAd {width:890px; margin:0 auto; z-index:1001;}
+#location {padding:20px 0 14px 0; margin-bottom:3px;}
+#headerInfo {margin:0 auto 15px auto;}
+
+#gnb {width:890px; font-family:Gulim, sans-serif; padding-top:69px; position:relative; z-index:500; margin:0 auto; text-align:left; _height:0;}
+
+.gnbWrap_C_etc div#gnb {padding-top:69px;}
+
+.gnbWrap_C #gnb {padding-top:81px;} /* 고객센터 */
+
+.gnbWrap_C_special #gnb {padding-top:67px;} /* 전문채용관 */
+
+body.gnbServiceJkMainBody #gnb {width:1000px; padding-top:71px;} /* 서비스안내 */
+body.gnbServiceJkMainBody .globalBar .innerBar {width:1000px;} /* 서비스안내 */
+
+body.hrVipList #gnb,
+body.hrVipList #headerInfo {width:960px;} /* 파견 기업 안내페이지 */
+
+.gnbWrap_C_event #gnb {height:43px; padding-top:32px;} /* 이벤트 메인 상단 */
+body.gnbEventMainBody #gnb {position:relative; width:960px; height:146px; padding-top:71px;} /* 이벤트 home 상단 */
+.gnbWrap_C_event div.gnbStd {background:url(/img/common/gnb/bg_global_bar_line.gif) repeat-x 0px 0px;}
+
+/*
+body#textCo,
+body.ggHome {background:url(/img/common/gnb/bg_global_bar_line.gif) repeat-x 0 0 !important;}
+*/
+.gnbHeaderCo #gnb,
+body.ggHome #gnb {width:auto !important; height:auto !important; padding-top:0 !important;}
+#globalBar {height:30px;}
+
+
+/* 로고 */
+#gnb h1 {position:absolute; top:20px; left:10px;}
+#gnb h2 {position:absolute; top:33px; left:156px; width:1px; height:18px; background:#d7dce5; display:block !important;}
+#gnb h2.skip {position:absolute; top:-5000em; width:1px; height:1px;}
+#gnb h2 a {position:absolute; top:-2px; left:9px;}
+body#sm #gnb h2 {padding:18px 0 0 0px;} /* to do: check */
+
+/* 섹션메뉴 */
+#gnb .sectionSubNav {position:absolute; top:37px; right:-2px;}
+.gnbHeaderCo #gnb .sectionSubNav,
+.ggHome #gnb .sectionSubNav {top:-31px; right:5px;}
+#gnb .sectionSubNav li {float:left; display:inline; padding-left:5px; background:url(/img/common/gnb/bg_bar_subnav.gif) no-repeat 0 6px; margin-left:4px;}
+#gnb .sectionSubNav .first {background:none;}
+#gnb .sectionSubNav .ico {position:absolute; top:-18px; left:-10px;}
+#gnb .sectionSubNav .sal .ico {left:-18px;}
+#gnb .sectionSubNav .sal_1 .ico {left:-6px;}
+#gnb .sectionSubNav .ico2 {position:absolute; top:-14px; left:5px;}
+#gnb .sectionSubNav .ico3 {position:absolute; top:-18px; left:5px;}
+.gnbHeaderCo #gnb .sectionSubNav .starter .ico,
+#textUser #gnb .sectionSubNav .starter .ico,
+.gnbWrap_C_etc #gnb .sectionSubNav .starter .ico,
+.gnbWrap_C_etc2 #gnb .sectionSubNav .starter .ico {display:none;}
+#gnb .sectionSubNav a {float:left; display:inline; width:58px; height:16px; padding-top:7px; text-align:center; position:relative; font:11px/15px Dotum, sans-serif; letter-spacing:-1px; cursor:pointer;}
+#gnb .sectionSubNav span {position:absolute; width:100%; height:23px; top:0; left:0; background:url(/img/common/gnb/text_subnav.gif) no-repeat;}
+
+#gnb .sectionSubNav .starter a {width:57px;}
+#gnb .sectionSubNav .hh a {width:57px;}
+#gnb .sectionSubNav .hr a {width:64px;}
+#gnb .sectionSubNav .gi a {width:59px;}
+#gnb .sectionSubNav .gi_1 a {width:64px;}
+#gnb .sectionSubNav .gi2 a {width:77px;}
+#gnb .sectionSubNav .alba a {width:45px;}
+#gnb .sectionSubNav .edu a {width:58px;}
+#gnb .sectionSubNav .guide a {width:75px;}
+#gnb .sectionSubNav .searching a {width:101px;}
+#gnb .sectionSubNav .searching2 a {width:125px;}
+#gnb .sectionSubNav .gg a {width:61px;}
+#gnb .sectionSubNav .ggGuide a {width:97px;}
+#gnb .sectionSubNav .webMail a {width:47px;}
+#gnb .sectionSubNav .hre a {width:95px; }
+#gnb .sectionSubNav .sal a {width:58px; }
+#gnb .sectionSubNav .now a {width:106px; }
+
+#gnb .sectionSubNav .starter span {background-position:0 -100px;}
+#gnb .sectionSubNav .hh span {background-position:-100px 0;}
+#gnb .sectionSubNav .hr span {background-position:-200px 0;}
+#gnb .sectionSubNav .alba span {background-position:-300px 0;}
+#gnb .sectionSubNav .edu span {background-position:-400px 0;}
+#gnb .sectionSubNav .gi span {background-position:-500px 0;} 
+#gnb .sectionSubNav .gi_1 span {background-position:-100px -100px;} 
+#gnb .sectionSubNav .gi2 span {background-position:-810px 0;} 
+#gnb .sectionSubNav .guide span {background-position:-600px 0;}
+#gnb .sectionSubNav .searching span {background-position:-700px 0;}
+#gnb .sectionSubNav .searching2 span {background-position:-900px 0;}
+#gnb .sectionSubNav .gg span {background-position:-1030px 0;}
+#gnb .sectionSubNav .ggGuide span {background-position:-1100px 0;}
+#gnb .sectionSubNav .webMail span {background-position:-1200px 0;}
+#gnb .sectionSubNav .hre span {background-position:-1250px 0;}
+#gnb .sectionSubNav .sal span {background-position:-700px 0;}
+#gnb .sectionSubNav .now span {background-position:-1354px 0;}
+
+/* 교육 회원 */
+#gnb .sectionSubNav .memEduHome a {width:77px;}
+#gnb .sectionSubNav .memEduComercial a {width:88px;}
+#gnb .sectionSubNav .memEduBannerAd a {width:101px;}
+#gnb .sectionSubNav .memEduTextInfo a {width:90px;}
+#gnb .sectionSubNav .memEduHome span {background-position:0 -50px;}
+#gnb .sectionSubNav .memEduComercial span {background-position:-100px -50px;}
+#gnb .sectionSubNav .memEduBannerAd span {background-position:-200px -50px;}
+#gnb .sectionSubNav .memEduTextInfo span {background-position:-305px -50px;}
+
+/* 파견대행 회원 */
+#gnb .sectionSubNav .memHhHome a {width:80px;}
+#gnb .sectionSubNav .searching2 a {width:125px;}
+#gnb .sectionSubNav .platinum a {width:100px;}
+#gnb .sectionSubNav .gg a {width:61px;}
+#gnb .sectionSubNav .memHhHome span {background-position:-400px -50px;}
+#gnb .sectionSubNav .searching2 span {background-position:-900px 0;}
+#gnb .sectionSubNav .platinum span {background-position:-500px -50px;}
+#gnb .sectionSubNav .gg span {background-position:-1030px 0;}
+
+/* 고객센터 */
+#gnb .sectionSubNav .ccFavFaq a {width:106px;}
+#gnb .sectionSubNav .ccMember a {width:100px;}
+#gnb .sectionSubNav .ccSerInfo a {width:89px;}
+#gnb .sectionSubNav .ccEvent a {width:87px;}
+#gnb .sectionSubNav .ccFavFaq span {background-position:-810px -50px;}
+#gnb .sectionSubNav .ccMember span {background-position:-958px -50px;}
+#gnb .sectionSubNav .ccSerInfo span {background-position:-1100px -50px;}
+#gnb .sectionSubNav .ccEvent span {background-position:-1231px -50px;}
+
+/* TheHR */
+#gnb .sectionSubNav .hreBusinesstrend a {width:63px;}
+#gnb .sectionSubNav .hreDoctemp a {width:63px;}
+#gnb .sectionSubNav .hreMembers a {width:100px;}
+#gnb .sectionSubNav .hreBusinesstrend span {background-position:-810px -50px;}
+#gnb .sectionSubNav .hreDoctemp span {background-position:-877px -50px;}
+#gnb .sectionSubNav .hreMembers span {background-position:-942px -50px;}
+
+
+/* 검색(잡타임스) */
+body#jobtimes #gnb .gnbSub {height:91px; border:none;}
+
+/* 검색(취업지식) */
+body#kn #gnb .gnbSub {height:91px; border:none;}
+
+/* 공지사항 */
+#headerInfo {*zoom:1; position:relative; z-index:0; text-align:right;}
+#headerInfo:after {content:""; display:block; clear:both;}
+#headerInfo a {zoom:1;}
+#headerInfo a,
+#headerInfo a:link {letter-spacing:-1px; font:12px/16px Gulim, sans-serif; color:#494949;}
+.gnbQuirksMemHh #headerInfo,
+.gnbQuirksMemEdu #headerInfo,
+.gnbQuirksMemGg #headerInfo,
+#textUser #headerInfo,
+#textMemHh #headerInfo {background:url(/img/common/gnb/bg_type_b_info.gif) no-repeat 0 0;}
+#headerInfo .notice {height:23px; padding:9px 0 0 0; text-align:left; overflow:hidden; line-height:16px; float:right; display:inline; font:12px/16px Gulim, sans-serif;}
+.gnbQuirks #headerInfo .notice {_height:32px;}
+.gnbQuirksMemHh #headerInfo .notice,
+.gnbQuirksMemEdu #headerInfo .notice,
+.gnbQuirksMemGg #headerInfo .notice,
+#textUser #headerInfo .notice,
+#textMemHh #headerInfo .notice {height:25px; margin-right:13px;}
+.gnbQuirksMemHh #headerInfo .notice,
+.gnbQuirksMemEdu #headerInfo .notice,
+.gnbQuirksMemGg #headerInfo .notice,
+#textUser #headerInfo .notice {_height:34px;}
+
+#headerInfo .notice h3 {float:left; display:inline; margin-right:6px;}
+#headerInfo .notice ul {float:left; display:inline; height:17px; overflow:hidden; margin-left:-1px; margin-top:1px;}
+#headerInfo .notice ul li {height:16px; padding:1px 1px 0 0; letter-spacing:-1px; white-space:nowrap; float:left; display:inline;}
+.gnbQuirks #headerInfo .notice ul li {padding-top:0;}
+#headerInfo .notice .tpButtonNav_1 {float:left; display:inline; margin-left:8px; margin-top:2px;}
+#headerInfo .banner {position:absolute; top:11px; left:13px;}
+#headerInfo .banner a {color:#6184b5; padding-right:6px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -257px; font:bold 11px/15px Dotum, sans-serif; letter-spacing:-1px;}
+
+
+/* 개인회원 - 공지사항 */
+body#secMuser #headerInfo {width:960px; background:url(/img/common/gnb/bg_type_b_info_mtu.gif) no-repeat 0 -2px;}
+body#secMuser #headerInfo .notice {height:25px; margin-right:13px;}
+body#secMuser #headerInfo button::-moz-focus-inner {padding:0; border:0;}
+body#secMuser #headerInfo .tpButtonNav_1 {display:inline-block; width:25px; height:13px; background:url(/images/main/bg_home_icon_all.gif) no-repeat 0 -100px; overflow:hidden; zoom:1;}
+body#secMuser #headerInfo .tpButtonNav_1 button {float:left; width:11px; height:11px; margin:1px 0 0 1px; overflow:hidden;}
+body#secMuser #headerInfo .tpButtonNav_1 button span {display:inline-block; width:11px; height:11px; background:url(/images/main/bg_home_icon_all.gif) no-repeat 4px -72px; padding-top:20px; overflow:hidden;}
+body#secMuser #headerInfo .tpButtonNav_1 button.prev_no span {background-position:4px -72px;}
+body#secMuser #headerInfo .tpButtonNav_1 button.prev_yes span {background-position:-6px -72px;}
+body#secMuser #headerInfo .tpButtonNav_1 button.next_no span {background-position:-16px -72px;}
+body#secMuser #headerInfo .tpButtonNav_1 button.next_yes span {background-position:-26px -72px;}
+
+
+/* 서브 GNB
+------------------------------------------------------------------------------------ */
+/* 전체 메뉴 */
+.gnbMenuAll {position:absolute; border:4px solid #48a7ff; width:882px; text-align:left; top:140px; left:50%; margin-left:-445px; font:12px/16px Gulim, sans-serif; background:#fff; display:none; z-index:400;}
+.gnbQuirks .gnbMenuAll {_width:890px;}
+
+.gnbMenuAll .layInner {padding-bottom:23px;}
+.gnbMenuAll a,
+.gnbMenuAll a:link,
+.gnbMenuAll a:visited {color:#454545;}
+.gnbMenuAll .hl_1 a,
+.gnbMenuAll .hl_1 a:link,
+.gnbMenuAll .hl_1 a:visited {color:#3399ff;}
+.gnbMenuAll h3 {height:27px; background:#fbfbfb; margin-bottom:15px; padding:16px 0 0 25px;}
+.gnbQuirks .gnbMenuAll h3 {_height:43px;}
+.gnbMenuAll h3 span {display:block; width:38px; height:15px; font:11px/15px Dotum, sans-serif; letter-spacing:-1px; position:relative; overflow:hidden;}
+.gnbMenuAll h3.newItem > span {display:inline-block; *zoom:1; *display:inline; vertical-align:middle;}
+.gnbMenuAll h3.newItem img.new {vertical-align:0; margin-left: 6px;}
+.gnbMenuAll h3 .ir {position:absolute; top:0; left:0; width:100%; height:100%; background:url(/img/common/gnb/text_menu_all.gif) no-repeat 0 0;}
+
+.gnbMenuAll .primary {overflow:hidden; *zoom:1;}
+.gnbMenuAll .item {float:left; display:inline; background:url(/img/common/gnb/bg_menu_all_column.gif) no-repeat 0 0; min-height:328px; _height:328px;}
+.gnbMenuAll .first {background-position:-1px 0;}
+.gnbMenuAll .region ul {overflow:hidden;}
+
+.gnbMenuAll .item ul {*zoom:1;}
+.gnbQuirks .gnbMenuAll .item ul {_zoom:1;}
+.gnbMenuAll .item li {height:23px; padding-left:6px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 0 -284px;}
+.gnbMenuAll .item li.lsM1 {letter-spacing:-1px;}
+.gnbMenuAll .item li.floatItem {float:left; *width:55px;}
+.gnbMenuAll .item li.floatItem.first {clear:left;}
+.gnbMenuAll .item li.floatItem.even {float:left; margin-left:5px; background:url(/img/List_Gi/Expert/bg_div_1.gif) no-repeat 0 2px;}
+.gnbMenuAllGg .item li {letter-spacing:-1px;}
+.gnbMenuAll .item li .new {position:relative; top:2px;}
+.gnbMenuAll .item li span {color:#ccc; margin:0 -1px;}
+.gnbMenuAll .item li .num {font-family:Verdana, sans-serif; color:#454545; letter-spacing:0;}
+.gnbMenuAll .item .banner {padding:6px 0 4px 20px;}
+.gnbMenuAll .item .banner_1 {padding:12px 0 4px 15px;}
+.gnbMenuAll .primary ul {padding-left:25px; margin-bottom:-3px;}
+.gnbMenuAll .primaryNarrow ul {padding-left:20px;}
+
+.gnbMenuAllGg .part ul,
+.gnbMenuAllGg .region ul,
+.gnbMenuAllHh .region ul,
+.gnbMenuAllHh .region ul {margin-right:-40px;}
+.gnbMenuAllEdu .region ul {margin-right:-50px;}
+.gnbMenuAll .region li {float:left; display:inline; width:82px;}
+.gnbMenuAllGg .part li {float:left; display:inline; width:132px;}
+
+.gnbMenuAll .region .wide {width:155px;}
+.gnbMenuAll .part h3 span {width:50px;}
+.gnbMenuAll .major h3 span {width:81px;}
+.gnbMenuAll .majorHh h3 span {width:110px;}
+.gnbMenuAll .majorPart h3 span {width:64px;}
+.gnbMenuAll .majorGg h3 span {width:81px;}
+.gnbMenuAll .special h3 span {width:64px;}
+.gnbMenuAll .workArea h3 span {width:51px;}
+.gnbMenuAllEdu .supportType h3 span {width:81px;}
+.gnbMenuAll .license h3 span {width:51px;}
+.gnbMenuAll .eduType h3 span {width:64px;}
+.gnbMenuAll .career h3 span {width:38px;}
+.gnbMenuAll .resumeSearch h3 span {width:78px;}
+
+.gnbMenuAll .majorHh h3 .ir {background-position:-630px 0;}
+.gnbMenuAll .majorPart h3 .ir {background-position:-750px 0;}
+.gnbMenuAll .majorGg h3 .ir {background-position:-100px -30px;}
+.gnbMenuAll .region h3 .ir {background-position:-100px 0;}
+.gnbMenuAll .part h3 .ir {background-position:-1200px 0;}
+.gnbMenuAll .type h3 .ir {background-position:-200px 0;}
+.gnbMenuAll .co h3 .ir {background-position:-300px 0;}
+.gnbMenuAll .special h3 .ir {background-position:-400px 0;}
+.gnbMenuAll .workArea h3 .ir {background-position:-830px 0;}
+.gnbMenuAllEdu .supportType h3 .ir {background-position:-900px 0;}
+.gnbMenuAll .license h3 .ir {background-position:-1020px 0;}
+.gnbMenuAll .eduType h3 .ir {background-position:0 -30px;}
+.gnbMenuAll .career h3 .ir {background-position:-1080px 0;}
+.gnbMenuAll .resumeSearch h3 .ir {background-position:-200px -30px;}
+
+.gnbMenuAll .btnClose {position:absolute; right:10px; bottom:10px; width:23px; height:23px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat -20px -130px; overflow:hidden;}
+.gnbMenuAll .btnClose span {position:absolute; left:-9999px;}
+.gnbMenuAll .starter .title {padding:0 0 7px 21px;}
+.gnbMenuAll .starter .navStart {margin:0; padding:9px 0 0 0; min-height:0; _height:auto; border:1px solid #f3f3f3; background:#fbfbfb; width:152px; margin-left:21px; padding-left:9px;}
+.gnbMenuAll .starter .navStart .ico {vertical-align:top; position:relative; top:-2px;}
+
+/* 세부메뉴 기본형 */
+.gnbSubNav {position:relative; z-index:2; *zoom:1; background:#40a1ff url(/img/common/gnb/bg_body_sub.gif) repeat-x 0 -99px;}
+#textUser .gnbSubNav,
+.gnbQuirksMemHh .gnbSubNav,
+.gnbQuirksMemEdu .gnbSubNav {background:none;}
+.gnbSubNav h3 {position:absolute; width:0; height:0; font-size:0; overflow:hidden; left:-9999px;}
+.gnbSubNav ul {*zoom:1; margin-left:1px;}
+.gnbSubNav ul:after {content:""; display:block; clear:both;}
+.gnbSubNav li {float:left; display:inline; margin:0 -1px; position:relative; border:0 !important;}
+.gnbSubNav li a {float:left; display:inline; height:25px; padding-top:16px; width:90px; cursor:pointer; position:relative;}
+.gnbQuirks .gnbSubNav li a {_height:41px;}
+.gnbSubNav .menuMemHr a,
+.gnbSubNav .menuMemEdu a,
+#textUser .menuMemGg a,
+.gnbQuirks .gnbSubNav .menuMemGg a {height:24px;}
+.gnbQuirks .gnbSubNav .menuMemHr a,
+.gnbQuirks .gnbSubNav .menuMemEdu a,
+.gnbQuirks .gnbSubNav .menuMemGg a {_height:40px;}
+
+.gnbSubNav li span {position:absolute; width:100%; height:42px; top:0; left:0; background:url(/img/common/gnb/text_gnb_common.gif) no-repeat 0 0;}
+.gnbSubNav .part a {width:96px;}
+.gnbSubNav .part2 a {width:76px;}
+.gnbSubNav .part3 a {width:88px;}
+.gnbSubNav .area a {width:75px; }
+.gnbSubNav .area2 a {width:78px;}
+.gnbSubNav .area3 a {width:90px;}
+.gnbSubNav .type a {width:76px;}
+.gnbSubNav .type2 a {width:79px; }
+.gnbSubNav .co a {width:76px;}
+.gnbSubNav .search a {width:101px;}
+.gnbSubNav .theme a {width:88px;}
+.gnbSubNav .all a {width:74px;}
+.gnbSubNav .all2 a {width:68px;}
+.gnbSubNav .all3 a {width:65px;}
+.gnbSubNav .workArea a {width:96px;}
+.gnbSubNav .career a {width:78px;}
+.gnbSubNav .resumeSearch a {width:68px;}
+.gnbSubNav .school a {width:112px;}
+.gnbSubNav .ggHome a {width:94px;}
+
+.gnbSubNav .part span {background-position:-100px 0;}
+.gnbSubNav .part2 span {background-position:0 -300px; }
+.gnbSubNav .part3 span {background-position:0 -453px;}
+.gnbSubNav .area span {background-position:-200px 0;}
+.gnbSubNav .area2 span {background-position:-100px -300px;}
+.gnbSubNav .type span {background-position:-300px 0;}
+.gnbSubNav .type2 span {background-position:-200px -300px;}
+.gnbSubNav .co span {background-position:-400px 0;}
+.gnbSubNav .search span {background-position:-500px 0;}
+.gnbSubNav .all span {background-position:-620px 0;}
+.gnbSubNav .all2 span {background-position:-620px -50px;}
+.gnbSubNav .all3 span {background-position:-620px -100px;}
+.gnbSubNav .workArea span {background-position:-900px 0;}
+.gnbSubNav .career span {background-position:-400px -300px;}
+.gnbSubNav .resumeSearch span {background-position:-500px -300px;}
+.gnbSubNav .school span {background-position:-604px -300px;}
+.gnbSubNav .ggHome span {background-position:-400px -150px;}
+.gnbSubNav .theme span {background-position:-500px -150px;}
+
+/* 전문채용관 new 아이콘 */
+.gnbSubNav .theme .icoNewGnb {position:absolute; left:29px; top:-9px; z-index:5;}
+
+/* 파견대행 */
+.gnbSubNav .menuHr .hrMain a {width:101px;}
+.gnbSubNav .menuHr .hrMain span {background-position:-700px 0;}
+
+/* 교육정보 */
+.gnbSubNav .menuEdu .eduMain a {width:96px;}
+.gnbSubNav .menuEdu .supportType a {width:144px;}
+.gnbSubNav .menuEdu .license a {width:93px;}
+.gnbSubNav .menuEdu .eduMain span {background-position:0 -150px;}
+.gnbSubNav .menuEdu .supportType span {background-position:-100px -150px;}
+.gnbSubNav .menuEdu .license span {background-position:-300px -150px;}
+
+/* 잡타임즈 */
+.gnbSubNav .menuJt li span {background-image:url(/img/common/gnb/text_gnb_jobtimes.gif);}
+.gnbSubNav .menuJt .jtHome a {width:89px;}
+.gnbSubNav .menuJt .jtNews a {width:98px;}
+.gnbSubNav .menuJt .jtGuide a {width:92px;}
+.gnbSubNav .menuJt .jtInter a {width:81px;}
+.gnbSubNav .menuJt .jtTalk a {width:79px;}
+.gnbSubNav .menuJt .jtPoll a {width:57px;}
+.gnbSubNav .menuJt .jtHr a {width:87px;}
+.gnbSubNav .menuJt .jtCont a {width:67px;}
+.gnbSubNav .menuJt .jtNews span {background-position:-100px 0;}
+.gnbSubNav .menuJt .jtGuide span {background-position:-200px 0;}
+.gnbSubNav .menuJt .jtInter span {background-position:-300px 0;}
+.gnbSubNav .menuJt .jtTalk span {background-position:-400px 0;}
+.gnbSubNav .menuJt .jtPoll span {background-position:-500px 0;}
+.gnbSubNav .menuJt .jtHr span {background-position:-600px 0;}
+.gnbSubNav .menuJt .jtCont span {background-position:-700px 0;}
+
+/* 취업지식 */
+.gnbSubNav .menuKn  li span {background-image:url(/img/common/gnb/text_gnb_knowledge.gif);}
+.gnbSubNav .menuKn .knHome a {width:97px;}
+.gnbSubNav .menuKn .knQna a {width:96px;}
+.gnbSubNav .menuKn .knHow a {width:97px;}
+.gnbSubNav .menuKn .knForm a {width:84px;}
+.gnbSubNav .menuKn .knSearch a {width:109px;}
+.gnbSubNav .menuKn .knMy a {width:107px;}
+.gnbSubNav .menuKn .knQna span {background-position:-100px 0;}
+.gnbSubNav .menuKn .knHow span {background-position:-200px 0;}
+.gnbSubNav .menuKn .knForm span {background-position:-310px 0;}
+.gnbSubNav .menuKn .knSearch span {background-position:-400px 0;}
+.gnbSubNav .menuKn .knMy span {background-position:-520px 0;}
+
+/* 교육 회원 */
+.gnbSubNav .menuMemEdu  li span {background-image:url(/img/common/gnb/text_gnb_edu_user.gif);}
+.gnbSubNav .menuMemEdu .memEduHome a {width:131px;}
+.gnbSubNav .menuMemEdu .memEduStep a {width:140px;}
+.gnbSubNav .menuMemEdu .memEduIng a {width:162px;}
+.gnbSubNav .menuMemEdu .memEduEnd a {width:178px;}
+.gnbSubNav .menuMemEdu .memEduCounsel a {width:150px;}
+.gnbSubNav .menuMemEdu .memEduInfo a {width:139px;}
+.gnbSubNav .menuMemEdu .memEduStep span {background-position:-150px 0;}
+.gnbSubNav .menuMemEdu .memEduIng span {background-position:-300px 0;}
+.gnbSubNav .menuMemEdu .memEduEnd span {background-position:-470px 0;}
+.gnbSubNav .menuMemEdu .memEduCounsel span {background-position:-660px 0;}
+.gnbSubNav .menuMemEdu .memEduInfo span {background-position:-820px 0;}
+
+.mhlMemEduHome .gnbSubNav .memEduHome span {background-position:0 -50px;}
+.mhlMemEduStep .gnbSubNav .memEduStep span {background-position:-150px -50px;}
+.mhlMemEduIng .gnbSubNav .memEduIng span {background-position:-300px -50px;}
+.mhlMemEduEnd .gnbSubNav .memEduEnd span {background-position:-470px -50px;}
+.mhlMemEduCounsel .gnbSubNav .memEduCounsel span {background-position:-660px -50px;}
+.mhlMemEduInfo .gnbSubNav .memEduInfo span {background-position:-820px -50px;}
+
+/* 파견대행 회원 */
+.gnbSubNav .menuMemHr  li span {background-image:url(/img/common/gnb/text_gnb_hh_user.gif);}
+.gnbSubNav .menuMemHr .memHhHome a {width:134px;}
+.gnbSubNav .menuMemHr .memHhStep a {width:145px;}
+.gnbSubNav .menuMemHr .memHhIng a {width:138px;}
+.gnbSubNav .menuMemHr .memHhEnd a {width:126px;}
+.gnbSubNav .menuMemHr .memHhGg a {width:144px;}
+.gnbSubNav .menuMemHr .memHhService a {width:101px;}
+.gnbSubNav .menuMemHr .memHhInfo a {width:114px;}
+.gnbSubNav .menuMemHr .memHhHome span {background-position:0 0;}
+.gnbSubNav .menuMemHr .memHhStep span {background-position:-150px 0;}
+.gnbSubNav .menuMemHr .memHhIng span {background-position:-300px 0;}
+.gnbSubNav .menuMemHr .memHhEnd span {background-position:-450px 0;}
+.gnbSubNav .menuMemHr .memHhGg span {background-position:-600px 0;}
+.gnbSubNav .menuMemHr .memHhService span {background-position:-750px 0;}
+.gnbSubNav .menuMemHr .memHhInfo span {background-position:-900px 0;}
+
+.mhlMemHhHome .gnbSubNav .memHhHome span {background-position:0 -50px;}
+.mhlMemHhStep .gnbSubNav .memHhStep span {background-position:-150px -50px;}
+.mhlMemHhIng .gnbSubNav .memHhIng span {background-position:-300px -50px;}
+.mhlMemHhEnd .gnbSubNav .memHhEnd span {background-position:-450px -50px;}
+.mhlMemHhGg .gnbSubNav .memHhGg span {background-position:-600px -50px;}
+.mhlMemHhService .gnbSubNav .memHhService span {background-position:-750px -50px;}
+.mhlMemHhInfo .gnbSubNav .memHhInfo span {background-position:-900px -50px;}
+
+
+/* 개인회원 */
+.gnbSubNav .menuMemGg a {width:127px;}
+.gnbSubNav .menuMemGg li span {background-image:url(/img/common/gnb/text_gnb_gg_user.gif);}
+.gnbSubNav .menuMemGg .memGgResumeStep a {width:129px;}
+.gnbSubNav .menuMemGg .memGgResume a {width:126px;}
+.gnbSubNav .menuMemGg .memGgTot a {width:131px;}
+.gnbSubNav .menuMemGg .memGgFit a {width:134px;}
+.gnbSubNav .menuMemGg .memGgPower a {width:120px;}
+.gnbSubNav .menuMemGg .memGgInfo a {width:135px;}
+.gnbSubNav .menuMemGg .memGgResumeStep span {background-position:-150px 0;}
+.gnbSubNav .menuMemGg .memGgResume span {background-position:-300px 0;}
+.gnbSubNav .menuMemGg .memGgTot span {background-position:-450px 0;}
+.gnbSubNav .menuMemGg .memGgFit span {background-position:-600px 0;}
+.gnbSubNav .menuMemGg .memGgPower span {background:url(/img/common/gnb/text_gnb_gg_user_jat.png) 0 0 no-repeat;}
+.gnbSubNav .menuMemGg .memGgInfo span {background-position:-900px 0;}
+
+/*.userStep .gnbSubNav .memGgResumeStep span {background-position:-150px -50px;}
+.userRmng .gnbSubNav .memGgResume span,
+.mhlMemGgResume .gnbSubNav .memGgResume span {background-position:-300px -50px;}
+.memGgTot .gnbSubNav .memGgTot span {background-position:-450px -50px;}
+.mhlMemGgFit .gnbSubNav .memGgFit span {background-position:-600px -50px;}
+.mhlMemGgPower .gnbSubNav .memGgPower span {background-position:-750px -50px;}*/
+
+/* 개인회원 추가 */
+.gnbSubNav .menuMemGg {background:url(/img/common/gnb/text_gnb_gg_user.gif) no-repeat right top;}
+.gnbSubNav .gnbSubMenuBtnMtu {position:absolute; top:9px; right:8px;}
+.gnbSubNav .gnbSubMenuMtu ul {padding-left:250px;}
+.gnbSubNav .gnbSubMenuMtu ul li ul {width:120px; padding:5px 0 15px 0;}
+.gnbSubNav .gnbSubMenuMtu ul li ul:after {content:""; display:block; height:0; clear:both;}
+.gnbSubNav .gnbSubMenuMtu ul li ul li {float:left;}
+.gnbSubNav .gnbSubMenuMtu ul li ul li a {padding:5px 0 2px 0; width:auto; height:12px;}
+
+.mtuGgHome .gnbSubNav .memGgHome span {background-position:0 -50px;}
+.mtuSecRsm .gnbSubNav .memGgResume span {background-position:-300px -50px;}
+.mtuSubLog .gnbSubNav .memGgTot span {background-position:-450px -50px;}
+.mtuSubMth .gnbSubNav .memGgFit span {background-position:-600px -50px;}
+.mtuSubPwr .gnbSubNav .memGgPower span {background-position:0 -50px;}
+
+/* 연봉정보 */
+.gnbSubNav .menuSal  li span {background:url(/img/common/gnb/text_gnb_sal.gif); }
+.gnbSubNav .menuSal .salHome a {width:99px;}
+.gnbSubNav .menuSal .salSch a {width:82px;}
+.gnbSubNav .menuSal .salAve a {width:82px;}
+.gnbSubNav .menuSal .salMy a {width:97px;}
+.gnbSubNav .menuSal .salNews a {width:79px;}
+.gnbSubNav .menuSal .salService a {width:150px;}
+.gnbSubNav .menuSal .salEvent a {width:97px;}
+
+.gnbSubNav .menuSal .salHome span {background-position:0 0;}
+.gnbSubNav .menuSal .salSch span {background-position:-100px 0;}
+.gnbSubNav .menuSal .salAve span {background-position:-190px 0;}
+.gnbSubNav .menuSal .salMy span {background-position:-280px 0;}
+.gnbSubNav .menuSal .salNews span {background-position:-380px 0;}
+.gnbSubNav .menuSal .salService span {background-position:-460px 0;}
+.gnbSubNav .menuSal .salEvent span {background-position:-617px 0;}
+
+
+#gnb .gnbSubNav .on {z-index:5;}
+
+/* 메뉴 on 처리 */
+/* 채용정보 */
+.giMain .gnbSubNav .giHome, /* 채용정보 홈 */
+.Gi_part .gnbSubNav .part2,
+.partList .gnbSubNav .part2,
+.partSearch .gnbSubNav .part2,
+.partKeywordList .gnbSubNav .part2,
+.partKeywordSearch .gnbSubNav .part2, /* 업직종별 */
+.Gi_part .gnbSubNav .part3,
+.giArea .gnbSubNav .area,
+.giAreaList .gnbSubNav .area,
+.mhlGiArea .gnbSubNav .area, /* 지역별 */
+.mhlGiType .gnbSubNav .type, /* 분류별 */
+.mhlGiCo .gnbSubNav .co, /* 기업별 */
+.giSch .gnbSubNav .search,
+.mhlGiSearch .gnbSubNav .search, /* 채용정보검색 */
+.hrMain .gnbSubNav .hrMain,
+.hrPart .gnbSubNav .part2,
+.mhlHhPart .gnbSubNav .part2,
+.hrArea .gnbSubNav .area,
+.mhlHhArea .gnbSubNav .area,
+.mhlHhType .gnbSubNav .type,
+.mhlHhWorkArea .gnbSubNav .workArea,
+.mhlHhSearch .gnbSubNav .search,
+
+.mhlGgHome .gnbSubNav .ggHome,
+.mhlGgPart .gnbSubNav .part,
+.mhlGgArea .gnbSubNav .area2,
+.mhlGgType .gnbSubNav .type2,
+.mhlGgCareer .gnbSubNav .career,
+.mhlGgSearch .gnbSubNav .resumeSearch,
+.mhlGgSchool .gnbSubNav .school,
+.mhlHhSearch .gnbSubNav .search,
+
+.eduMain .gnbSubNav .eduMain,
+.mhlEduSupportType .gnbSubNav .supportType,
+.mhlEduPart .gnbSubNav .part,
+.mhlEduArea .gnbSubNav .area,
+.mhlEduType .gnbSubNav .type,
+.mhlEduLicense .gnbSubNav .license,
+.mhlJobtimesHome .gnbSubNav .jtHome,
+.mhlJobtimesNews .gnbSubNav .jtNews,
+.mhlJobtimesGuide .gnbSubNav .jtGuide,
+.mhlJobtimesKn .gnbSubNav .jtInter,
+.mhlJobtimesCom .gnbSubNav .jtTalk,
+.mhlJobtimesHr .gnbSubNav .jtHr,
+.mhlJobtimesOs .gnbSubNav .jtPoll,
+
+.mhlKnHome .gnbSubNav .knHome,
+.mhlKnQna .gnbSubNav .knQna,
+.mhlKnHow .gnbSubNav .knHow,
+.mhlKnSearch .gnbSubNav .knSearch,
+.mhlKnMy .gnbSubNav .knMy,
+
+.userStep .gnbSubNav .memGgResumeStep,
+.userRmng .gnbSubNav .memGgResume,
+.mhlMemGgResume .gnbSubNav .memGgResume,
+.memGgTot .gnbSubNav .memGgTot,
+.mhlMemGgFit .gnbSubNav .memGgFit,
+.mhlMemGgPower .gnbSubNav .memGgPower,
+
+.mhlMemEduHome .gnbSubNav .memEduHome,
+.mhlMemEduStep .gnbSubNav .memEduStep,
+.mhlMemEduIng .gnbSubNav .memEduIng,
+.mhlMemEduEnd .gnbSubNav .memEduEnd,
+.mhlMemEduCounsel .gnbSubNav .memEduCounsel,
+.mhlMemEduInfo .gnbSubNav .memEduInfo,
+
+.mhlMemHhHome .gnbSubNav .memHhHome,
+.mhlMemHhStep .gnbSubNav .memHhStep,
+.mhlMemHhIng .gnbSubNav .memHhIng,
+.mhlMemHhEnd .gnbSubNav .memHhEnd,
+.mhlMemHhGg .gnbSubNav .memHhGg,
+.mhlMemHhGg .gnbSubNav .memHhService,
+.mhlMemHhInfo .gnbSubNav .memHhInfo
+{z-index:10;}
+
+.giMain .gnbSubNav .giHome span {background-position:0 -50px;}
+.Gi_part .gnbSubNav .part2 span,
+.partList .gnbSubNav .part2 span,
+.partSearch .gnbSubNav .part2 span,
+.partKeywordList .gnbSubNav .part2 span,
+.partKeywordSearch .gnbSubNav .part2 span,
+.giKeyword .gnbSubNav .part2 span {background-position:0 -350px; }
+
+.Gi_part .gnbSubNav .part3 span,
+.lgiSubPart .gnbSubNav .part3 span,
+.lgiSubPartFind .gnbSubNav .part3 span,
+.giCoInfo .gnbSubNav .part3 span {background-position:0 -553px; }
+
+.mhlGgPart .gnbSubNav .part span,
+.mhlEduPart .gnbSubNav .part span {background-position:-100px -100px; }
+.giArea .gnbSubNav .area span,
+.giAreaList .gnbSubNav .area span,
+.mhlGiArea .gnbSubNav .area span,
+.hrArea .gnbSubNav .area span,
+.mhlHhArea .gnbSubNav .area span,
+.mhlEduArea .gnbSubNav .area span,
+.lgiSubArea .gnbSubNav .area span {background-position:-200px -100px;}
+
+.mhlGgArea .gnbSubNav .area2 span {background-position:-100px -400px;}
+.mhlGgType .gnbSubNav .type2 span {background-position:-200px -400px;}
+
+.mhlGiType .gnbSubNav .type span,
+.mhlEduType .gnbSubNav .type span,
+.mhlHhType .gnbSubNav .type span,
+.lgiSubLang .gnbSubNav .type span,
+.lgiSubPref .gnbSubNav .type span,
+.lgiSubWf .gnbSubNav .type span,
+.lgiSubGrad .gnbSubNav .type span,
+.lgiSubMajor .gnbSubNav .type span,
+.lgiSubLicense .gnbSubNav .type span,
+.lgiSubMilit .gnbSubNav .type span,
+.lgiSubVisual .gnbSubNav .type span,
+.lgiSubOnair .gnbSubNav .type span {background-position:-300px -100px;}
+
+.mhlGiCo .gnbSubNav .co span,
+.lgiSubCodiv .gnbSubNav .co span {background-position:-400px -100px;}
+
+.hrMain .gnbSubNav .hrMain span {background-position:-700px -50px;}
+.eduMain .gnbSubNav .eduMain span {background-position:0 -200px;}
+.giSch .gnbSubNav .search span,
+.mhlGiSearch .gnbSubNav .search span,
+.mhlHhSearch .gnbSubNav .search span {background-position:-500px -50px;}
+.hrPart .gnbSubNav .part2 span,
+.mhlHhPart .gnbSubNav .part2 span {background-position:0 -350px;}
+.mhlHhArea .gnbSubNav .area span {background-position:-200px -100px;}
+.mhlGgHome .gnbSubNav .ggHome span,
+.gnbSubNav .ggHome .on span {background-position:-400px -200px;}
+.mhlHhWorkArea .gnbSubNav .workArea span {background-position:-900px -100px;}
+
+.mhlEduSupportType .gnbSubNav .supportType span {background-position:-100px -250px;}
+.mhlEduLicense .gnbSubNav .license span {background-position:-300px -250px;}
+
+.themeGate .gnbSubNav .theme span {background-position:-500px -200px;}
+
+.gnbSubNav .giHome .on span {background-position:0 -50px;}
+.gnbSubNav .part .on span {background-position:-100px -50px;}
+.gnbSubNav .part2 .on span {background-position:0 -350px;}
+.gnbSubNav .part3 .on span {background-position:0 -503px;}
+.gnbSubNav .area .on span {background-position:-200px -50px;}
+.gnbSubNav .area2 .on span {background-position:-100px -350px;}
+.gnbSubNav .type .on span {background-position:-300px -50px;}
+.gnbSubNav .type2 .on span {background-position:-200px -350px;}
+.gnbSubNav .co .on span {background-position:-400px -50px;}
+.gnbSubNav .search .on span {background-position:-500px -50px;}
+.gnbSubNav .theme .on span {background-position:-500px -200px;}
+.gnbSubNav .workArea .on span {background-position:-900px -50px;}
+.gnbSubNav .hrMain .on span {background-position:-700px -50px;}
+.gnbSubNav .career .on span {background-position:-400px -350px;}
+
+.mhlGgSearch .gnbSubNav .resumeSearch span, 
+.gnbSubNav .resumeSearch .on span {background-position:-500px -350px;}
+.mhlGgSchool .gnbSubNav .school span, 
+.gnbSubNav .school .on span {background-position:-604px -350px;}
+
+.gnbSubNav .eduMain .on span {background-position:0 -200px;}
+.gnbSubNav .supportType .on span {background-position:-100px -200px;}
+.gnbSubNav .license .on span {background-position:-300px -200px;}
+
+/* 잡타임즈_on */
+.mhlJobtimesHome .gnbSubNav .jtHome span,
+.gnbSubNav .jtHome .on span {background-position:0 -50px;}
+.mhlJobtimesNews .gnbSubNav .jtNews span,
+.gnbSubNav .jtNews .on span {background-position:-100px -50px;}
+.mhlJobtimesGuide .gnbSubNav .jtGuide span,
+.gnbSubNav .jtGuide .on span {background-position:-200px -50px;}
+.mhlJobtimesKn .gnbSubNav .jtInter span,
+.gnbSubNav .jtInter .on span {background-position:-300px -50px;}
+.mhlJobtimesCom .gnbSubNav .jtTalk span,
+.gnbSubNav .jtTalk .on span {background-position:-400px -50px;}
+.mhlJobtimesOs .gnbSubNav .jtPoll span,
+.gnbSubNav .jtPoll .on span {background-position:-500px -50px;}
+.mhlJobtimesHr .gnbSubNav .jtHr span,
+.gnbSubNav .jtHr .on span {background-position:-600px -50px;}
+.gnbSubNav .jtCont .on span {background-position:-700px -50px;}
+
+/* 취업지식_on */
+.mhlKnHome .gnbSubNav .knHome span,
+.gnbSubNav .knHome .on span {background-position:0 -50px;}
+.mhlKnQna .gnbSubNav .knQna span,
+.gnbSubNav .knQna .on span {background-position:-100px -50px;}
+.mhlKnHow .gnbSubNav .knHow span,
+.gnbSubNav .knHow .on span {background-position:-200px -50px;}
+.gnbSubNav .knForm .on span {background-position:-310px -50px;}
+.mhlKnSearch .gnbSubNav .knSearch span,
+.gnbSubNav .knSearch .on span {background-position:-400px -50px;}
+.mhlKnMy .gnbSubNav .knMy span,
+.gnbSubNav .knMy .on span {background-position:-520px -50px;}
+
+/* 연봉정보_on,hover */
+.salnfoHome .gnbSubNav .salHome span,
+.gnbSubNav .salHome .on span {background-position:0 -50px;}
+.salnfoSch .gnbSubNav .salSch span,
+.gnbSubNav .salSch .on span {background-position:-100px -50px;}
+.salnfoAve .gnbSubNav .salAve span,
+.gnbSubNav .salAve .on span {background-position:-190px -50px;}
+.salnfoMy .gnbSubNav .salMy span,
+.gnbSubNav .salMy .on span {background-position:-280px -50px;}
+.salnfoNews .gnbSubNav .salNews span,
+.gnbSubNav .salNews .on span {background-position:-380px -50px;}
+.salnfoService .gnbSubNav .salService span,
+.gnbSubNav .salService .on span {background-position:-460px -50px;}
+.salInfoEvent .gnbSubNav .salEvent span,
+.gnbSubNav .salEvent .on span {background-position:-617px -50px;}
+
+
+
+/* 서브메뉴 레이어 */
+#gnb .gnbSubNavList li {border-bottom:0 !important; font-weight:normal; text-align:center;}
+#gnb .gnbSubNavList a {color:#fff; font-weight:bold; letter-spacing:-2px;}
+#gnb .gnbSubNavList .layer {position:absolute; top:41px; left:1px; width:240px; display:none;}
+#gnb .gnbSubNavList .layerInner {border:2px solid #48a7ff; border-bottom:0; _border-bottom:2px solid #48a7ff; padding:9px 10px 8px 10px; background:#fff; *zoom:1;}
+#gnb .gnbSubNavList .layer .bg {display:block; font-size:0; line-height:0; margin-right:3px; height:5px; background:url(/img/common/gnb/bg_lay_sub_nav_b.png) no-repeat 0 0; position:static; width:auto; _display:none;}
+#gnb .gnbSubNavList .layer .bg_1 {background:url(/img/common/gnb/bg_lay_sub_nav_b_1.png) no-repeat 0 0;}
+#gnb .gnbSubNavList .layer .bgRb {width:3px; height:5px; font-size:0; line-height:0; position:absolute; bottom:0; right:0; background:url(/img/common/gnb/bg_lay_sub_nav_b.png) no-repeat 100% 0; left:auto; top:auto; _display:none;}
+#gnb .gnbSubNavList .layer ul {margin-left:0; *zoom:1; margin-right:-50px;}
+#gnb .gnbSubNavList .layer li {height:23px; font:12px/16px Gulim, sans-serif; color:#494949; white-space:nowrap; margin:0; text-align:left;}
+#gnb .gnbSubNavList .layer li a {padding:5px 4px 2px 4px; display:inline-block; width:auto; height:auto; float:none; *zoom:1; vertical-align:top; color:#494949; font-weight:normal; letter-spacing:0;}
+#gnb .gnbSubNavList .layer li a:hover {background:#f2f6ff; text-decoration:underline; color:#494949;}
+#gnb .gnbSubNavList .layer li span {color:#ccc; margin:0 -3px; width:auto !important; height:auto !important; position:static !important; background:none !important;}
+#gnb .gnbSubNavList .layer li span.num {color:#494949; margin:0; font-family:Verdana, sans-serif;}
+#gnb .gnbSubNavList .layer .listType2 {border-top:1px solid #f3f3f3; padding-top:5px; margin-top:7px; margin-right:0;}
+#gnb .gnbSubNavList .layer li .ls {letter-spacing:-1px;}
+#gnb .gnbSubNavList .layer .new {position:relative;top:2px;}
+#gnb .gnbSubNavList .layer .Part_more {display:inline-block;float:none;position:absolute;right:13px;top:305px;width:auto;height:auto;padding-top:2px;padding-right: 8px;color:#5387ed;font-weight:normal;background:url(/img/common/gnb/bg_Part_more.gif) no-repeat right 5px;letter-spacing:-1px;text-decoration:underline;font-weight:bold;font-size:14px;font-family:dotum,'돋움';}
+#gnb .gnbSubNavList .layer .Part_more:hover {color:#5387ed;text-decoration:underline;}
+
+#gnb .gnbSubNavList .layerType2 {width:340px;}
+#gnb .menuGG .gnbSubNavList .layerType2 {}
+#gnb .gnbSubNavList .layerType2 .layerInner {padding:8px 14px 7px 14px;}
+#gnb .gnbSubNavList .layerType2 ul {margin:0 -5px 0 -2px;}
+#gnb .gnbSubNavList .layerType2 li {width:auto; margin-right:2px;}
+#gnb .gnbSubNavList .layerType2 .wide1 {width:40px; letter-spacing:-1px;}
+#gnb .gnbSubNavList .layerType2 strong {margin-right:-2px;}
+#gnb .gnbSubNavList .layerType3 ul {margin-right:0;}
+#gnb .gnbSubNavList .layerType3 li {width:auto; float:none; display:block;}
+
+#gnb .gnbSubNavList .part .layer {width:291px;}
+#gnb .gnbSubNavList .part .layerType3 {width:95px;}
+#gnb .gnbSubNavList .part .layer ul {letter-spacing:-1px;}
+#gnb .gnbSubNavList .part .layer li {width:144px; }
+#gnb .menuEdu .gnbSubNavList .part .layer {width:273px;}
+#gnb .menuEdu .gnbSubNavList .part .layer li {width:120px;}
+#gnb .menuGg .gnbSubNavList .part .layer {width:273px;}
+#gnb .menuGg .gnbSubNavList .part .layer li {width:120px;}
+
+#gnb .gnbSubNavList .part2 .layer {width:291px;}
+#gnb .gnbSubNavList .part2 .layer ul {letter-spacing:-1px;}
+#gnb .gnbSubNavList .part2 .layer li {width:144px;}
+
+#gnb .gnbSubNavList .type .layer, #gnb .gnbSubNavList .type2 .layer {width:226px;}
+#gnb .gnbSubNavList .type .layer li, #gnb .gnbSubNavList .type2 .layer li {width:106px;}
+#listHr #gnb .gnbSubNavList .type .layer,
+#gnb .menuGg .gnbSubNavList .type .layer {width:240px;}
+#listHr #gnb .gnbSubNavList .type .layer li {width:127px;}
+#gnb .gnbSubNavList .co .layer {width:270px; }
+#gnb .gnbSubNavList .co .layer li {width:125px;}
+#gnb .gnbSubNavList .workArea .layer {width:228px;}
+#gnb .gnbSubNavList .workArea li {width:122px;}
+#gnb .gnbSubNavList .supportType .layer {width:143px;}
+#gnb .gnbSubNavList .career .layer {width:128px;}
+#gnb .gnbSubNavList .resumeSearch .layer {width:180px;}
+#listEdu #gnb .gnbSubNavList .type .layer,
+.gnbQuirksEdu #gnb .gnbSubNavList .type .layer {width:275px;}
+#listEdu #gnb .gnbSubNavList .type .layer li,
+.gnbQuirksEdu #gnb .gnbSubNavList .type .layer li {width:136px; }
+#listEdu #gnb .gnbSubNavList .license .layer,
+.gnbQuirksEdu #gnb .gnbSubNavList .license .layer {width:314px;}
+#listEdu #gnb .gnbSubNavList .license .layer li,
+.gnbQuirksEdu #gnb .gnbSubNavList .license .layer li {width:152px;}
+
+
+/*채용정보 업직종 레이어 추가_2013.0228*/
+#gnb .gnbSubNavList .coMainPart .layer {overflow:hidden; width:590px; letter-spacing:-1px;} 
+#gnb .gnbSubNavList .coMainPart .layerInner {padding:0; background:#fff; *zoom:1;}
+#gnb .gnbSubNavList .coMainPart h4 {font-weight:bold;}
+#gnb .gnbSubNavList .coMainPart ul {margin-right:0;}
+#gnb .gnbSubNavList .coMainPart li {width:auto; float:none; display:block; text-align:left; }
+#gnb .gnbSubNavList .coMainPart .part1st {position:relative; width:195px; *margin-left:-388px; background:#fbfbfb;}
+#gnb .gnbSubNavList .coMainPart .part1st h4 {position:absolute; top:15px; *left:0; width:50px;}
+#gnb .gnbSubNavList .coMainPart .part1st ul {margin-left:50px !important; background:#fff; border-left:1px solid #f3f3f3; border-right:1px solid #f3f3f3; padding:8px 0 8px 10px; }
+#gnb .gnbSubNavList .coMainPart .part1st ul li a {cursor:default !important;}
+#gnb .gnbSubNavList .coMainPart .part1st_1 {border-top:1px solid #f3f3f3;}
+#gnb .gnbSubNavList .coMainPart .part2st {position:absolute; left:210px; top:10px;}
+#gnb .gnbSubNavList .coMainPart .part2st ul li {width:180px; float:left; padding-left:2px; background:url(/Img/List_GI/onecue/bu_onecue_sprites.png) no-repeat 0 -637px; overflow:hidden;}
+#gnb .gnbSubNavList .coMainPart .newly {background-color:#f1f8ff; border-top:1px solid #d0dff2; padding:10px 0 8px 10px; text-align:left;}
+#gnb .gnbSubNavList .coMainPart .newly h4 {color:#6184b5; padding-bottom:3px;}
+#gnb .gnbSubNavList .coMainPart .newly li {float:left; background:url(/Img/List_GI/onecue/bu_onecue_sprites.png) no-repeat 0 -638px; padding:0 10px 0 5px;}
+#gnb .gnbSubNavList .coMainPart .newly li a {padding-left:0;}
+
+
+/* gnb 배너 */
+#gnb .gnbBnr {position:absolute;right:-210px;top:69px;width:202px;height:41px;z-index:100;}
+#gnb .gnbBnr p {position:absolute;left:0px;bottom:0px;}
+
+/* gnb 기업별 레이어 배너 */
+.gnbSubNav li .bnrChamp {position:relative; overflow:hidden; zoom:1; text-align:center; border-left:2px solid #48a7ff; border-right:2px solid #48a7ff;}
+.gnbSubNav li .bnrChamp a {display:block; float:none; width:auto; height:auto; padding:0;}
+.gnbSubNav li .bnrChamp a img {display:block;}
+
+/* Category Navigation Bar_2014.12.02 */
+.lgiCnb {z-index:1000;}
+.lgiCnb .cnbList .selected .tit, .lgiCnb .cnbList .selected_1 .tit, .lgiCnb .cnbList .scrollCnt li a, .lgiCnb .cnbList .scrollCnt .now, .lgiCnb .cnbList .icnMob, .lgiCnb .cnbList .icnCal, .lgiCnb .cnbList .icnHan, .lgiCnb .cnbList .icnWd, .lgiCnb .cnbList .fylink a, .lgiCnb .cnbList .scrollCnt .selected .tit, .lgiCnb .goTop button {background:url('/img/List_Gi/sprites/lgi_tpl_cnb_icn.png') no-repeat 0 0;}
+.lgiCnb .cnbList li a:hover,.lgiCnb .cnbList .scrollCnt li a:hover {color:#3399ff;}
+
+.lgiCnb {display:none; position:fixed; top:20px; left:50%; width:168px; margin-left:-675px; border-top:1px solid #d6d6d6; text-align:left;}
+.lgiCnb a {cursor:pointer !important;}
+.lgiCnb .cnbList {overflow:hidden; border:1px solid #d6d6d6; border-top:0}
+.lgiCnb .cnbList li {line-height:37px; border-top:1px solid #efefef; vertical-align:middle;}
+.lgiCnb .cnbList li a, .lgiCnb .cnbList li .tit {padding-left:14px; color:#333; }
+.lgiCnb .cnbList li:first-child{border-top:0}
+.lgiCnb .cnbList .selected .tit {padding-right:13px; font-weight:bold; color:#3399ff; background-position:right -172px;}
+.lgiCnb .cnbList .selected_1 .tit {padding-right:15px; background-position:right -204px;}
+.lgiCnb .cnbList .selected .scrollCnt {display:block;} 
+.lgiCnb .cnbList .scrollCnt {position:relative; display:none; padding:9px 13px 7px 12px; background-color:#fbfbfb; }
+.lgiCnb .cnbList .scrollCnt:after {content:""; display:block; height:0; clear:both;}
+.lgiCnb .cnbList .scrollCnt ul {width:100%;}
+.lgiCnb .cnbList .scrollCnt ul:after {content:""; display:block; height:0; clear:both;}
+.lgiCnb .cnbList .scrollCnt li {line-height:21px; border-top:0 none; letter-spacing:-1px; padding:0;}
+.lgiCnb .cnbList .scrollCnt li a {color:#666; padding-left:8px; background-position:left -250px;}
+.lgiCnb .cnbList .scrollCnt .now {padding-left:8px; padding-right:0; padding-right:0; font-weight:normal; color:#3399ff; background-position:left -278px;}
+.lgiCnb .cnbList strong.new {display:inline-block; *zoom:1; *display:inline; background:url(/img/main/ico_new.gif) no-repeat 0 0; width:10px; height:9px; overflow:hidden; text-indent:-9999em; vertical-align:middle;}
+
+.lgiCnb .scroll {overflow:hidden; height:130px !important;}
+.lgiCnb .scrollw_180 {height:172px; }
+.lgiCnb .scrollw_200 {height:193px; }
+
+/*
+.lgiCnb .scrollBarWr,.lgiCnb .scrollBar,.lgiCnb .scrollBar:hover {background:url('/img/List_Gi/sprites/lgi_tpl_cnbbar.png') no-repeat 0 0;}
+.lgiCnb .scrollBarWr {display:none; overflow:hidden; position:absolute; left:157px; top:15px; width:5px; height:140px; background-position:-10px 0;}
+.lgiCnb .scrollBar {display:block; width:5px; background-position:-27px 0; cursor:pointer;}
+.lgiCnb .scrollBar:hover {background-position:-43px 0; }
+.lgiCnb .scroll .scrollBarWr {display:block;} */
+
+.lgiCnb .cnbList .scrollCnt .local li {float:left; display:inline; width:45px;}
+.lgiCnb .cnbList .scrollCnt .localw {clear:both;display:block; width:150px; margin-top:2px;}
+.lgiCnb .cnbList .scrollCnt .localw:after {content:""; display:block; height:0; clear:both;}
+.lgiCnb .cnbList .scrollCnt .localw li {float:left; display:inline; width:72px;}
+
+.lgiCnb .cnbList .fylink {font:11px '돋움', dotum, sans-serif; line-height:37px; padding-left:20px; letter-spacing:-1px;}
+.lgiCnb .cnbList .fylink a {color:#666; padding-right:15px; background-position:right -233px; }
+.lgiCnb .cnbList .fylink_1 a {padding-right:15px;  background:url('/img/List_Gi/sprites/lgi_tpl_cnb_icn.png') no-repeat right -231px;}
+.lgiCnb .cnbList .icnMob {background-position:8px 5px;}
+.lgiCnb .cnbList .icnCal {background-position:13px -304px;}
+.lgiCnb .cnbList .icnHan {background-position:8px -32px;}
+.lgiCnb .cnbList .icnWd {background-position:7px -71px;}
+.lgiCnb .goTop {width:37px; margin:10px auto;}
+.lgiCnb .goTop button {overflow:hidden; width:37px; height:37px; background-position:-8px -117px;}
+/* Category Navigation Bar End ----------------------------------------------------*/
+
+.gnbSubNav .school .ico {position:absolute; left:18px; top:-10px; z-index:20;}

@@ -1,0 +1,49 @@
+.resumeContainerComplete h1.header { margin-bottom: 29px; text-align: center; font-size: 21px; letter-spacing: -1px; line-height: 1.33; }
+.resumeContainerComplete h1.header img { display: block; margin: 0 auto 24px; }
+.resumeContainerComplete .buttonViewWritten { display: block; width: 179px; height: 50px; padding-top: 14px; margin: 0 auto; background-color: #ff6600; color: #fff; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 15px; font-weight: bold; }
+.resumeContainerComplete .list { overflow: hidden; position: relative; margin-top:143px;}
+.resumeContainerComplete .list h2.header { margin-bottom: 10px; padding-bottom: 8px; font-size: 20px; color: #000; text-align: center; border-bottom: 2px solid #4a5470; letter-spacing: -2px; }
+.resumeContainerComplete .list ul { overflow: hidden; position: relative; width: 900px; text-align: left; }
+.resumeContainerComplete .list li { float: left; overflow: hidden; position: relative; width: 215px; height: 162px; margin: 0 10px 10px 0; padding-top: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #c8cbd0; font-size: 13px; font-family: 'Malgun Gothic'; }
+.resumeContainerComplete .list .logo { overflow: hidden; width: 100%; height: 36px; margin-bottom: 8px; text-align: center; }
+.resumeContainerComplete .list .logo img { width: 84px; height: 36px; }
+.resumeContainerComplete .list .company { margin-bottom: 3px; padding: 0 10px; }
+.resumeContainerComplete .list .company a { vertical-align: middle; color: #000; font-family: 'Tahoma','Malgun Gothic'; font-size: 13px; font-weight: bold; line-height: 1.33; }
+.resumeContainerComplete .list .description { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; height: 38px; padding: 0 10px; }
+.resumeContainerComplete .list .description a { font-size: 13px; color: #333; line-height: 1.42857; }
+.resumeContainerComplete .list .extra { overflow: hidden; position: absolute; left: 0; top: 129px; width: 100%; padding: 0 10px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.resumeContainerComplete .list .extra .btnSm_1 { float: right; display: block; width: 37px; height: 15px; margin: 1px 0 0 0; padding: 0; border: 0; text-indent: -9999px; background: url("/content/images/main/tpl_bg_icn.png") no-repeat -55px -170px; }
+.resumeContainerComplete .list .extra .dday { float: left; padding: 2px 0; color: #777; line-height: 1; font-size: 12px; }
+.resumeContainerComplete .list .extra .dday_start { color: #3399ff; }
+.resumeContainerComplete .list .extra .dday_end { color: #ff5a44; }
+.resumeContainerComplete .list .extra .dday_always { color: #666; }
+.rsModalComplete { z-index: 9900; position: fixed; top: 0 !important; width: 100%; height: 100%; background: url("/content/images/text_user/resume/write/bg-dimd.png"); }
+.rsModalComplete .container { position: absolute; top: 50%; left: 50%; overflow: hidden; top: 160px; margin-left: -415px; width: 830px; padding: 65px 26px 40px; -webkit-box-sizing: border-box; box-sizing: border-box; /*border:4px solid #555e7b;*/ background: #f6fafe; /* url(/img/Event/FirstResume2016/ly_img_04.png) no-repeat 590px 40px*/ font-family: "Malgun Gothic"; color: #333; text-align: left; letter-spacing: -1px; line-height: 1.42857; }
+.rsModalComplete .container h2 { text-align: center; }
+.rsModalComplete .infoTxt { margin: 7px 0 17px; font-size: 30px; letter-spacing: -3px; } 
+.rsModalComplete .formGp { margin: 21px 0 15px; padding: 39px 0; background: #fff; border: 1px solid #d9d9d9; color: #999; text-align: center; }
+.rsModalComplete .formGp > span { display: inline-block; margin: 0 5px; font-size: 18px; color: #333; }
+.rsModalComplete .formGp .txt { padding-left: 15px; background: url(/img/Event/FirstResume2016/icon_dot.png) no-repeat 0 10px; }
+.rsModalComplete .formGp .ipTel { width: 87px; }
+.rsModalComplete .formGp .ipTel input, .rsModalComplete .formGp .ipTel select { padding: .2em; width: 100%; height: 31px; border: 1px solid #d8d8d8; font-size: 16px; color: #666; text-align: center; letter-spacing: -1px; line-height: normal; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: inherit; }
+.rsModalComplete .formGp .ipTel select { padding: 0 0 .1em .5em; line-height: 1.8; }
+.rsModalComplete .agreeGp ul { padding: 15px 20px; background: #ecf2f8; border: 1px solid #d8d8d8; }
+.rsModalComplete .agreeGp li { font-size: 13px; color: #666; line-height: 1.8; letter-spacing: -1px; }
+.rsModalComplete .agreeGp .chk { display: block; margin: 15px 0 27px; }
+.rsModalComplete .agreeGp .chk input[type="checkbox"] { margin-top: 3px; width: 15px; height: 15px; }
+.rsModalComplete .agreeGp .chk label { margin-left: 3px; font-size: 16px; color: #333; }
+.rsModalComplete .btnGp { text-align: center; }
+.rsModalComplete .btnGp button { margin: 0 10px; }
+.rsModalComplete.fin .container { top: 270px; margin-left: -304px; padding-top: 80px; width: 570px; /*background-image:url(/img/Event/FirstResume2016/ly_img_04_fin.png); background-position:center 40px;*/ text-align: center; }
+.rsModalComplete.fin .container .form { margin-top: 43px; }
+.rsModalComplete.fin .infoTxt { font-size: 22px; letter-spacing: -2px; }
+
+/* 선배에게 질문하기 텍스트 배너 */
+.buttonQnaLink {margin:35px 0 -40px 0;}  
+.buttonQnaLink span {color:#333;}
+.buttonQnaLink em {display:inline-block; color:#f60; text-decoration:underline;}
+
+/* 채용 뱃지 추가 */
+.celebrate-badge{margin:-10px 0 0 0;}
+.celebrate-badge span{border:1px solid #00AE6F;line-height:21px;font-size:12px;letter-spacing: -0.9px;color: #FFFFFF;padding:0 6px;display:inline-block;background-color: #00AE6F;}
+.celebrate-badge span::before{display:inline-block;content: "";width:13px;height:13px;background-image: url("/content/images/theme/celebrate/icon_celebrate_search_txt_w.svg");background-size: 13px 13px;background-position: center center;background-repeat: no-repeat;margin:0 4px 0 0;position: relative;top:2px;}

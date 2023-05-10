@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/*
+.File Name		: /inc/css/ver_1/gnb.css
+.Final Editor	: 유영미 (2015-04-24 : 잡코리아 개인회원_소식 알림창 (ME))
+*/
+
+.gnbWrap,
+.gnbWrapCo {text-align:center; position:relative; z-index:10000; *zoom:1;} /* gnbWrapCo는 기업회원 wrapper */
+.gnbWrap * {margin:0; padding:0;}
+.gnbWrap h1,
+.gnbWrap h2,
+.gnbWrap h3,
+.gnbWrap h4 {font-weight:normal; font-size:100%;}
+.gnbWrap form,
+.gnbWrap fieldset {border:0;}
+.gnbWrap img {border:0 none; vertical-align:top;}
+.gnbWrap address,
+.gnbWrap caption,
+.gnbWrap em {font-weight:normal; font-style:normal;}
+.gnbWrap hr {display:none;}
+.gnbWrap li {list-style:none;}
+.gnbWrap select,
+.gnbWrap input,
+.gnbWrap option,
+.gnbWrap textarea {vertical-align:middle; font:12px Verdana, Gulim, Dotum, sans-serif;}
+.gnbWrap #skipNavigation,
+.gnbWrap .blind,
+.gnbWrap .skip {position:absolute; top:-5000em; width:0px; height:0px; overflow:hidden; line-height:0; font-size:0;}
+.gnbWrap legend {display:none;}
+.gnbWrap button {overflow:visible; margin:0; padding:0; border:0 none; cursor:pointer;}
+.gnbWrap button::-moz-focus-inner {padding:0; border:0;}
+.gnbWrap #topWrapAd,
+.gnbWrap #location {text-align:left;}
+.gnbWrap .evtGnb li {display:inline; margin: 0 -4px 0 0;}
+
+
+.gnbQuirks {background:url(/img/common/gnb/bg_body_sub.gif) repeat-x 0 0; vertical-align:top;}
+.gnbQuirksMemHh,
+.gnbQuirksMemEdu,
+.gnbQuirksMemGg,
+.gnbWrap_C_etc td.gnbQuirks {background:url(/img/common/gnb/bg_global_bar_line.gif) repeat-x 0 0;}
+.gnbWrap_C_special td.gnbQuirks {height:97px; background:url(/img/common/gnb/bg_global_bar_line.gif) repeat-x 0 0;}
+
+.gnbWrap_C .gnbQuirks,
+.gnbWrap_C_etc2 td.gnbQuirks {height:111px; background:url(/images/common_v02/servicejk_blueBar.gif) repeat-x 0px 0px;}
+.gnbWrap_C_serviceJk .gnbQuirksHh,
+.gnbWrap_C_serviceJk .gnbQuirksMemGg,
+.gnbWrap_C_etc td.gnbQuirksHh,
+.gnbWrap_C_etc td.gnbQuirksGg {height:auto; background:url(/img/common/gnb/bg_body_sub.gif) repeat-x 0 0; vertical-align:top;}
+.gnbWrap_C_serviceJk .gnbQuirksMemGg {height:111px; background:url(/images/common_v02/servicejk_blueBar.gif) repeat-x 0px 0px;}
+
+/*
+body.gnbEventBody .gnbQuirks {height:107px; background:url(/images/common_v02/servicejk_blueBar.gif) repeat-x 0px 0px;}
+*/
+.gnbWrap_C_event .gnbQuirks {height:105px; background:url(/images/common_v02/servicejk_blueBar.gif) repeat-x 0 0;}
+
+.gnbQuirksInner {width:890px; margin:0 auto; position:relative; z-index:1000;}
+.gnbQuirks .globalBar,
+.gnbQuirks #gnb,
+.gnbQuirks #headerInfo {width:890px; margin-left:5px; _margin-left:10px; text-align:left;}
+.gnbQuirks .gnbMenuAll {margin-left:-440px;}
+
+.gnbQuirks #headerInfo {text-align:right;}
+
+/* Global Top Bar */
+.globalBar {height:30px; position:relative; z-index:10000; background:url(/img/common/gnb/bg_global_bar_line.gif) repeat-x 0 0; margin-bottom:0; text-align:left; letter-spacing:-1px;}
+body.gnbEventMainBody .globalBar,
+.gnbWrap_C_event .globalBar{background:none;}
+.gnbQuirks .globalBar {background:none;}
+
+.globalBar,
+.globalBar a,
+.globalBar a:link,
+.globalBar a:visited,
+.globalBar button {font:11px/15px Dotum, sans-serif; color:#888;}
+.globalBar a {letter-spacing:-1px;}
+.globalBar .innerBar {width:890px; margin:0 auto; position:relative; height:100%;}
+body.gnbEventMainBody .innerBar {width:960px;}
+.gnbWrapCo .globalBar .innerBar,
+.gnbHeaderCo .globalBar .innerBar,
+.ggHome .globalBar .innerBar,
+.smTopGnb .globalBar .innerBar,
+#secMuser .globalBar .innerBar,
+.hrVipList .globalBar .innerBar,
+#secLgi .globalBar .innerBar {width:960px;}
+.smTopGnb .globalBar .innerBar .lnb li a {text-decoration:none;}
+.globalBar .globalLink,
+.globalBar .func,
+.globalBar .lnb {position:absolute; top:0; left:0;}
+
+.globalBar .globalLink {left:407px;}
+.globalBar .globalLink li {float:left; display:inline; margin-left:-1px;}
+.globalBar .globalLink a {display:block; width:39px; height:30px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 0 -50px; position:relative;}
+.globalBar .globalLink .appDown a {background-position:-50px -50px;}
+.globalBar .globalLink strong {color:#3399ff; font-weight:normal;}
+.globalBar .globalLink a:hover {*zoom:1;z-index:2;}
+.globalBar .globalLink a:hover .tooltip,
+.globalBar .globalLink a:focus .tooltip,
+.globalBar .globalLink a:active .tooltip{top:30px;}
+.globalBar .tooltip {position:absolute; border-bottom:1px solid #f2f2f2; background:#fff; top:-9999px; left:-36px;}
+.globalBar .tooltip .inner {border:1px solid #cecece; white-space:nowrap; display:block; height:16px; padding:4px 4px 0 4px;}
+.gnbQuirks .globalBar .tooltip .inner {_height:20px;}
+.globalBar .tooltip .arrow {position:absolute; width:5px; height:4px; top:-3px; left:50%; margin-left:-3px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 0 -90px;}
+.globalBar .home .tooltip {left:-59px;}
+.globalBar .appDown .tooltip {left:-61px;}
+
+.globalBar .func {top:8px;}
+.globalBar .func a {text-decoration:none;}
+.globalBar .func a img {vertical-align:middle !important; *vertical-align:top !important;}
+.globalBar .func .home,
+.globalBar .func .fav,
+.globalBar .func .app,
+.globalBar .func .last {float:left; display:inline; padding-right:9px; margin-right:5px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -188px;}
+.globalBar .func button {height:15px; line-height:13px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat -50px -90px; padding-left:15px; padding-top:3px; *padding-top:2px; vertical-align:top; text-indent:0;}
+.globalBar .func .hover {background-position:-50px -110px; color:#3399ff;}
+.globalBar .func .last {background:none;}
+.globalBar .func .app button {padding-left:17px;}
+.globalBar .func .app button,
+.globalBar .func .app .hover {background-position:-50px -130px;}
+.globalBar .func .home {padding-right:5px;}
+.globalBar .func .home a {float:left; width:17px; height:16px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat -50px -150px;}
+.globalBar .func .home span {position:absolute; left:-9999px;}
+.globalBar .func .highlight a {color:#f60; display:inline-block; padding:1px 0 0 1px;}
+.globalBar .func .text {border:0; font-size:11px; _zoom:1; padding-top:1px;}
+.gnbQuirks .globalBar .func .text {padding-top:0;}
+.globalBar .func .text img {position:relative; top:-1px; _top:-2px; margin-right:1px;}
+.gnbQuirks .globalBar .func .text img {top:-1px;}
+.globalBar .func .num {letter-spacing:0;}
+
+.globalBar .lnb {left:auto; right:0; top:5px;}
+.globalBar .lnb .mn {float:left; position:relative; white-space:nowrap; display:inline; padding-right:7px; margin-right:3px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -185px; *zoom:1;}
+.globalBar .lnb .mn a {display:inline-block; height:18px; padding-top:4px; color:#666; letter-spacing:-1px;}
+.globalBar .lnb .mn a:link,
+.globalBar .lnb .mn a:visited {color:#666;}
+.gnbQuirks .globalBar .lnb .mn a {_height:22px;}
+.globalBar .lnb .mn a:hover {color:#3399ff; }
+
+.globalBar .lnb .highlight a {color:#6184b5;}
+.globalBar .lnb .mobile a {padding-left:9px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 0 -237px;}
+.globalBar .lnb .more a,
+.globalBar .lnb .more button {color:#666; padding-right:14px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% 4px; letter-spacing:-1px;}
+.globalBar .lnb .more a:hover,
+.globalBar .lnb .more button:hover {color:#3399ff; background-position:100% -20px; letter-spacing:-1px;}
+.globalBar .lnb .more button span {display:inline-block; padding:4px 0 2px 0; *padding:2px 0 2px 0; white-space:nowrap;}
+.globalBar .lnb .last {background:none; padding-right:0;}
+.globalBar .lnb .my a {padding-left:15px; background:url(/img/starter/dec_1.gif) no-repeat 0 5px; text-decoration: underline;}
+
+.globalBar .layer {position:absolute; top:21px; left:0; width:110px; padding:0; background:#fff; display:none; border:1px solid #49658d;}
+.gnbQuirks .globalBar .layer {_width:92px;}
+.globalBar .lnb .layer_2 {width:123px;}
+.gnbQuirks .lnb .layer_2 {_width:125px;}
+.globalBar .lnb .layer_2 .link em,
+.globalBar .lnb .layer_2 .link strong {display:block;}
+.globalBar .layer .link {padding:2px 0 4px 0;}
+.globalBar .layer .link li {overflow:hidden; zoom:1; float:none; display:block; padding:0; margin:0; background:none; position:static; vertical-align:bottom;}
+.globalBar .layer .link a {height:16px; padding:6px 0 0 12px; background:none; display:block;}
+.gnbQuirks .globalBar .layer .link a {_height:22px;}
+.globalBar .layer .link .line {background:url(/img/common/gnb/bg_global_bar_line2.gif) repeat-x 0 0;}
+.globalBar .lnb .layer .link a:hover {background-color:#f9f9f9; text-decoration:underline; color:#666;}
+.globalBar .lnb .layer .link em a {color:#3399ff; font-weight:normal;}
+.globalBar .lnb .layer .link em a:hover {color:#3399ff;}
+.globalBar .lnb .layer .link strong a {font-weight:bold;}
+.globalBar .lnb .layer_3 .link {overflow:hidden; *zoom:1; margin-right:-30px; padding:5px 0 0 0;}
+.globalBar .lnb .layer_3 .link li {float:left; display:inline; width:63px; margin-right:8px; margin-left:5px;}
+.globalBar .lnb .layer_3 .link a {height:16px; padding-top:4px; padding-left:7px;}
+.gnbQuirks .globalBar .lnb .layer_3 .link a {_height:20px;}
+.globalBar .lnb .layer_3 .link .full {background:#f9f9f9; width:153px; margin:0;}
+.globalBar .lnb .layer_3 .link .full a {margin-left:6px;}
+.globalBar .lnb .layer_3 .link .first {padding-top:5px; margin-top:3px;}
+.globalBar .lnb .layer_3 .link .last {padding-bottom:3px; padding-top:0; margin-top:0;}
+.globalBar .lnb .layer_3 {border:2px solid #49658d; width:153px; left:auto; right:0; display:none;}
+.globalBar .lnb .layer_3 .bg {width:3px; height:3px; position:absolute; background:url(/img/common/gnb/bg_round_1.gif) no-repeat 0 0; font-size:0; line-height:0; _display:none;}
+.globalBar .lnb .layer_3 .lt {top:-2px; left:-2px;}
+.globalBar .lnb .layer_3 .rt {background-position:-3px 0; top:-2px; right:-2px;}
+.globalBar .lnb .layer_3 .lb {background-position:0 -3px; top:100%; left:-2px; margin-top:-1px;}
+.globalBar .lnb .layer_3 .rb {background-position:-3px -3px; top:100%; left:100%; margin-top:-1px; margin-left:-1px;}
+
+.globalBar .lnb .mn .layer_4 {width:160px;}
+.globalBar .lnb .mn .layer_4 .link strong a {color:#39f;}
+.globalBar .lnb .mn .layer_4 .link em a {color:#666; font-weight:bold;}
+.globalBar .lnb .mn .layer_4 .link a:hover {color:#39f;}
+
+#globalBar .layerTpl_1 {position:absolute; border:3px solid #35a4fb; display:none; background:#fff;}
+#globalBar .layerTpl_1 .layInner {padding:23px 23px 10px 24px; *zoom:1;}
+#globalBar .layerTpl_1 .title {font:12px/17px Gulim, sans-serif; color:#494949; margin-bottom:5px;}
+#globalBar .layerTpl_1 .title em,
+#globalBar .layerTpl_1 .title strong {font-weight:bold;}
+#globalBar .layerTpl_1 .title strong {color:#3399ff;}
+#globalBar .layerTpl_1 .btnClose {position:absolute; top:5px; right:5px; width:21px; height:21px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat -20px -90px; padding:0;}
+#globalBar .layerTpl_1 .btnClose span {position:absolute; left:-9999px;}
+#globalBar .layerTpl_1 .layAction {background:#f8f8f8; text-align:right; padding:8px 11px 4px 0; *zoom:1;}
+#globalBar .layerTpl_1 .layAction a {padding-right:7px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -218px; margin-left:13px;}
+
+#globalBar .layerApps {width:402px; top:22px; left:0;}
+.gnbQuirks #globalBar .layerApps {_width:408px;}
+#globalBar .layerApps a {background:none; width:auto; height:auto; position:static; display:inline;}
+#globalBar .layerApps .down {border:1px solid #f3f3f3; background:#fbfbfb; position:relative; min-height:92px; padding:13px 0 6px 14px; line-height:17px; color:#494949; margin-bottom:26px;}
+.gnbQuirks #globalBar .layerApps .down {_height:107px;}
+#globalBar .layerApps .detail strong {font-weight:bold;}
+#globalBar .layerApps .bxPolicy {color:#333; margin-top:10px; line-height:17px;}
+#globalBar .layerApps .bxPolicy input {position:relative; top:-2px; display:inline-block; width:13px; height:13px;}
+#globalBar .layerApps .bxPolicy label {display:inline-block; color:#888; vertical-align:top;}
+#globalBar .layerApps .bxPolicy dl {margin-top:8px;}
+#globalBar .layerApps .bxPolicy dt {font-weight:bold; margin-bottom:2px;}
+#globalBar .layerApps .bxPolicy dd {color:#888;}
+#globalBar .layerApps .qrCode {position:absolute; top:7px; right:7px;}
+#globalBar .layerApps select,
+#globalBar .layerApps .ipText {font:12px/17px Verdana, sans-serif; color:#494949;}
+#globalBar .layerApps select {width:53px; height:20px; border:1px solid #adacb1;}
+#globalBar .layerApps .ipText {width:43px; height:18px !important; border:1px solid #c9c9c9; border-right:1px solid #ebebeb; border-bottom:1px solid #ebebeb; vertical-align:top;}
+.gnbQuirks #globalBar .layerApps .ipText {_width:45px; _height:20px !important;}
+#globalBar .layerApps .ipImage {vertical-align:top; margin-left:1px;}
+#globalBar .layerApps fieldset {padding:7px 0 2px 1px;}
+#globalBar .layerApps .apps {overflow:hidden; *zoom:1;}
+#globalBar .layerApps .apps li {float:left; display:inline; height:64px; width:170px; margin-right:5px; background:url(/img/common/gnb/bg_apps.gif?2016122314) no-repeat 0 0;}
+#globalBar .layerApps .apps li a {display:block; padding:6px 0 0 61px;}
+#globalBar .layerApps .apps li strong {color:#666; font-weight:bold;}
+#globalBar .layerApps .apps .appsBoss {background-position:0 -200px;}
+#globalBar .layerApps .apps .appsJobfair {background-position:0 -100px;}
+#globalBar .layerApps .apps .appsSalary {background-position:0 -300px;}
+#globalBar .layerApps .apps .appsJK {background-position:0 -400px;}
+#globalBar .layerApps .apps .appsJob {background-position:0 -500px;}
+#globalBar .layerApps .apps .appsJKU {background-position:0 -600px;}
+#globalBar .layerApps .apps .appsJKU strong {letter-spacing:-1.5px;}
+#globalBar .layerApps .apps .appsWdt {background-position:0 -700px;}
+#globalBar .layerApps .apps .appsFJ {background-position:0 -800px;}
+
+#globalBar .layerNavAll .layInner {padding:0;}
+
+#globalBar .gnbBarDeco {display:inline-block; height:19px; background:url(/img/common/gnb/fb_deco.gif) no-repeat left top; padding-left:8px; margin:-2px 0 0 2px;}
+#globalBar .gnbBarDeco span {display:inline-block; height:16px; background:url(/img/common/gnb/fb_deco_1.gif) no-repeat right top; padding:3px 6px 0 0;}
+#globalBar .gnbBarDeco span button {line-height:18px; background:none; padding:0 !important; vertical-align:-1px; *vertical-align:0;}
+#globalBar .layerAppsEvent {width:472px; top:22px; left:0; background-color:#fff; text-align:center;}
+#globalBar .layerAppsEvent a {background:none; width:auto; height:auto; position:static; display:inline;}
+#globalBar .layerAppsEvent .layInner {height:386px; padding:0;}
+#globalBar .layerAppsEvent .btm {background-color:#4b5c94; padding:17px 0 18px;}
+#globalBar .layerAppsEvent .btm .action {padding-top:14px;}
+
+#globalBar .layerFacebook {width:335px; top:22px; left:0; background-color:#fff; text-align:left; padding:0 15px;}
+#globalBar .layerFacebook a {background:none; width:auto; height:auto; position:static; display:inline;}
+#globalBar .layerFacebook .txt1 {position:relative; top:4px; font:12px/18px Gulim, sans-serif; color:#666;}
+#globalBar .layerFacebook .action {position:relative; padding:15px 0; font:bold 12px/18px Gulim, sans-serif; color:#666; text-align:center; border:1px solid #f3f3f3; background:#fbfbfb;}
+#globalBar .layerFacebook .action .imp {color:#5badfe;}
+#globalBar .layerFacebook .action .like {width:75px; height:24px; background:url(/img/common/gnb/btn_fb2.gif) no-repeat 0 0;}
+#globalBar .layerFacebook .action .btnfb1 {border:none; overflow:hidden; width:65px; height:25px; margin-top:7px; margin-left:-77px;}
+#globalBar .layerFacebook .action .btnfb2 {position:absolute; top:56px; left:163px;}
+#globalBar .layerFacebook .btm {padding:10px 0 20px 0px;}
+#globalBar .layerFacebook .btm .allcount {width:160px; color:#999;}
+#globalBar .layerFacebook .btm .allcount em {color:#666;}
+#globalBar .layerFacebook .btm .award {position:absolute; bottom:20px; left:196px;}
+
+/* 잡코리아 바로가기 서비스 */
+.globalBar .dir {float:left; display:inline; padding-right:9px; margin-right:5px; background:url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -188px;}
+.globalBar .dir button {position:relative; width:82px; height:17px; font:11px dotum,"돋움",sans-serif; color:#888;  background:0 none; }
+.globalBar .dir button .on {position:absolute; top:0; left:0;  display:inline-block; width:82px; height:17px; background:url(/img/common/gnb/ico_dir.png) no-repeat 0 -70px;}
+.globalBar .dir button .off {position:absolute; top:0; left:0;  display:inline-block; width:82px; height:17px; background:url(/img/common/gnb/ico_dir.png) no-repeat 0 -40px;}
+
+#globalBar .layerTpl_1 {position: absolute; border:3px solid #35a4fb; background:#fff;}
+#globalBar .layerDirect {display:block; width:495px; top:22px; left:0; padding-bottom:20px;}
+#globalBar .layerDirect .layInner {padding:0 0 0 0;}
+#globalBar .layerDirect .title {background-color:#4b5c94; padding:30px 0 20px 30px;}
+#globalBar .layerDirect dl dt {padding:30px 0 0 30px;}
+#globalBar .layerDirect .tip {padding:10px 0 30px 30px; line-height:1.5; font:11px dotum,"돋움",sans-serif; color:#888; letter-spacing:-1px; border-bottom:1px solid #eeeff1;}
+#globalBar .layerDirect .tip a {display:inline-block; width:71px; height:15px; padding:2px; color:#888; background:url(/img/common/gnb/ico_dir.png) no-repeat 0 -100px; text-decoration:none;}
+#globalBar .layerDirect .btnClose {position:absolute; top:5px; right:5px; width:23px; height:23px; background:url(/img/common/gnb/ico_dir.png) no-repeat -5px -5px !important;}
+#globalBar .layerDirect .guide {width:100% !important;}
+#globalBar .layerDirect .guide dd {margin:10px 0 20px 30px;}
+#globalBar .layerDirect .guide li {float:left; display:inline; margin:0 2px;}
+#globalBar .layerDirect .guide:after {content:""; display:block; height:0; clear:both;}
+#globalBar .layerDirect .aggUrl,
+#globalBar .layerDirect .addFav,
+#globalBar .layerDirect .addSta,
+#globalBar .layerDirect .addMail {display:block; background:url(/img/common/gnb/ico_dir.png) no-repeat 0 0; width:104px; height:104px;}
+#globalBar .layerDirect .aggUrl {background-position:0 -150px;}
+#globalBar .layerDirect .addFav {background-position:0 -260px;}
+#globalBar .layerDirect .addSta {background-position:0 -370px;}
+#globalBar .layerDirect .addMail {background-position:0 -480px;}
+#globalBar .layerDirect .gorsOpen button {width:100%; height:36px; padding:0;}
+
+/* 개인회원_소식 알림창 서비스 */
+.globalBar .gglayer {z-index:1000;}
+.globalBar .gglayer,
+.globalBar .gglayer a,
+.globalBar .gglayer a:visited,
+.globalBar .gglayer button {font:12px verdana, gulim, "굴림", dotum, "돋움";}
+.globalBar .gglayer {position:absolute; top:21px; right:0;}
+.globalBar .me {float:left; display:inline;	padding-right:5px; margin-right:5px; background: url(/img/common/gnb/bg_global_bar.gif) no-repeat 100% -185px;}
+.globalBar .me .id {position:relative; display:inline-block; height:18px; padding:4px 20px 3px 0; color: #666; letter-spacing:-1px; background:url(/img/common/gnb/bg_global_me.png) right -81px no-repeat;} /*서브페이지 비표준 때문에 영역을 크게줌 */
+.globalBar .me .id .btnMeNew {position:absolute; top:0; right:-5px;}
+.globalBar .me.new {padding-right:15px;}
+
+.globalBarMe {position:relative; width:346px; height:508px; border:2px solid #3b4a5a; background:#fff;}
+.globalBarMe .menu {width: 100%; border-bottom:1px solid #566474; *zoom:1;}
+.globalBarMe .menu:after {content:""; display:block; height:0; clear:both;}
+.globalBarMe .menu li {float:left; width:33.3%; display:inline;}
+.globalBarMe .menu li a {display:inline-block; width:100%; min-height:20px; line-height:20px; color:#666; text-align:center; padding-top:14px; padding-bottom:5px; border-left:1px solid #e3e3e3;  font:normal 12px gulim, "굴림", sans-serif;}
+.gnbQuirks .globalBarMe .menu li a {padding-top:14px; padding-bottom:7px;}
+.globalBarMe .menu li.fir a,
+.globalBarMe .menu li:first-child a {border-left:0 none;}
+.globalBarMe .menu li.on a {background:#5b6b7c; color:#fff !important; font-weight:bold;}
+
+.globalBarMe .btnResume {position:absolute; bottom:0; width:346px; text-align:center; border-top:1px solid #4f9ff4; background:#74b7fe; z-index:100;}
+.gnbQuirks .globalBarMe .btnResume {_width:342px;}
+.globalBarMe .btnResume a {display:inline-block; color:#fff !important; font-weight:bold; padding:10px 0 10px 30px; background:url(/img/common/gnb/bg_global_me.png) -2px -158px no-repeat;}
+.globalBarMe .titBar {position:relative; color:#5f6676; text-align: left; font:normal 11px dotum, "돋움", sans-serif; background:#e6f2ff; border-bottom:1px solid #e1eefe; border-top:1px solid #e1eefe; padding:10px 0 6px 11px; letter-spacing:-1px;}
+.globalBarMe .titBar a {font:normal 11px dotum, "돋움", sans-serif; color:#999;}
+.globalBarMe .titBar .allView {position:absolute; right:9px; display:inline-block; padding-right:7px; background:url(/img/common/gnb/bg_global_me.png) right -40px no-repeat;}
+
+.globalBarMe .list {clear:both;}
+.globalBarMe .list li {position:relative; border-top:1px solid #f2f2f2; padding:6px 0; height:37px; *height:34px; letter-spacing:-1px; color:#666; text-align:left;}
+.globalBarMe .list li:first-child {border-top:0 none;}
+.globalBarMe .list li a {color:#666;}
+.globalBarMe .list li dt a, .globalBarMe .list li dd a {margin-left: 31px;}
+.globalBarMe .list .cn {font-weight:normal; color:#333; line-height:1.6;}
+.globalBarMe .list .tit {font:normal 11px dotum, "돋움", sans-serif; vertical-align:middle;}
+.globalBarMe .list .tit strong {font-weight:normal; color:#39f;}
+.globalBarMe .list .day {margin-left:3px; color: #999; font:normal 11px dotum, "돋움", sans-serif; letter-spacing:0; vertical-align:middle;}
+.globalBarMe .list .favIcn {position:absolute; left:12px; top:15px;}
+.globalBarMe .list .staIcn {position:absolute; right:10px; top:13px;}
+
+.globalBarMe .list_1 li {word-break:nowrap; white-space:nowrap; padding:7px 0 7px 15px; height:13px; background:url(/img/common/gnb/bg_global_me.png) 10px 10px no-repeat; letter-spacing:-2px;}
+.globalBarMe .list_1 li dt a, .globalBarMe .list_1 li dd a {margin-left: 0;}
+.globalBarMe .list_1 .cate {color:#3499ff; text-decoration:underline;}
+.globalBarMe .list_1 .lkRecent {color:#3499ff; text-decoration:underline;}
+
+.globalBarMe .list_2 li {padding:9px 0 8px 96px;}
+.globalBarMe .list_2 li dt a, .globalBarMe .list_2 li dd a {margin-left: 0;}
+.globalBarMe .list_2 .logo {position:absolute; left:13px; top:10px; display:inline-block; height:30px; border:1px solid #dbdbdb;}
+.globalBarMe .list_2 .staIcn {top:17px;}
+.globalBarMe .list_2 .num {color:#39f;}
+
+.globalBarMe .todayList {min-height:249px; *height:210px;}
+
+.globalBarMe .noLogin .txt1 {color:#333; font:bold 14px/2 dotum, "돋움", sans-serif;}
+.globalBarMe .noLogin .txt2 {color:#666; font:12px/1.5 dotum, "돋움", sans-serif; margin-bottom:8px;}
+.globalBarMe .noLogin .view a {color:#39f; text-decoration:underline;padding-right:8px; background:url(/img/common/gnb/bg_global_me.png) right -21px no-repeat;}
+.globalBarMe .noLogin .icnScrap_1 {display:inline-block; width:19px; height:19px; background:url(/img/common/gnb/bg_global_me.png) no-repeat -62px -335px;}
+.globalBarMe .noLogin .icnFav_1 {display:inline-block; width:19px; height:19px; background:url(/img/common/gnb/bg_global_me.png) no-repeat -82px -340px; overflow:hidden; vertical-align:middle;}
+
+.globalBarMe .case1 {padding:100px 0 107px 0;}
+.globalBarMe .case2 {padding:50px 0;}
+.globalBarMe .case3 {padding-top:140px;}
+.globalBarMe .case4 {padding:35px 0;}
+
+.globalBarMe .applyMng {z-index:1;}
+.globalBarMe .applyMng li {position:relative; padding:12px 8px 8px 70px; border-bottom:1px solid #f2f2f2; text-align:left;}
+.globalBarMe .applyMng li em {color:#39f;}
+.globalBarMe .applyMng dl {}
+.globalBarMe .applyMng dl dt {letter-spacing:-1px; margin-bottom:11px; line-height:1.5;}
+.globalBarMe .applyMng dl dt a {color:#333;}
+.globalBarMe .applyMng dl dd {clear:both; color:#666; font:normal 11px/1.5 dotum, "돋움", sans-serif;}
+.globalBarMe .applyMng dl dd a {color:#666;}
+
+.globalBarMe .applyMng .noView {background:#fffeea;}
+.globalBarMe .applyMng .time {position:absolute; left:11px; top:13px; }
+.globalBarMe .applyMng .time .inr {display:inline-block; padding-top:20px; color:#fff; width:49px; height:51px; letter-spacing:0; text-align:center; background:url(/img/common/gnb/bg_global_me.png) no-repeat -50px -410px; letter-spacing:-1px;}
+.globalBarMe .applyMng .time .inr_1 {background:url(/img/common/gnb/bg_global_me.png) no-repeat 0 -410px;}
+.globalBarMe .applyMng .etc {position:relative; width:100%;}
+.globalBarMe .applyMng .t {letter-spacing:-1px; }
+.globalBarMe .applyMng .t a  {color:#666; font:normal 11px/1.5 dotum, "돋움", sans-serif;}
+.globalBarMe .applyMng .d {position:absolute; right:0; top:0; text-align:right;}
+.globalBarMe .applyMng .d a {color:#999; font:normal 11px/1.5 dotum, "돋움", sans-serif; letter-spacing:0; }
+
+.globalBarMe .cnt {height:432px; overflow:hidden; text-align:center;}
+.globalBarMe .scroll {position:relative; overflow:hidden; }
+.globalBarMe .scroll .sCont { position:absolute; left:0; top:0; width:100%; }
+.globalBarMe .scroll .sBar {position:absolute; right:4px; top:0; width:7px; height:100%; z-index:80;}
+.globalBarMe .scroll .grip {position:absolute; left:0px; width:7px; margin:10px 0 10px 0; background:#c1c1c1; border-radius:2px; cursor:pointer;}
+.globalBarMe .scroll .titBar .allView,
+.globalBarMe .scroll .staIcn {right:16px;}
+.globalBarMe .scroll .applyMng .d {right:10px;}
+
+.globalBarMe .devSBarDisabled {display:none; }
+.globalBarMe .ellipsis {width:100%; display:inline-block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overow: ellipsis;}
+
+.btnMe {display: inline-block; width:100%; height:100%; background:url(/img/common/gnb/bg_global_me.png) no-repeat 0 0; overflow:hidden; vertical-align:middle;}
+.btnMeScrap_1 {width:18px; height:18px; background-position:-6px -104px;}
+.btnMeScrap_2 {width:18px; height:18px; background-position:-6px -124px;}
+.btnMeState_1 {width:51px; height:22px; background-position:0 -195px;}
+.btnMeState_2 {width:51px; height:22px; background-position:0 -239px;}
+.btnMeState_3 {width:51px; height:22px; background-position:0 -217px;}
+.btnMeState_4 {width:51px; height:22px; background-position:0 -349px;}
+.btnMeState_5 {width:51px; height:22px; background-position:0 -261px;}
+.btnMeState_6 {width:51px; height:22px; background-position:0 -283px;}
+.btnMeState_7 {width:51px; height:22px; background-position:0 -305px;}
+.btnMeState_8 {width:51px; height:22px; background-position:0 -327px;}
+.btnMeState_9 {width:61px; height:22px; background-position:0 -371px;}
+.btnMeNew {width:15px; height:15px; background-position:-4px -63px;}
+.btnMePush {width:16px; height:18px; background-position:-4px -83px;}
+
+/* 인재풀 등록하기 */
+.lyPoolRegister {display:none; position:absolute; left:0; top:0; width:520px; letter-spacing:-1px; background:#46a5ff; text-align:center; z-index:999999;}
+.lyPoolRegister * {margin:0; padding:0;}
+.lyPoolRegister .reseHead {padding:9px 0 0 8px; text-align:left; background-color:#46a5ff;}
+.lyPoolRegister .reseCont {position:relative; width:520px; margin:0 auto; background:#fff url(/img/list_gi/lgi_pop_bottom.gif) repeat-x left bottom;}
+.lyPoolRegister .reseCont .reseDesc {position:relative; overflow:hidden; zoom:1; color:#000; width:520px; padding-top:13px; background:url(/img/list_gi/lgi_pop_top.gif) repeat-x left top;}
+.lyPoolRegister .reseCont .reseDesc .dsLeft {position:absolute; top:0; left:0; width:10px; height:100%; background:#fff url(/img/list_gi/lgi_pop_left.gif) repeat-y left bottom;}
+.lyPoolRegister .reseCont .reseDesc .dsRight {position:absolute; top:0; right:0; width:10px; height:100%; background:#fff url(/img/list_gi/lgi_pop_right.gif) repeat-y right bottom;}
+.lyPoolRegister .reseCont .reseDesc .bg {width:13px; height:13px; position:absolute; background:url(/img/list_gi/lgi_pop_round.gif) no-repeat 0 0; z-index:2;}
+.lyPoolRegister .reseCont .reseDesc .lt {top:0; left:0;}
+.lyPoolRegister .reseCont .reseDesc .rt {background-position:-13px 0; top:0; right:0;}
+.lyPoolRegister .reseCont .reseDesc .lb {background-position:0 -13px; top:100%; left:0; margin-top:-13px;}
+.lyPoolRegister .reseCont .reseDesc .rb {background-position:-13px -13px; top:100%; right:0; margin-top:-13px;}
+.lyPoolRegister .reseCont .close {position:absolute; top:-25px; right:15px;}
+.lyPoolRegister .reseCont .close button {display:block; width:25px; height:25px; overflow:hidden; background:url(/img/list_gi/lgi_pop_close.png) no-repeat 7px 7px; border:none;}
+.lyPoolRegister .reseCont .close button span {position:absolute; top:-9999em;}
+.lyPoolRegister .flashPad {position:absolute; left:0; top:0; z-index:-1; }
+.openPoolRegister {display:block;}
+
+/* 퀵입사지원 온라인 */
+.iconQuick {position:absolute;left:-7px;top:-8px;}
+.iconQuick2 {position:absolute;left:-7px;top:-11px;}
+.imgQ {display:inline-block;background:url(/img/List_Gi/all_q_apply.png) no-repeat;text-indent:-9999px;}
+
+.layerQuick {position:relative;background:#46a5ff;z-index:1000;}
+.layerQuick * {margin:0; padding:0;}
+.layerQuick .quickHead {height:34px;padding:9px 0 0 8px;background:#46a5ff;}
+.layerQuick .quickHead h3 {float:left;}
+
+.layerQuick .btnHelp {float:left;margin:7px 0 0 0;}
+.layerQuick .btnHelp .imgQ {width:19px;height:19px;background-position:-80px -100px;float:left;}
+.layerQuick .companyName {float:left;position:absolute;right:0;top:19px;background:url(/img/List_Gi/bg_q_title.gif) no-repeat right top;padding:0 23px 0 0;}
+.layerQuick .companyName .txt {float:left;min-width:55px;background:url(/img/List_Gi/bg_q_title.gif) no-repeat;height:20px;padding:12px 0 0 36px;color:#666;font-size:14px;letter-spacing:-1px;text-align:center;font-weight:bold;font-family:Dotum, '돋움', sans-serif;white-space:nowrap;}
+
+.lyTplLogin .btnClose {position:absolute;right:5px;top:10px; width:21px; height:21px; background:url(/img/List_Gi/all_q_apply.png) no-repeat 0 -100px;}
+.lyTplLogin .btnClose span {display:inline-block; text-indent:-9999px;}
+.lyTplLogin .btnClose_s1 {position:absolute;right:5px;top:3px;}
+
+.quickContent {background:url(/img/List_Gi/q_apply_mid.gif) repeat-y;}
+.quickContent .boxTop {padding:7px 0 0 0;background:url(/img/List_Gi/q_apply_top.gif) no-repeat;}
+.quickContent .boxBottom {padding:0 0 12px 0;background:url(/img/List_Gi/q_apply_bottom.gif) no-repeat 0 100%;overflow:hidden;}
+
+.quickTooltip {position:absolute; background-color:#fff; text-align:left; letter-spacing:-1px; z-index:2000;border:1px solid #565656; font-weight:normal;}
+.quickTooltip .close {position:absolute; top:0; right:0;}
+.quickTooltip .btnHelpClose {display:inline-block;width:19px; height:19px; background:url(/img/List_Gi/sprites/lgi_tpl_icon_1.png) no-repeat -46px -267px; overflow:hidden; vertical-align:middle;}
+.quickTooltip .btnHelpClose button {width:100%; height:100%;}
+.quickTooltip .btnHelpClose button span {position:absolute; top:-9999em; width:1px; height:1px; overflow:hidden;}
+.quickTooltip dt {display:block;padding:2px 0 7px 0;color:#46a5ff;font-weight:bold;font-size:12px;}
+.quickTooltip dd {color:#666;font-size:11px;font-family:'돋움', Dotum, sans-serif;letter-spacing:-1px;}
+.quickTooltip dd .link {text-decoration:underline;margin-left:5px;}
+.quickTooltip .desc {margin:2px; padding:8px 8px 5px; line-height:1.4; background-color:#fbfbfb;}
+.quickTooltip .desc em {color:#46a5ff; font-weight:bold;}
+.quickTooltip .arrow {overflow:hidden;position:absolute;left:81px;top:-5px;width:7px;height:5px;background:url(/img/List_Gi/layer_arrow_top.gif) no-repeat;}
+.quickTooltip .group {display:block;padding:0 0 3px 0;}
+.layerQuick .flashPad {position:absolute;left:0;top:0;z-index:-1;}
+/* 개인회원_소식 알림창 서비스 끝 ------------------------------------------------------------------------------------------ */

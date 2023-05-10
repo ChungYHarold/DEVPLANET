@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*
+.File Name		: /inc/css/ver_2/common.css
+.Final Editor	: JSM (2011-06-02)
+*/
+
+/* Reset 
+-------------------------------------------------------------------------- */
+html, body {width:100%; /*height:100%;*/}
+html {overflow-y:scroll; -webkit-text-size-adjust:none;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, button, p, table, th, td {padding:0; margin:0;}
+table, th, td, input, button {font-size:12px;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:100%;}
+table {border-collapse:collapse; border-spacing:0; empty-cells:show; border:0 none; width:100%; table-layout:fixed; word-wrap:break-word;}
+li {list-style:none;}
+form, fieldset, iframe, button {border:0 none;}
+label {cursor:pointer; vertical-align:middle;}
+img {border:0 none; vertical-align:top;}
+address, caption, em {font-weight:normal; font-style:normal;}
+hr {display:none;}
+select, input, option, textarea {vertical-align:middle; font:12px gulim, "����", dotum, "����",sans-serif;}
+input, select, button{vertical-align:middle;}
+button {overflow:visible; background:transparent; cursor:pointer;}
+.skip, .blind, legend {position:absolute; top:-5000em; width:1px; height:1px; overflow:hidden; line-height:0; font-size:0;}
+#skipNavigation {position:relative; z-index:10001;}
+#skipNavigation a {position:absolute; top:-202px; left:0; width:200px; height:24px; padding-top:4px; background-color:#000; text-align:center; color:#fff !important; font:bold 14px '���� ���',Malgun Gothic,'����',Dotum,sans-serif;}
+#skipNavigation a:active, #skipNavigation a:focus {top:0;}
+
+body {font:12px verdana, gulim, "����", dotum, "����", "Apple SD Gothic Neo", sans-serif; text-align:center; color:#666;}
+
+/* Anchor 
+-------------------------------------------------------------------------- */
+a,
+a:link,
+a:visited {color:#666; text-decoration:none;}
+a:hover,
+a:active,
+a:focus {color:#06c;}
+
+/* Location
+------------------------------------------------------------------------------------ */
+.nowLocation {position:relative; width:960px; margin:0 auto; padding:23px 0 11px 0; letter-spacing:-1px; color:#888; vertical-align:middle; font-family:gulim,"����",sans-serif;}
+
+#listHr .nowLocation,
+#listEdu .nowLocation {width:890px;}
+
+/* ���� AD
+-------------------------------------------------------------------------- */
+/* �ϴ� ���(495x110) */
+#adFooter {clear:both; margin:0 auto; background-color:#fff; letter-spacing:-1px;}
+#adFooter table {border-top:3px solid #a8a8a8; margin:0 auto;}
+#adFooter td {font:14px '���� ���',Malgun Gothic,'����',Dotum,sans-serif; text-align:center;}
+
+/* ���� ��� */
+#adTopWrap {position:relative; width:890px; margin:0 auto;}
+
+/* ���� ���� ���(90x154) */
+#adLeftWing {position:absolute; top:48px; left:-100px; width:90px; z-index:1000;}
+#secLgi.lgiGiMain #adLeftWing,
+.eduMain #adLeftWing,
+.hrMain #adLeftWing {top:0;}
+
+/* ���� ���� ���(120x600) */
+#adRightWing {position:absolute; top:48px; right:-130px; width:120px; z-index:1000;}
+#secLgi.lgiGiMain #adRightWing,
+.eduMain #adRightWing,
+.hrMain #adRightWing {top:0;}

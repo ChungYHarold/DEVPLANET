@@ -1,0 +1,8 @@
+.resumeHeader { overflow: hidden; width: 100%; height: 35px; margin-bottom: 50px; background-color: #fff; border-bottom: 1px solid #ececec; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .container { position: relative; overflow: hidden; width: 1200px; height: 34px; margin: 0 auto; text-align: left; }
+.resumeHeader .logo { position: absolute; left: 0; top: 0; display: inline-block; padding-top: 13px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .links { float: right; font-size: 0; }
+.resumeHeader .links .link { position: relative; display: inline-block; zoom: 1; *display: inline; height: 34px; margin-left: 11px; padding: 6px 0 0 12px; color: #666; font-size: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.resumeHeader .links .link:before { content: ''; display: block; position: absolute; left: 0; top: 10px; width: 1px; height: 11px; background-color: #ddd; }
+.resumeHeader .links .link:first-child { margin-left: 0; padding-left: 0; }
+.resumeHeader .links .link:first-child:before { display: none; }
